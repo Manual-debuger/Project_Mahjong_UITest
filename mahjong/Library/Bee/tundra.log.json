@@ -306,24 +306,3 @@
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.AdditionalFile.txt","enqueuedNodeIndex":246,"enqueueingNodeAnnotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.dll (+2 others)","enqueueingNodeIndex":248}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.rsp","enqueuedNodeIndex":247,"enqueueingNodeAnnotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.dll (+2 others)","enqueueingNodeIndex":248}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.pdb","enqueuedNodeIndex":307,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
-{"msg":"newNode","annotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.AdditionalFile.txt","index":119}
-{"msg":"newNode","annotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.rsp","index":120}
-{"msg":"runNodeAction","annotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.AdditionalFile.txt","index":119}
-{"msg":"newNode","annotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm.rsp","index":123}
-{"msg":"runNodeAction","annotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm.rsp","index":123}
-{"msg":"runNodeAction","annotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.rsp","index":120}
-{"msg":"noderesult","processed_node_count":174,"number_of_nodes_ever_queued":307,"annotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.rsp","index":120,"exitcode":0,"outputfile":"Library\\Bee\\artifacts\\1900b0aE.dag\\Unity.2D.Sprite.Editor.rsp"}
-{"msg":"noderesult","processed_node_count":175,"number_of_nodes_ever_queued":307,"annotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.AdditionalFile.txt","index":119,"exitcode":0,"outputfile":"Library\\Bee\\artifacts\\1900b0aE.dag\\Unity.2D.Sprite.Editor.AdditionalFile.txt"}
-{"msg":"noderesult","processed_node_count":177,"number_of_nodes_ever_queued":307,"annotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm.rsp","index":123,"exitcode":0,"outputfile":"Library\\Bee\\artifacts\\1900b0aE.dag\\Unity.2D.Sprite.Editor.dll.mvfrm.rsp"}
-{"msg":"newNode","annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.dll (+2 others)","index":121}
-{"msg":"runNodeAction","annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.dll (+2 others)","index":121}
-{"msg":"newNode","annotation":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm","index":124}
-{"msg":"runNodeAction","annotation":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm","index":124}
-{"msg":"noderesult","processed_node_count":302,"number_of_nodes_ever_queued":307,"annotation":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.dll.mvfrm","index":124,"exitcode":0,"outputfile":"Library\\Bee\\artifacts\\1900b0aE.dag\\Unity.2D.Sprite.Editor.dll.mvfrm"}
-{"msg":"noderesult","processed_node_count":303,"number_of_nodes_ever_queued":307,"annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.dll (+2 others)","index":121,"exitcode":0,"outputfile":"Library\\Bee\\artifacts\\1900b0aE.dag\\Unity.2D.Sprite.Editor.dll"}
-{"msg":"newNode","annotation":"CopyFiles Library/ScriptAssemblies/Unity.2D.Sprite.Editor.pdb","index":267}
-{"msg":"runNodeAction","annotation":"CopyFiles Library/ScriptAssemblies/Unity.2D.Sprite.Editor.pdb","index":267}
-{"msg":"noderesult","processed_node_count":304,"number_of_nodes_ever_queued":307,"annotation":"CopyFiles Library/ScriptAssemblies/Unity.2D.Sprite.Editor.pdb","index":267,"exitcode":0,"outputfile":"Library\\ScriptAssemblies\\Unity.2D.Sprite.Editor.pdb"}
-{"msg":"newNode","annotation":"CopyFiles Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll","index":266}
-{"msg":"runNodeAction","annotation":"CopyFiles Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll","index":266}
-{"msg":"noderesult","processed_node_count":305,"number_of_nodes_ever_queued":307,"annotation":"CopyFiles Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll","index":266,"exitcode":0,"outputfile":"Library\\ScriptAssemblies\\Unity.2D.Sprite.Editor.dll"}
