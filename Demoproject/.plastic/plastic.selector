@@ -1,0 +1,4 @@
+repository "Project_Mahjong@AIAJTY@cloud"
+  path "/"
+    br "/main"
+    co "/main"
