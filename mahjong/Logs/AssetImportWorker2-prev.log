@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.25f1 (68ef2c4f8861) revision 6876972'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'zh' Physical Memory: 23981 MB
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'zh' Physical Memory: 16205 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\2021.3.25f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.25f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker2
 -projectPath
-D:/Project_Mahjong/Project_Mahjong_UITest/mahjong
+E:/github_repo/Project_Mahjong_UITest/mahjong
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-60461
-Successfully changed project path to: D:/Project_Mahjong/Project_Mahjong_UITest/mahjong
-D:/Project_Mahjong/Project_Mahjong_UITest/mahjong
+57917
+Successfully changed project path to: E:/github_repo/Project_Mahjong_UITest/mahjong
+E:/github_repo/Project_Mahjong_UITest/mahjong
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,60 +47,60 @@ D:/Project_Mahjong/Project_Mahjong_UITest/mahjong
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [16988] Host "[IP] 192.168.0.8 [Port] 0 [Flags] 2 [Guid] 1448628435 [EditorId] 1448628435 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-8TGAMCPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20808] Host "[IP] 26.147.234.45 [Port] 0 [Flags] 2 [Guid] 2198471995 [EditorId] 2198471995 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [16988] Host "[IP] 192.168.0.8 [Port] 0 [Flags] 2 [Guid] 1448628435 [EditorId] 1448628435 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-8TGAMCPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20808] Host "[IP] 26.147.234.45 [Port] 0 [Flags] 2 [Guid] 2198471995 [EditorId] 2198471995 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 79.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 115.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
-[Subsystems] Discovering subsystems at path D:/Unity/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Project_Mahjong/Project_Mahjong_UITest/mahjong/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/github_repo/Project_Mahjong_UITest/mahjong/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 with Max-Q Design (ID=0x1f12)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
     Vendor:   NVIDIA
-    VRAM:     5968 MB
-    Driver:   31.0.15.3179
+    VRAM:     3962 MB
+    Driver:   30.0.15.1179
 Initialize mono
-Mono path[0] = 'D:/Unity/2021.3.25f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56968
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2021.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: D:/Unity/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003527 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006117 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 335 ms
-Refreshing native plugins compatible for Editor in 92.12 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 462 ms
+Refreshing native plugins compatible for Editor in 115.00 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.053 seconds
+- Completed reload, in  1.336 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1054ms)
-		BeginReloadAssembly (83ms)
+	ReloadAssembly (1337ms)
+		BeginReloadAssembly (108ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (881ms)
-			LoadAssemblies (83ms)
+		EndReloadAssembly (1110ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (109ms)
+			SetupTypeCache (165ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (694ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (845ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (420ms)
+				InitializePlatformSupportModulesInManaged (570ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (92ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (133ms)
+				RefreshPlugins (115ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (111ms)
 				ProcessInitializeOnLoadMethodAttributes (47ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -108,60 +108,59 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003672 seconds.
+Registered in 0.003106 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Project_Mahjong\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Project_Mahjong\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 Package Manager log level set to [2]
-- Completed reload, in  1.228 seconds
+- Completed reload, in  1.266 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1229ms)
-		BeginReloadAssembly (136ms)
+	ReloadAssembly (1267ms)
+		BeginReloadAssembly (138ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (988ms)
-			LoadAssemblies (111ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1005ms)
+			LoadAssemblies (100ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (287ms)
+			SetupTypeCache (345ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (514ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (446ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (30ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (396ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (271ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3280 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (341.7 KB). Loaded Objects now: 3743.
-Memory consumption went from 126.2 MB to 125.9 MB.
-Total: 3.265700 ms (FindLiveObjects: 0.300600 ms CreateObjectMapping: 0.095800 ms MarkObjects: 2.694600 ms  DeleteObjects: 0.173100 ms)
+Unloading 27 unused Assets / (341.8 KB). Loaded Objects now: 3743.
+Memory consumption went from 122.0 MB to 121.7 MB.
+Total: 5.971800 ms (FindLiveObjects: 0.445200 ms CreateObjectMapping: 0.585000 ms MarkObjects: 4.767800 ms  DeleteObjects: 0.172100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -169,559 +168,1031 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 209884.999058 seconds.
-  path: Assets/Prefabs/DemoTile.prefab
-  artifactKey: Guid(4f89d9eca21bd4f41930a00a06ba278c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DemoTile.prefab using Guid(4f89d9eca21bd4f41930a00a06ba278c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b52bc26b06e1aa47eecb65949862180') in 0.142371 seconds 
+  Time since last request: 601462.925513 seconds.
+  path: Assets/Prefabs/UI/結算_Player.prefab
+  artifactKey: Guid(1d13ac9ee2652704c884fb31ba835aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player.prefab using Guid(1d13ac9ee2652704c884fb31ba835aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b2fa48dc5f2f8bc6f2636b707acac8') in 0.119662 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.020177 seconds.
-  path: Assets/Prefabs/DemoTile.prefab
-  artifactKey: Guid(4f89d9eca21bd4f41930a00a06ba278c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DemoTile.prefab using Guid(4f89d9eca21bd4f41930a00a06ba278c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae822b36d10350c43100a5270b79abce') in 0.052694 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.492902 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e731edeb0697abb8576775e8507d6590') in 0.035598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.612306 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd94df5f55e9301a1b5063f81a46359c') in 0.050464 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 100.238823 seconds.
-  path: Assets/MahjongTiles/Models/MahjongTiles.FBX
-  artifactKey: Guid(8b367f923d1e0724bbdfa81ff4af6532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Models/MahjongTiles.FBX using Guid(8b367f923d1e0724bbdfa81ff4af6532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa211bb26be9ca73349570fb9fcef69') in 0.592503 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 60.369882 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0e1f87dc528c54687e83d657fe6456') in 0.035802 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.195150 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603ed555bae07bdbf30a169c82007787') in 0.036774 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.663239 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f415218e2fe820cdf81fe89b9d1aff43') in 0.045099 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.357561 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c662b74841c457b191ab1b6b9513bfe1') in 0.052191 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.614898 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58b9f855ed1e3fd4264eeafc0ce6e9f') in 0.041173 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 50.161564 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defbab2c1338437b863a8ce8a9624093') in 0.109617 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 42.531941 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad76900c5ea93e62d73e238dfacd7dbb') in 0.060241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.039615 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a108e503fb9ce435e78a108e56281e8b') in 0.049401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.551170 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673b70f1eb1a0a5b819fdb8e5f9b7f6c') in 0.057032 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.131338 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00cdb8ac5537661939e91c6c0798791') in 0.051755 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.536624 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb2bf2b9f44713cdfe541628ca1bd163') in 0.076210 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.992867 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb23e901d3b71bf19f339f56ead409c') in 0.044424 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.418820 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692c76001f8b83ab777237e2812074b7') in 0.048060 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.821907 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2420c946687ef2559758b839dc79d3e') in 0.042944 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 229.930004 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd74ee458336efdb3de2f637c1720e98') in 0.042440 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.124423 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64dbb468749340c45f02cf9749bd02ad') in 0.041530 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 61.383317 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9acacffa8969854c69c61bef5120edb') in 0.025066 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.150253 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c74673d672f286377655a11ce316c3b9') in 0.034702 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.801198 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ee1e1c20949f1b613d8dd6b5b8bacf') in 0.032087 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.302460 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '995a0459102f46d2741674cbf34dbf74') in 0.029676 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.467071 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a94e560316d69fd2d81f1d052eb4c54') in 0.031758 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.867792 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849c49109171a75c79617ac5c44535b9') in 0.028477 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.259111 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af8cafe466af5d60b79015d50178ecb') in 0.032326 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.689659 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b2a43ffbe826a7ee57091899f71a64') in 0.023767 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.319145 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d71a09c44ce5e4bf17f8388ea20c25c') in 0.026376 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.005513 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d532a9766322a7da73d5607dd482e1') in 0.028439 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.572628 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7a6ab58e7667b614cd33036884d706f') in 0.031956 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.010528 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '864c2c897c6b92020daf96b8d1d8dbe7') in 0.039259 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.772388 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b9bd49bdcc433348dd502a4638e0482') in 0.030639 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.823111 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '545cd6b29a4564d21bacd362650a2740') in 0.033983 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.332454 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8a5184b8fe04738339f14a4c8fc3a7') in 0.031561 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.783432 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '305e5015c3005e6d0ca2d1b12d8812b2') in 0.024110 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.066916 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2646ba68c32c526059365e87220b3bc1') in 0.028170 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.585226 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79e6fb7c72946eb077785cf8ce2778d') in 0.025754 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.074097 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78babb57737e0f5cefa42a3b3b8e3a6a') in 0.032276 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.462002 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a67f08523277a7fd82c7799a74a1580') in 0.033301 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.327493 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3807fabb160d5d74f937f9fe38f002b') in 0.031284 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.412268 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a15290ac8ce57f5398a29ada3c9d36') in 0.027177 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.311315 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e8fe7ed249b48b2935d187e7163313') in 0.028945 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.174342 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f29112f5915098ac739a679892bf433') in 0.029090 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.983291 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1483521c02b6f98f6515fb943298d216') in 0.037205 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.723204 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84bcfb68ce69db677d96fef0ae0be602') in 0.028306 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.933612 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0329c04d3a65cd4e51e4669f63eb2069') in 0.032142 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.722588 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6f502c2922d7f8b057566e6bb541d1') in 0.046734 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.605433 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a6da3eacf80e9d8757e287e599d2ac') in 0.027624 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.452925 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46799428703814d77b00b2a8fdb9ea0d') in 0.030198 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.686405 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af078cf78c97c63ce7c3eceb82401f4f') in 0.050232 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.377666 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925f3ca33592bafc4a9cdfb84efcab25') in 0.035269 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.554368 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafd6f8f369af74e9545c20ca6a80e6f') in 0.022834 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.203625 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7570e4762498165aeee193ad7e1d9fe8') in 0.024654 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.761833 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd2e4364c818f1f7aa085898380c27b') in 0.030921 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.189899 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b010986cd6e3704c17108c8bef17daf') in 0.031780 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.227033 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1676aa4561d62c8ffca66bcec421d52') in 0.028876 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.094960 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b0999543a98390f2fa321a234f5b70') in 0.048542 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.377217 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119469fc0c75f8d9de0d4a07147cb855') in 0.032390 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.547045 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '368cbf9df1c7fe1049c05d014973f33a') in 0.031068 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.895134 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7a3e4662625cda156d8a9b23af0cd2') in 0.028445 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.312345 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2269b77e0e0f46fa2541a36b518f4e1') in 0.029865 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.098948 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9d3c200997843e4ab527eb29f0d13e') in 0.025070 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.650909 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd854b10cb04d1126cac352d4049bbb') in 0.027549 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.288560 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0037d056615576a7be880056723dbc7') in 0.029633 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.278527 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc709420e443d3651e27fafbdb2ab08') in 0.028589 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.236417 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697e30224b1820f389d3d4b911cfa9eb') in 0.025625 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.227668 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b6b3a20478cd17a0b1a3a773c5cda0') in 0.026719 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.701536 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd940ea2bdaaff9f93aa913b5c68554c6') in 0.028190 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.284252 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfdd000962cb23937d10794ad6a07fed') in 0.029100 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.266817 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b6d5469125468ff8c2128530824c86') in 0.030962 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.198327 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '154e189fedc84d73cf0b9b8c497650a8') in 0.024720 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.660280 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58947d0cbc7c85a8cfb954148b69b60') in 0.032264 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.125933 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a211bfb9f404c776664ba0b20c9095d') in 0.034279 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.772124 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119e199c818e8df0c00475ac7113551f') in 0.021438 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.056520 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecac8509561d53ccad8c9be31ff5ac28') in 0.023186 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.172219 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ba6af86a65ff46826d81c57d2c0cf8') in 0.024171 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.750355 seconds.
-  path: Assets/Prefabs/GameObject.prefab
-  artifactKey: Guid(9e63b33fec7827549b953c2366b1f474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameObject.prefab using Guid(9e63b33fec7827549b953c2366b1f474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbfb999622751338ce687dc4f95a356') in 0.041537 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.159912 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316c98402946b57f0c7a230ca3ce940b') in 0.023566 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.442607 seconds.
+  Time since last request: 0.000028 seconds.
   path: Assets/Prefabs/RowOfTiles.prefab
   artifactKey: Guid(9e63b33fec7827549b953c2366b1f474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/RowOfTiles.prefab using Guid(9e63b33fec7827549b953c2366b1f474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aeb600bb3f47202e8745572678011ef') in 0.044416 seconds 
+Start importing Assets/Prefabs/RowOfTiles.prefab using Guid(9e63b33fec7827549b953c2366b1f474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '138d16ae84bcb7007efcde41ae5e95a5') in 0.097566 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.169051 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc304c9f0b9aa019dc69af7fc9378d6b') in 0.029496 seconds 
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/UI/PlayerInfo.prefab
+  artifactKey: Guid(5a5fe1aee3259eb44b040d25b681bdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/PlayerInfo.prefab using Guid(5a5fe1aee3259eb44b040d25b681bdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255fdd126e0bb0dd50123abe70a8f0ef') in 0.042150 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.144836 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '220daf966aed695da49e573ef9daa6f7') in 0.021313 seconds 
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(38826caf6ade8ab45ba179a89c00b97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(38826caf6ade8ab45ba179a89c00b97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b78c5309054bc3af33ed6c09866d98d') in 0.011378 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.206512 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81ce7cfbf61e67003cb3e1b63ed6b57') in 0.033108 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/Prefabs/UI/Timer (1).prefab
+  artifactKey: Guid(f3dfde7d260e1ed40a934752847a758d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Timer (1).prefab using Guid(f3dfde7d260e1ed40a934752847a758d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196428d23f2d3c7ee173cf3af6014bcf') in 0.026491 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.571169 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994eb9cbeb9c4912a423a662459d4452') in 0.023971 seconds 
+  Time since last request: 0.000058 seconds.
+  path: Assets/Prefabs/DemoTile.prefab
+  artifactKey: Guid(4f89d9eca21bd4f41930a00a06ba278c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DemoTile.prefab using Guid(4f89d9eca21bd4f41930a00a06ba278c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70567604e91fee1251bb0fcf5cc1c41c') in 0.023803 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.408056 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c580f37722074401bba26433a3a1d4e8') in 0.025004 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/UI/UITile.prefab
+  artifactKey: Guid(d8846229df166864d863db3ece7b0d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/UITile.prefab using Guid(d8846229df166864d863db3ece7b0d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7e2abfec35848b2abfa1f15b3bdbbf') in 0.013411 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.801287 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6bc48d5291dd53f5e8f9fb7d0593f3b') in 0.028002 seconds 
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/UI/Button_Template.prefab
+  artifactKey: Guid(0b7a686ea97737c438e733431cf1dafb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Button_Template.prefab using Guid(0b7a686ea97737c438e733431cf1dafb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54d02411dbad687e441d9570e865f02') in 0.049599 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 144.144006 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a0aa906022453a1860a9963b59fc40') in 0.034682 seconds 
+  Time since last request: 29.990200 seconds.
+  path: Assets/Prefabs/UI/GameObject.prefab
+  artifactKey: Guid(c3926826c9d9e2146b3971002991e891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameObject.prefab using Guid(c3926826c9d9e2146b3971002991e891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee15f4d18fa709a238cb8eab5b4e705') in 0.032212 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 118.921372 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b15ff3de37a78489a87eb3a2ca188b') in 0.029849 seconds 
+  Time since last request: 21.944987 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(c3926826c9d9e2146b3971002991e891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(c3926826c9d9e2146b3971002991e891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4977a29284af431f936f7078071ada23') in 0.049207 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.048924 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68659617f8a247cd2587eafa4bd465bb') in 0.026450 seconds 
+  Time since last request: 84.746411 seconds.
+  path: Assets/Prefabs/UI/GameObject.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/GameObject.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '483b90d1c0bd736ae15ac867455e2896') in 0.026308 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.818378 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b13893e5e1b6200955486c270ff89f6') in 0.030546 seconds 
+  Time since last request: 5.061754 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7fcdea54eb0301008ee7c9a5a65dc86') in 0.025045 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.000448 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c41dbe3c606b8e09162f25ae3ac3e3') in 0.028519 seconds 
+  Time since last request: 45.933968 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e34a5e41847fa539b85bc8ab1e39c0fd') in 0.026135 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.192699 seconds.
-  path: Assets/Prefabs/Player_Tiles.prefab
-  artifactKey: Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player_Tiles.prefab using Guid(30d39c50ae1568343aea9a70c8dd8fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33382336d53bf5f076199d9a455fc3bc') in 0.027190 seconds 
+  Time since last request: 8.774261 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9138955b729e2f4f6f71d9ee0a9ed40') in 0.025177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.692830 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ab6ca4b1b390ca99b0af1be1f35bc7') in 0.025984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.302033 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c777834c92f5cba2858fdd456992830') in 0.025293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.037589 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b09b2c50e67becc663787dd77b54a97') in 0.028274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.334957 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebdf05c9e55f0031bcc1270dd7a4f95a') in 0.025394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.463523 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4305be8f0282ae1ceeeb9349f89b753') in 0.025755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.082126 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '971e680a97fbc394bf8c1d60565fce8f') in 0.396487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.975808 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec2f2830db93a257aaed4499ae478bc') in 0.025143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.295869 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52210a169aace81919d70801f1a09b70') in 0.025649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.776951 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fe338113436f42ecb60c4c6e13877b7') in 0.027120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.228905 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1002c5f774aa72e0b5ea83ff622983b') in 0.025832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.482842 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c8023266738a71ace1206d139befd1') in 0.025530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.184060 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd78bd313ede4fcc1de1b93c7f2914f') in 0.025974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.217754 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af4bf7ea22b23b67727cdd0b99b39f3b') in 0.027294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.305809 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9be03bc9eb38ba1c92d047ea984e857') in 0.028714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.420710 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d9884ae06bb642ff388110180620646') in 0.025923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.331533 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88f49431a80878d4e49a21c42f1d6cc1') in 0.026965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.857703 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62177b59eab82e82d971a167f583da1') in 0.028053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.465495 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb4a977bab0217a6f3517129c922692') in 0.025829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.604070 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d7edd930673290fbc0d770387de8fe') in 0.026631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.006616 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb985674385d24242e1d4923d3f3328') in 0.027394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.119802 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e1cf636120ff0c3a01dd8c87c1f6b4') in 0.027570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.202371 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b77671869193687838366a17dc724292') in 0.027558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.670951 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e43ab4689be5240c9b2fad0d6b112af3') in 0.028654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.270341 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f889d57e191001cb079aa336a2be95') in 0.025692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.558285 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29fb9c8c49e345b13a1014fd9e84f626') in 0.027608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.651129 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb321bcec5d17de340b8286ee55f561') in 0.025932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.116457 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5fcc0915575e1ed5870153150331908') in 0.025379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.697924 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4048de4e8b932ed883010bd1f941924a') in 0.026455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.107524 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc296886a03cdc96231694ab4de7a3a1') in 0.026740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.369974 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f91a9466057a7836fd058430e82ba98') in 0.026292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.939915 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df195d036a5b93d2633f705313bd1319') in 0.028024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.816150 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e90afa2863e1fbe38a352ccc215368') in 0.027144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.598595 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47706e0d002a57cda9b30af68b28230b') in 0.025648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.380215 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e9f27431db00725fc34f92107ef587') in 0.025089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.769729 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae3bf09ce7fcdcd83b1bb379f2b465a') in 0.026574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.193700 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7cebbfa15e0ca4fc6d194c19490dc7') in 0.025241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.762554 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15401e9ed05cca4c7e4fb44397bf39a3') in 0.024996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.598002 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f02f6663bd48428b2d2ff0e9544e4ea') in 0.025705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.997624 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2acca6c4048c1195b80ecfa60193be63') in 0.025460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.192090 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb3d297764c2749d112234ab033b6d32') in 0.599783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.843663 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71111eefcc07fc006c6f446b13f44711') in 0.025685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.113327 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18e872751f6c9d984c06f57d4cc5f70') in 0.025600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.022710 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d48629f869df3f91310b7f8f29f38bd') in 0.027408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.587466 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650bacc2dfc4b73f6f4b89ee2e75ed07') in 0.027014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.567037 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5dbe84a3a519f59abaf7ed4d48f3b68') in 0.029747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.569160 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f94c6bd0ff00f81f450172fc3c85887') in 0.081888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.460660 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4668ce941019cdc2877ed1ef786db4c3') in 0.030131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.097108 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db7062e09c09b55005efc5a36a710da') in 0.025817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.191966 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba2598423ef9a944d6676954e55741ec') in 0.025654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.647571 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '884e1a0cd72deb7bb5ba778291391fbf') in 0.026292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.119997 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61cad056232b7183164ce14944fb040f') in 0.029184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.617923 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b643d984e910e91bd7a628556b741f') in 0.026804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.502520 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccaa99c7caecd46f062d00a4216ac09b') in 0.026257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.688557 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2bb858b4f7b59bafb0471ac6af47b4') in 0.025189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.218366 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d8a9e111935ef3d52990946fa5f929') in 0.025610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.577207 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7106cdac799ed0900e1c2d2c613a84f') in 0.026606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.240017 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e616af3d744cb76208124ebbb37174bd') in 0.025543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.811364 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40efe26982b26807cad299964b631a15') in 0.026017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.367006 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e13178abd77960e8d5a13ece5e8f7eb') in 0.025624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.635516 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09254cabd29bcfc562910c9c8b1861e1') in 0.026197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.856266 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7202a7b6064ff5a41ad90ab2c5129413') in 0.025789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.511323 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '437d1dfebf2f9e0d64842b519ca95766') in 0.025546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.608213 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8efd584181731a4645b5923bfc83ab0') in 0.026060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.532292 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db86401abf3ce60d9acf061d26816508') in 0.025743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.400857 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b2f66576f8e0ebd825fe36143a2b4d0') in 0.030146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.273523 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '470eb4cc234d934af3a9ee75abbf54f0') in 0.025349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.322874 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a156f9f3b5597c84084e194dea38fc75') in 0.026582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.851887 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7049d419a0f7c375841a7bb36f9bfc9c') in 0.026693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.309883 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fae34f46b126791c6e57212faf57834') in 0.636951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.275582 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6293771b2c20e1b94b2f7300a7432d09') in 0.026953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.420576 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81c9914b5fde06a6a3b8da75a7d4fe3b') in 0.025553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.669817 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '683aece1f24a3325d06dff03cf581663') in 0.025720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.947090 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3816e954a1ce15e717544cca41863f70') in 0.026207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.831224 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fb54b2c8da335e302c211f20fb706e') in 0.026770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.250406 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '574f8a8d0979fd6b26f0ec3d1fb1643f') in 0.026078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.174479 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f50682af01eb79d27fbba4d74853932') in 0.027020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.498878 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c70fd04cb628a3f13c12793f57d9c3') in 0.028523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.411268 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '470c37e49b5e4ce6529ca41fb88af485') in 0.027725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.626794 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee04db177d7cec582eb2de242888bffb') in 0.026759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.678106 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259cbc9d48b2d2ba9d7ff5878ede4578') in 0.025258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.234981 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a9656e31f2b60b3cd48f6c3babd013') in 0.026477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.855179 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '093233e0929b0e72856a81d9119bdb11') in 0.026889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.796582 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '107424b8cbccd7b1b725fc6f9cceec32') in 0.903177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.604716 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e1f6e8f4283ab69a6490bd0ab2c37d') in 0.025597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.316755 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c495e587f29a883a188aff2f7c79eb1e') in 0.027235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.574989 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2cd39bba48f0482b5b6514fce563f27') in 0.027406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.524993 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8593282d1a450a00bfbe15f9a7beb2a') in 0.026693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.993858 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2285b92ce790dbde15ba9789f9e7ab2a') in 0.025991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.358693 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5e54fc383b2f49431d51ddecb5f9f1') in 0.027892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.220479 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad28ff8319bc61d6566e61d94a468b4') in 0.398135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.102956 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf023375fe9b2be6bf25d739bbfb39e2') in 0.031008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.787132 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2323838dda536da6eae6992243949997') in 0.024681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.053783 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e77cde500be6a0f7e720099fcaf8efc') in 0.027382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.990767 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9438dedd99a89e43eebbc76d95784e') in 0.027849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.849000 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6721073fb22e77acf72d5612a024e8d') in 0.033843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.391898 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf1becb19d3626b763f449416d23d0a') in 0.025069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.149618 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe989958b76e5fd1382f51fdcd813972') in 0.024771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.344906 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8d5b69536d688655079bfe8e293fb4') in 0.033513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.896694 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa37c41201a1cda48fad7cf1c400373b') in 0.027786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.577713 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f1f2937436d5d958b9c7d6e10d884c') in 0.026036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.180098 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7644b87994f774090f7fa8c041e74a4c') in 0.025444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.716378 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a59684833fc60a9fdcad013f715fee3') in 0.026152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.326042 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3bd2df959f0b6c93b6007045f8d74b5') in 0.031390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.577928 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd695bea63decc787aeca336ec559d9c9') in 0.026446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.228401 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73525ad677296800c87b51d5a19a061e') in 0.030041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.865398 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a08d34baa4398b8ec097c2d6f259ef4') in 0.030576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.533339 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db668236125583495fd5a759dc94b11') in 0.027233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.263418 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbdb18eb97aec731f30e978119143166') in 0.024873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.702051 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8e956d690426ac5f3521545e952631') in 0.027837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.331856 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a61d8a8fd666aabd9c7071c35a0a216') in 0.026269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.983500 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6de7ac9f0c7bb42cb59b8e0e03f1db1') in 0.025401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.161454 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b595cf95d45cceaa57258b6bcfaf0b5e') in 0.027407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.854776 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef91a1ec0463d2f4a8e271d45841221') in 0.024906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.286873 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49528f86075b441c57e633a18fc89c54') in 0.026069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.203501 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f85c1a9a599cbc6ed16060ad1ac73c5') in 0.026500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.217151 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1de0d43563587b6cf9852ad8776a05') in 0.027921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.687745 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15e0ada66c9e82611e21a4651ac669f') in 0.026680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.823103 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d010136adafe949577267194cddf5bc') in 0.026550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.885057 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c16157ec3097ba707b375ebb8af3e79') in 0.027595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.833047 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84294b8625798a0aa0b0e70f172604c') in 0.025766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.986557 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d1ff7135b9cb94e813da8127f9d4898') in 0.025053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.320753 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c35070b2281c1e2d8cfa4cddfcaf1ef') in 0.026617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.761269 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6f1e4014a67edcf5bd52f92db1ebb2') in 0.027292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.220925 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3e87c3e6b1e1e1299f05b81402c34d') in 0.027477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.610448 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e65f00a24a14461616fa5cc766da00') in 0.027414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.869320 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2414b895fbc08711e99ddc9d6a11893e') in 0.028729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.665034 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1e3dda305182bce10933d79f944837') in 0.027319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.782925 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf5c96d625fcd7ec991a9592d1af128') in 0.024459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.325320 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c80d125197603067c2ce75c8a039f1') in 0.029590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 91.798913 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6560e88b0eb441d363ad91b5d2e74c') in 0.026806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.093769 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd35d39771a66c6876bba59896477ff') in 0.058402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.482925 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd49a9500214426662cc60b8adceb7fa3') in 0.025636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.266111 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8fbd018fa7164213215fb930ba5e2b') in 0.324740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.666580 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3a52609aa962487001b5538426121d') in 0.026704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.810986 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26fb1c44e2807782de81b18587146a6') in 0.026767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.418894 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9548cb098c8556470546f7d4ad5a60c') in 0.027101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.016904 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0873f39c2b7c9ef622351ea3fc65225f') in 0.026596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.674593 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07fb93ac2347808b2ba5589cdbfb01d9') in 0.024504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.932280 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47796a1e468ec8c711ad90d14c04dd02') in 0.025015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.134603 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03457e9a42703f24d3f453250aad803c') in 0.030582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.398546 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e16a984a1e942f0b4f420902d4fe49') in 0.028926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.976129 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edf3c4f77a1cf7958b52f76f465fa88') in 0.030335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.588931 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd32055526fe02edaa72c3dd3072b11') in 0.029925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.235589 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c878900547487e7b01aa0dc30115c568') in 0.025781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.861830 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbe6fa7e83b5bf5b963d2b8aa077d3f') in 0.028921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.414129 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a81c3565ab47120f96c1f0073d103394') in 0.025443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.299353 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5674ccb22a52312e3025413776217e2') in 0.029034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.974776 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b60cae5e1c8648cfd07c52428ce291') in 0.032880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.586713 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084a4b7f604e2879d065a39b4655244b') in 0.031618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.207240 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f57e9eedf539838bf664f880d73616c') in 0.032630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.037762 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d63efd5a4c0d58c4e5094384b668818') in 0.035303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.228447 seconds.
+  path: Assets/Prefabs/UI/結算_Player_2.prefab
+  artifactKey: Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/結算_Player_2.prefab using Guid(be25f254bf286cd4dba66efe83d9ab42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce2faa81c676df8576912fe2f8a18ad') in 0.030650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 430.400446 seconds.
+  path: Assets/MahjongTiles/Textures/MahjongTile 1.png
+  artifactKey: Guid(f534331b6e4d9834a8f411e823965a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Textures/MahjongTile 1.png using Guid(f534331b6e4d9834a8f411e823965a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1ee4737472e1ae76972bd755b487e6') in 0.270315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 78.054526 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f42ba1b3398af654f7b1cf6d44c4f77') in 0.251723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
+  artifactKey: Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset using Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed885a4fd013463f46472a4f9b9a9a45') in 0.284263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '007425405e2f4fef13b63816c7a4cdee') in 0.068845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a73de2470602b15186bc3b39d73306') in 0.235282 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
