@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class aspectCamera : MonoBehaviour
 {
-    public float deviceWidth;
+    /*public float deviceWidth;
     public float deviceHeight;
     public float aspectRatio;
     public Camera mainCamera;
@@ -13,43 +13,40 @@ public class aspectCamera : MonoBehaviour
     private void Awake()
     {
         aspectRatio = deviceWidth / deviceHeight;
-    }
+    }*/
 
     private void Update()
     {
-        deviceWidth = Screen.width;
-        deviceHeight = Screen.height;
-        aspectRatio = deviceWidth / deviceHeight;
-        float targetAspectRatio = 1792f / 828f;
-        float baseFOV = 55f;
-        float extraWidth = 0f;
-        float extraHeight = 0f;
+        float targetAspectRatio = 2.17f; // 目?屏幕比例，例如 iPhone 11
+        Rect safeArea = Screen.safeArea;
 
-        if (aspectRatio > targetAspectRatio)
+        float screenAspectRatio = (float)Screen.width / Screen.height;
+        float viewportWidth = 1f;
+        float viewportHeight = 1f;
+
+        if (screenAspectRatio > targetAspectRatio)
         {
-            // ??的?高比例??，需要添加黑?在左右
-            extraWidth = deviceHeight * targetAspectRatio - deviceWidth;
+            // 如果屏幕比例更?，?根据高度?行?放
+            viewportHeight = targetAspectRatio / screenAspectRatio;
         }
-        else if (aspectRatio < targetAspectRatio)
+        else
         {
-            // ??的?高比例?窄，需要添加黑?在上下
-            extraHeight = deviceWidth / targetAspectRatio - deviceHeight;
+            // 如果屏幕比例更窄，?根据?度?行?放
+            viewportWidth = screenAspectRatio / targetAspectRatio;
         }
 
-        Debug.Log(deviceWidth);
-        Debug.Log(deviceHeight);
-        float targetFOV = baseFOV * (targetAspectRatio / aspectRatio);
-        mainCamera.fieldOfView = targetFOV;
+        // 根据安全?域?行偏移
+        float viewportX = (1f - viewportWidth) * 0.5f;
+        float viewportY = (1f - viewportHeight) * 0.5f;
 
-        // 根据需要添加的黑?大小?整相机的?野范?
-        mainCamera.rect = new Rect(
-            extraWidth / (2f * deviceWidth),
-            extraHeight / (2f * deviceHeight),
-            1f - extraWidth / deviceWidth,
-            1f - extraHeight / deviceHeight
-        );
+        // 考?安全?域的?距
+        viewportX += safeArea.x / Screen.width * viewportWidth;
+        viewportY += safeArea.y / Screen.height * viewportHeight;
+        viewportWidth *= safeArea.width / Screen.width;
+        viewportHeight *= safeArea.height / Screen.height;
 
-        // 在相机的背景上添加黑?效果
-        mainCamera.backgroundColor = Color.black;
+        // ?置 Camera 的 Viewport Rect
+        Camera.main.rect = new Rect(viewportX, viewportY, viewportWidth, viewportHeight);
+
     }
 }
