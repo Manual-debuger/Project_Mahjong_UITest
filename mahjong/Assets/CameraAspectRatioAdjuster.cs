@@ -5,14 +5,18 @@ public class CameraAspectRatioAdjuster : MonoBehaviour
     public float targetAspectRatio = 18f / 9f; // 以18:9為目標長寬比
     public float originFOV = 55;
     public bool isSafeArea;
+    private Camera mainCamera = null;
+
     private void Awake()
     {
         // originFOV = cam.fieldOfView;
+        mainCamera = GetComponent<Camera>();
+        
     }
 
     void Update()
     {
-        Camera camera = GetComponent<Camera>();
+        var camera = mainCamera;
         Rect safeArea = Screen.safeArea;
         float currentAspectRatio = (float)Screen.width / Screen.height;
         float scaleFactor = currentAspectRatio / targetAspectRatio;
