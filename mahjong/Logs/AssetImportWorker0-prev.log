@@ -15,7 +15,7 @@ F:/Ntust/3-2/let me out/Project_Mahjong_UITest/mahjong
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55513
+52893
 Successfully changed project path to: F:/Ntust/3-2/let me out/Project_Mahjong_UITest/mahjong
 F:/Ntust/3-2/let me out/Project_Mahjong_UITest/mahjong
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ F:/Ntust/3-2/let me out/Project_Mahjong_UITest/mahjong
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12648] Host "[IP] 192.168.68.60 [Port] 0 [Flags] 2 [Guid] 3265922658 [EditorId] 3265922658 [Version] 1048832 [Id] WindowsEditor(7,GTX-1660S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [27428] Host "[IP] 192.168.68.60 [Port] 0 [Flags] 2 [Guid] 839483293 [EditorId] 839483293 [Version] 1048832 [Id] WindowsEditor(7,GTX-1660S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12648] Host "[IP] 192.168.68.60 [Port] 0 [Flags] 2 [Guid] 3265922658 [EditorId] 3265922658 [Version] 1048832 [Id] WindowsEditor(7,GTX-1660S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27428] Host "[IP] 192.168.68.60 [Port] 0 [Flags] 2 [Guid] 839483293 [EditorId] 839483293 [Version] 1048832 [Id] WindowsEditor(7,GTX-1660S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 100.99 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 101.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -62,44 +62,44 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
     Vendor:   NVIDIA
     VRAM:     5980 MB
-    Driver:   31.0.15.2698
+    Driver:   31.0.15.3179
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56244
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56836
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011415 seconds.
+Registered in 0.014586 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 93.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 94.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.763 seconds
+- Completed reload, in  1.074 seconds
 Domain Reload Profiling:
-	ReloadAssembly (763ms)
-		BeginReloadAssembly (108ms)
+	ReloadAssembly (1074ms)
+		BeginReloadAssembly (101ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (528ms)
-			LoadAssemblies (104ms)
+		EndReloadAssembly (712ms)
+			LoadAssemblies (98ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (122ms)
+			SetupTypeCache (296ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
+			RebuildScriptCaches (30ms)
 			SetupLoadedEditorAssemblies (326ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (88ms)
+				InitializePlatformSupportModulesInManaged (84ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (93ms)
+				RefreshPlugins (95ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (92ms)
+				ProcessInitializeOnLoadAttributes (95ms)
 				ProcessInitializeOnLoadMethodAttributes (51ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -107,179 +107,53 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003967 seconds.
+Registered in 0.004429 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image F:\Ntust\3-2\let me out\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image F:\Ntust\3-2\let me out\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 Package Manager log level set to [2]
-- Completed reload, in  1.502 seconds
+- Completed reload, in  1.558 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1503ms)
-		BeginReloadAssembly (157ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1204ms)
-			LoadAssemblies (117ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (352ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (636ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (27ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (107ms)
-				ProcessInitializeOnLoadAttributes (464ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3281 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (342.3 KB). Loaded Objects now: 3764.
-Memory consumption went from 145.4 MB to 145.1 MB.
-Total: 4.462800 ms (FindLiveObjects: 0.345300 ms CreateObjectMapping: 0.094600 ms MarkObjects: 3.871200 ms  DeleteObjects: 0.150500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 432450.837873 seconds.
-  path: Assets/Materials/Yellow.mat
-  artifactKey: Guid(ef65d4b444eaab54fbfadb904d9ac764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Yellow.mat using Guid(ef65d4b444eaab54fbfadb904d9ac764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f892a68dec70f4db6d08485ae1f12655') in 0.133026 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Materials/Black.mat
-  artifactKey: Guid(4fb62017cb8c3b84b8ed911e697d9a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Black.mat using Guid(4fb62017cb8c3b84b8ed911e697d9a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ca1259cb46023a07500be6677ce914f') in 0.013232 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005607 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\Ntust\3-2\let me out\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\Ntust\3-2\let me out\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.367 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1369ms)
-		BeginReloadAssembly (305ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (21ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (108ms)
-		EndReloadAssembly (954ms)
-			LoadAssemblies (115ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (291ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (490ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (359ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3262 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (81.6 KB). Loaded Objects now: 3807.
-Memory consumption went from 143.7 MB to 143.7 MB.
-Total: 3.819100 ms (FindLiveObjects: 0.310000 ms CreateObjectMapping: 0.096700 ms MarkObjects: 3.304800 ms  DeleteObjects: 0.106000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003581 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\Ntust\3-2\let me out\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\Ntust\3-2\let me out\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.389 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1390ms)
-		BeginReloadAssembly (174ms)
+	ReloadAssembly (1559ms)
+		BeginReloadAssembly (158ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (1093ms)
-			LoadAssemblies (113ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1255ms)
+			LoadAssemblies (124ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (316ms)
+			SetupTypeCache (422ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (578ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (633ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (27ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (425ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (13ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (461ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.77 ms, found 3 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3262 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (81.4 KB). Loaded Objects now: 3810.
-Memory consumption went from 143.7 MB to 143.7 MB.
-Total: 3.833600 ms (FindLiveObjects: 0.277300 ms CreateObjectMapping: 0.088600 ms MarkObjects: 3.331400 ms  DeleteObjects: 0.135100 ms)
+Unloading 3282 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (342.3 KB). Loaded Objects now: 3765.
+Memory consumption went from 145.5 MB to 145.2 MB.
+Total: 3.491500 ms (FindLiveObjects: 0.355000 ms CreateObjectMapping: 0.100600 ms MarkObjects: 2.912800 ms  DeleteObjects: 0.122100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -293,136 +167,124 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 14861.265974 seconds.
-  path: Assets/MahjongTiles/Prefabs/Bams/Bam_1.prefab
-  artifactKey: Guid(425bf8c9c108e254ba60dbbbdc6089eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Bams/Bam_1.prefab using Guid(425bf8c9c108e254ba60dbbbdc6089eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfacda6dcbefcc8cb3b68d721489101') in 0.327261 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Prefabs/center.prefab
-  artifactKey: Guid(58308b68ade9eab438ed2b25798f26c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/center.prefab using Guid(58308b68ade9eab438ed2b25798f26c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c722478ba2779499d18782dee528afab') in 0.741964 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Prefabs/UI/PlayerInfo.prefab
-  artifactKey: Guid(5a5fe1aee3259eb44b040d25b681bdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/PlayerInfo.prefab using Guid(5a5fe1aee3259eb44b040d25b681bdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9132770788a4e4aa347f081f51c9130a') in 0.078486 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab
-  artifactKey: Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab using Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c78e2152e913217ccf6ed4f1a9ef88e') in 0.032560 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Prefabs/UI/HandTiles.prefab
-  artifactKey: Guid(13e21a55b5352304fba99d4caa878da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/HandTiles.prefab using Guid(13e21a55b5352304fba99d4caa878da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4960716060ff92982d5c9bea32e13334') in 0.107587 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/MahjongTiles/Prefabs/Dots/Dot_9.prefab
-  artifactKey: Guid(dc9d7fc2703e2444bb9fe9683f9a2edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Dots/Dot_9.prefab using Guid(dc9d7fc2703e2444bb9fe9683f9a2edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda5c1d5c55e9d0c1cf3561b0a56260f') in 0.018265 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/MahjongTiles/Prefabs/Bams/Bam_9.prefab
-  artifactKey: Guid(47aac553aca6ebf489518235c8b1310d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Bams/Bam_9.prefab using Guid(47aac553aca6ebf489518235c8b1310d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9ed61684bc0f598fd3396bbdaf2579c') in 0.017898 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/MahjongTiles/Prefabs/Craks/Crak_5.prefab
-  artifactKey: Guid(cd30722d3770a784a92da828842063b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Craks/Crak_5.prefab using Guid(cd30722d3770a784a92da828842063b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ee7e47f1122777401c05cbacff0751') in 0.020177 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Prefabs/Main_Tiles 1.prefab
-  artifactKey: Guid(9e97ca9f0a4b28c4698c020f5789b8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Main_Tiles 1.prefab using Guid(9e97ca9f0a4b28c4698c020f5789b8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404c1e3d755e5d4b4379852ca9be1c51') in 0.060207 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/MahjongTiles/Prefabs/Dots/Dot_5.prefab
-  artifactKey: Guid(66725cb194a9d1641903e2f8a8627215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Dots/Dot_5.prefab using Guid(66725cb194a9d1641903e2f8a8627215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34417c568e3a639cfaa9f0cc316776d8') in 0.016862 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab
-  artifactKey: Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab using Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4992595c2498a91d2828304aa739fee') in 0.028798 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Prefabs/UI/結算_Player.prefab
-  artifactKey: Guid(1d13ac9ee2652704c884fb31ba835aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/結算_Player.prefab using Guid(1d13ac9ee2652704c884fb31ba835aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327472b1e9d41b291b4df474e73ee3a0') in 0.032991 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/MahjongTiles/Prefabs/Dots/Dot_3.prefab
-  artifactKey: Guid(ae4523e558d38a84c82c9bf76f08e500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Dots/Dot_3.prefab using Guid(ae4523e558d38a84c82c9bf76f08e500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a5952773b887eb2a512f6d2acfbe32a') in 0.018584 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/MahjongTiles/Prefabs/Bams/Bam_7.prefab
-  artifactKey: Guid(a3622e9cc70f51440be553844a9934ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Bams/Bam_7.prefab using Guid(a3622e9cc70f51440be553844a9934ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0880d48e2340937910a16e56a96699') in 0.019620 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/MahjongTiles/Prefabs/Craks/Crak_6.prefab
-  artifactKey: Guid(86396fdce45cb7741bb166e8ffcb6317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Craks/Crak_6.prefab using Guid(86396fdce45cb7741bb166e8ffcb6317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec870c66682c27b9d37f7e9c9f5d2ff') in 0.016302 seconds 
+  Time since last request: 88489.194182 seconds.
+  path: Assets/MahjongTiles/Prefabs/Winds/Wind_South.prefab
+  artifactKey: Guid(68fd7526471927940b1febc05a230c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Winds/Wind_South.prefab using Guid(68fd7526471927940b1febc05a230c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6735f65e9c904cbc5c53414cac0d433d') in 0.183397 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/Prefabs/DemoTile.prefab
-  artifactKey: Guid(4f89d9eca21bd4f41930a00a06ba278c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DemoTile.prefab using Guid(4f89d9eca21bd4f41930a00a06ba278c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811ba6497c1036d8c4a458b3528d2930') in 0.019910 seconds 
+  path: Assets/MahjongTiles/Prefabs/Seasons/Season_4.prefab
+  artifactKey: Guid(60c6ace533bcd884c9e279169e352519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Seasons/Season_4.prefab using Guid(60c6ace533bcd884c9e279169e352519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '150def70105c5680cd28b509fbb1651a') in 0.023701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Prefabs/backup/GroupOfKong.prefab
+  artifactKey: Guid(e9c394bc9bcb147429e6869e03607aa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/backup/GroupOfKong.prefab using Guid(e9c394bc9bcb147429e6869e03607aa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c9a467b8fbd6fa4eb6084125ea15720') in 0.021571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/MahjongTiles/Prefabs/Seasons/Season_1.prefab
+  artifactKey: Guid(0bbf6a9d78e4fa44b8e041b15c5fd9a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Seasons/Season_1.prefab using Guid(0bbf6a9d78e4fa44b8e041b15c5fd9a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7d5b9130a4db053543f4ffafc1041f') in 0.019836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/MahjongTiles/Prefabs/Winds/Wind_West.prefab
+  artifactKey: Guid(74c0d509f7f383f46aa41d8067249448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Winds/Wind_West.prefab using Guid(74c0d509f7f383f46aa41d8067249448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9dcd7483e78d66e9d6086e4c713d1fb') in 0.020058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MahjongTiles/Prefabs/Bams/Bam_6.prefab
+  artifactKey: Guid(0cf92ae13f445f94cb13af9ba6e7e8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Bams/Bam_6.prefab using Guid(0cf92ae13f445f94cb13af9ba6e7e8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177705da8f7c1961d563b3dcdc3f457b') in 0.018406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MahjongTiles/Prefabs/Dots/Dot_9.prefab
+  artifactKey: Guid(dc9d7fc2703e2444bb9fe9683f9a2edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Dots/Dot_9.prefab using Guid(dc9d7fc2703e2444bb9fe9683f9a2edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda5c1d5c55e9d0c1cf3561b0a56260f') in 0.016576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MahjongTiles/Prefabs/Bams/Bam_9.prefab
+  artifactKey: Guid(47aac553aca6ebf489518235c8b1310d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Bams/Bam_9.prefab using Guid(47aac553aca6ebf489518235c8b1310d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9ed61684bc0f598fd3396bbdaf2579c') in 0.021323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/MahjongTiles/Prefabs/Dots/Dot_7.prefab
+  artifactKey: Guid(7d1668df91e0e1c4ca8f21930231503f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Dots/Dot_7.prefab using Guid(7d1668df91e0e1c4ca8f21930231503f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '488ebcc5d1e3d61761f0312578be53c3') in 0.018052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/MahjongTiles/Prefabs/Craks/Crak_5.prefab
+  artifactKey: Guid(cd30722d3770a784a92da828842063b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Craks/Crak_5.prefab using Guid(cd30722d3770a784a92da828842063b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ee7e47f1122777401c05cbacff0751') in 0.021873 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/MahjongTiles/Prefabs/Bams/Bam_4.prefab
-  artifactKey: Guid(8b3369c5f058a6b488975a7aac2e1d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Bams/Bam_4.prefab using Guid(8b3369c5f058a6b488975a7aac2e1d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50f9c449b00aaa259bed002fcb8d101d') in 0.019838 seconds 
+  path: Assets/MahjongTiles/Prefabs/Dice.prefab
+  artifactKey: Guid(6afb35567cc9f7d42a0c8c3872617651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Dice.prefab using Guid(6afb35567cc9f7d42a0c8c3872617651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62708efa9fd689bab8b1aa8794c6df50') in 0.017998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Prefabs/backup/Main_Tiles 1.prefab
+  artifactKey: Guid(9e97ca9f0a4b28c4698c020f5789b8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/backup/Main_Tiles 1.prefab using Guid(9e97ca9f0a4b28c4698c020f5789b8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404c1e3d755e5d4b4379852ca9be1c51') in 0.030678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/MahjongTiles/Prefabs/Dots/Dot_5.prefab
+  artifactKey: Guid(66725cb194a9d1641903e2f8a8627215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Dots/Dot_5.prefab using Guid(66725cb194a9d1641903e2f8a8627215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34417c568e3a639cfaa9f0cc316776d8') in 0.019410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Prefabs/Whole Table.prefab
+  artifactKey: Guid(233a65ac4c00e0e4994d6ecdb5293833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Whole Table.prefab using Guid(233a65ac4c00e0e4994d6ecdb5293833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6774572127b77aee00f154cda7088e03') in 0.217396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/MahjongTiles/Prefabs/Dots/Dot_3.prefab
+  artifactKey: Guid(ae4523e558d38a84c82c9bf76f08e500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Dots/Dot_3.prefab using Guid(ae4523e558d38a84c82c9bf76f08e500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a5952773b887eb2a512f6d2acfbe32a') in 0.019839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Prefabs/backup/DemoTile.prefab
+  artifactKey: Guid(4f89d9eca21bd4f41930a00a06ba278c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/backup/DemoTile.prefab using Guid(4f89d9eca21bd4f41930a00a06ba278c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811ba6497c1036d8c4a458b3528d2930') in 0.018045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/MahjongTiles/Prefabs/Dragons/Dragon_Blank.prefab
+  artifactKey: Guid(8240b02ac31743e479ae662a5d5d5e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Dragons/Dragon_Blank.prefab using Guid(8240b02ac31743e479ae662a5d5d5e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2251833c14d48c5d273b5773995d3b9d') in 0.024010 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
   path: Assets/MahjongTiles/Prefabs/Seasons/Season_2.prefab
   artifactKey: Guid(d0b1f47bc10dd864ca23ee76189ef047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Seasons/Season_2.prefab using Guid(d0b1f47bc10dd864ca23ee76189ef047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05c2e3610884954eb9b65967b6cd282') in 0.018864 seconds 
+Start importing Assets/MahjongTiles/Prefabs/Seasons/Season_2.prefab using Guid(d0b1f47bc10dd864ca23ee76189ef047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05c2e3610884954eb9b65967b6cd282') in 0.019002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/MahjongTiles/Prefabs/Dots/Dot_6.prefab
+  artifactKey: Guid(ce9431d68c4ee884faf34c1d77c3deda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MahjongTiles/Prefabs/Dots/Dot_6.prefab using Guid(ce9431d68c4ee884faf34c1d77c3deda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ffcea1f903f841a9e3fd51ca3782574') in 0.021290 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000025 seconds.
-  path: Assets/Prefabs/UI/UITile.prefab
-  artifactKey: Guid(d8846229df166864d863db3ece7b0d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/UITile.prefab using Guid(d8846229df166864d863db3ece7b0d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7e2abfec35848b2abfa1f15b3bdbbf') in 0.010824 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/MahjongTiles/Prefabs/Dots/Dot_6.prefab
-  artifactKey: Guid(ce9431d68c4ee884faf34c1d77c3deda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Dots/Dot_6.prefab using Guid(ce9431d68c4ee884faf34c1d77c3deda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ffcea1f903f841a9e3fd51ca3782574') in 0.019324 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/MahjongTiles/Prefabs/Craks/Crak_2.prefab
-  artifactKey: Guid(8efa33b9502f9674ea8214048731bf09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Craks/Crak_2.prefab using Guid(8efa33b9502f9674ea8214048731bf09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ba6a2208a0cb906efcc737d9d515a8') in 0.023692 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/MahjongTiles/Prefabs/Winds/Wind_East.prefab
-  artifactKey: Guid(f1bc7f0222c438c489e5d2c9dd1caef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Prefabs/Winds/Wind_East.prefab using Guid(f1bc7f0222c438c489e5d2c9dd1caef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65bde6a61cabe509c8cbb58b59d1e667') in 0.061999 seconds 
+  path: Assets/Prefabs/UI/Player.prefab
+  artifactKey: Guid(4e96ff324a5556744bbd6f72972e3465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Player.prefab using Guid(4e96ff324a5556744bbd6f72972e3465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a972ea31c7902247a640918f8ff15e2b') in 0.084377 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
