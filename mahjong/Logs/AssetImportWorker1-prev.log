@@ -15,7 +15,7 @@ E:/github_repo/Project_Mahjong_UITest/mahjong
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-53344
+60798
 Successfully changed project path to: E:/github_repo/Project_Mahjong_UITest/mahjong
 E:/github_repo/Project_Mahjong_UITest/mahjong
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ E:/github_repo/Project_Mahjong_UITest/mahjong
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [5600] Host "[IP] 26.147.234.45 [Port] 0 [Flags] 2 [Guid] 3861173447 [EditorId] 3861173447 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [30968] Host "[IP] 26.147.234.45 [Port] 0 [Flags] 2 [Guid] 356637512 [EditorId] 356637512 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [5600] Host "[IP] 26.147.234.45 [Port] 0 [Flags] 2 [Guid] 3861173447 [EditorId] 3861173447 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [30968] Host "[IP] 26.147.234.45 [Port] 0 [Flags] 2 [Guid] 356637512 [EditorId] 356637512 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 85.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 89.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -67,94 +67,94 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56696
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004939 seconds.
+Registered in 0.005384 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 254 ms
-Refreshing native plugins compatible for Editor in 85.35 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 462 ms
+Refreshing native plugins compatible for Editor in 89.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.958 seconds
+- Completed reload, in  1.162 seconds
 Domain Reload Profiling:
-	ReloadAssembly (959ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (1162ms)
+		BeginReloadAssembly (84ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (6ms)
-		EndReloadAssembly (759ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (976ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (124ms)
+			SetupTypeCache (116ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (562ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (784ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (336ms)
+				InitializePlatformSupportModulesInManaged (549ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (85ms)
+				RefreshPlugins (89ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (92ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
+				ProcessInitializeOnLoadAttributes (99ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002682 seconds.
+Registered in 0.002916 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 Package Manager log level set to [2]
-- Completed reload, in  1.111 seconds
+- Completed reload, in  1.179 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1112ms)
+	ReloadAssembly (1180ms)
 		BeginReloadAssembly (113ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (862ms)
-			LoadAssemblies (84ms)
+		EndReloadAssembly (960ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (312ms)
+			SetupTypeCache (401ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (364ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (371ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
+				InitializePlatformSupportModulesInManaged (20ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (99ms)
-				ProcessInitializeOnLoadAttributes (218ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (230ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.33 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3282 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 27 unused Assets / (342.3 KB). Loaded Objects now: 3765.
 Memory consumption went from 141.4 MB to 141.1 MB.
-Total: 4.956000 ms (FindLiveObjects: 0.405900 ms CreateObjectMapping: 0.332900 ms MarkObjects: 4.038300 ms  DeleteObjects: 0.177700 ms)
+Total: 4.007100 ms (FindLiveObjects: 0.410200 ms CreateObjectMapping: 0.337600 ms MarkObjects: 3.067300 ms  DeleteObjects: 0.190600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -168,181 +168,233 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1178099.768579 seconds.
-  path: Assets/effect
-  artifactKey: Guid(6770cb1864c6e1548acce41848ac88f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect using Guid(6770cb1864c6e1548acce41848ac88f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04a435b9802f1528c650b7ac329f0df') in 0.021501 seconds 
+  Time since last request: 1198193.934416 seconds.
+  path: Assets/effect/m31_teleporter_FX/01_FX_texture/FxT_scar_blue.png
+  artifactKey: Guid(23af15aeac2dc5144b152b39dfc73403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/01_FX_texture/FxT_scar_blue.png using Guid(23af15aeac2dc5144b152b39dfc73403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbaac6351ccffd91727a0232f8265ea1') in 0.083841 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 77.038525 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat
-  artifactKey: Guid(749b9069dc4742c5bfa5c74644049926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat using Guid(749b9069dc4742c5bfa5c74644049926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2a993edebf430cd3405b60943119573') in 0.902540 seconds 
+  Time since last request: 0.000020 seconds.
+  path: Assets/effect/m31_teleporter_FX/01_FX_texture/FxT_sharpline_blue.png
+  artifactKey: Guid(f54b37762c9354b4db529b251b81dd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/01_FX_texture/FxT_sharpline_blue.png using Guid(f54b37762c9354b4db529b251b81dd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'debd0229c695cf834e6c3ea9900b7376') in 0.022010 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002828 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.024 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1025ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (777ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (295ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (309ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3263 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (81.5 KB). Loaded Objects now: 3771.
+Memory consumption went from 139.4 MB to 139.3 MB.
+Total: 4.938400 ms (FindLiveObjects: 0.351300 ms CreateObjectMapping: 0.275500 ms MarkObjects: 4.165200 ms  DeleteObjects: 0.145100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3519.138627 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Glyph_2.png
+  artifactKey: Guid(a89df11735ab543a2a9fb581eec08097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Glyph_2.png using Guid(a89df11735ab543a2a9fb581eec08097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7430432a5de48a846ad2e550df45dba5') in 0.142799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Magic_Circle_1.png
+  artifactKey: Guid(f7fd4fc8d3b144b3888af43c1fd5a2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Magic_Circle_1.png using Guid(f7fd4fc8d3b144b3888af43c1fd5a2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596637e0ea1fcaca3980d6697cc34b95') in 0.051939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Spiral.mat
+  artifactKey: Guid(db787a6176f3242e5aa2dfe433ebe17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Spiral.mat using Guid(db787a6176f3242e5aa2dfe433ebe17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba5e6347800970dcac14da03af374b1') in 0.169151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.089747 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Magic_Circle_2.png
+  artifactKey: Guid(2f65fe06bec9a4e44b226445a3f9d1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Magic_Circle_2.png using Guid(2f65fe06bec9a4e44b226445a3f9d1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11966887462bfb234749e61146accf8e') in 0.454807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Particle.mat
+  artifactKey: Guid(17e637e4cccf345ce9a9fdae33186a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Particle.mat using Guid(17e637e4cccf345ce9a9fdae33186a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f35cd8a6fc5f722e6df4313d2ace6b79') in 0.047433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Rune_1.png
+  artifactKey: Guid(5bdd410ff4076415e960811c8a8b95ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Rune_1.png using Guid(5bdd410ff4076415e960811c8a8b95ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be69c833ba159aa9063c0e247ee71ce8') in 0.046565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.195259 seconds.
+  path: Assets/effect/m31_teleporter_FX/02_FX_material/FxM_scar_blue_2x.mat
+  artifactKey: Guid(35b7af9a5a587f94590f93d149df76b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/02_FX_material/FxM_scar_blue_2x.mat using Guid(35b7af9a5a587f94590f93d149df76b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033f0e6f5417e1905954614501bc6ff8') in 0.088309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/effect/m31_teleporter_FX/02_FX_material/FxM_tlpt_alpha.mat
+  artifactKey: Guid(07b84a92a5931804e889880d633f8523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/02_FX_material/FxM_tlpt_alpha.mat using Guid(07b84a92a5931804e889880d633f8523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f416f69e17c77249eaae224fcea77553') in 0.020873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/PlaneMaterial 1.mat
+  artifactKey: Guid(2d1fda059842de440837ecd5d6236fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/PlaneMaterial 1.mat using Guid(2d1fda059842de440837ecd5d6236fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3597cd5a064d877a3ae786a9ba3baac7') in 0.132404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.028850 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/SnowFlakes_01.mat
+  artifactKey: Guid(e98a56c94877757469ada537eaa187b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/SnowFlakes_01.mat using Guid(e98a56c94877757469ada537eaa187b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b646114ee4078381a7960714070536d') in 0.026454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/SnowFlakes_03.mat
+  artifactKey: Guid(30ed72b2cf91f8049ac5db3809266372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/SnowFlakes_03.mat using Guid(30ed72b2cf91f8049ac5db3809266372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e28301d43cd5e1792fd7ed42f95891d') in 0.036157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/SnowFlakes_02.mat
+  artifactKey: Guid(d2ddaff8c3908ab40be0b0ed0f4e4f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/SnowFlakes_02.mat using Guid(d2ddaff8c3908ab40be0b0ed0f4e4f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8222c43783aef718b7f56e9eeb815709') in 0.014993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60.774926 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_2.png
+  artifactKey: Guid(169cc9dc838ef4ef0abafc9488af0198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_2.png using Guid(169cc9dc838ef4ef0abafc9488af0198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32d4e2a08505d580ce43bc752070c64') in 0.032045 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Electro.mat
-  artifactKey: Guid(410fa9a27b8dd1f4989dd201babd7d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Electro.mat using Guid(410fa9a27b8dd1f4989dd201babd7d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc45f988f427200697b4c807bff83bd') in 0.088839 seconds 
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_3.png
+  artifactKey: Guid(6885cc5ccd99a4fcc94f86bcd03d9a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_3.png using Guid(6885cc5ccd99a4fcc94f86bcd03d9a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5617c771d57f606f627b771198ecb19') in 0.063477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.414525 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/FX/Rays_1.png
+  artifactKey: Guid(dda26367d17774a8ba9fc5a452f96143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/FX/Rays_1.png using Guid(dda26367d17774a8ba9fc5a452f96143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9097d59d6853cf175e10836f94a2ee98') in 0.137182 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000030 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf
-  artifactKey: Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf using Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea666942d0eece97033b1fdcf41b0e5') in 0.047852 seconds 
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/FX/Spiral_1.png
+  artifactKey: Guid(7d698cacca8194db88d71e84f10a3707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/FX/Spiral_1.png using Guid(7d698cacca8194db88d71e84f10a3707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae314f95e40d3673a458cce790e5e9f') in 0.052882 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Gradient.mat
-  artifactKey: Guid(2ae196836e3f6ce438e93e246a6ab900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Gradient.mat using Guid(2ae196836e3f6ce438e93e246a6ab900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9583b939cd3f3562a6031bf6530e6282') in 0.053740 seconds 
+  Time since last request: 0.000047 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/FX/Sonic_Pulse_1.png
+  artifactKey: Guid(9efe9f05d41df4cbc9166b0d0c9bbc63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/FX/Sonic_Pulse_1.png using Guid(9efe9f05d41df4cbc9166b0d0c9bbc63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf19012fd8da6d5eb84be97de27d139') in 0.057950 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
-  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98853919175491666ccb7e00667f7062') in 0.039263 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat
-  artifactKey: Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat using Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3896d62b3ec80391b0722a657aabfc67') in 0.036256 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF
-  artifactKey: Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF using Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eccdc888298d4bf4052cac9292a855c6') in 0.023676 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3d2d9bcca93e2f612ecd20afaa883c') in 0.028214 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat
-  artifactKey: Guid(a00013af81304728b2be1f4309ee2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat using Guid(a00013af81304728b2be1f4309ee2433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1870d45892f283130b3e1dcd812315ac') in 0.075124 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/text meshpro/MINGLIU.TTC
-  artifactKey: Guid(5f5ca8a4a11ddf849b84d6d8083f2a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/text meshpro/MINGLIU.TTC using Guid(5f5ca8a4a11ddf849b84d6d8083f2a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d948ea72b98f4a9dedf55da0f21c81') in 0.046838 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Flash.mat
-  artifactKey: Guid(db3488de871721d4f83250ff2af716b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Flash.mat using Guid(db3488de871721d4f83250ff2af716b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e62855b2ed5c75ee08ba0dc6363db04') in 0.032401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.607773 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat
-  artifactKey: Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat using Guid(aadd5a709a48466c887296bb5b1b8110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea74e1a7f58363d122b82087fcd70ff') in 0.023140 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c6221b5128cc1eb6551e24ce6315bd') in 0.035733 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/TextMesh Pro/Fonts/kaiu SDF.asset
-  artifactKey: Guid(bbe55b839a186d7419e9ab7c1dd6ea0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/kaiu SDF.asset using Guid(bbe55b839a186d7419e9ab7c1dd6ea0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6eea53d7a032cfa0ebef90f252d9ca8') in 0.065809 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.565193 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat
-  artifactKey: Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat using Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3f6ff0a334f8898f15f98d5d86205b') in 0.030600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '007425405e2f4fef13b63816c7a4cdee') in 0.046774 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.339780 seconds.
-  path: Assets/MahjongTiles/Materials/MahjongTile_Mobile_Unlit.mat
-  artifactKey: Guid(13402b6bf17840543b0b10d2ea03549f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Materials/MahjongTile_Mobile_Unlit.mat using Guid(13402b6bf17840543b0b10d2ea03549f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2822e19c60b754e0c716f52d828672c1') in 0.026763 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/text meshpro/MINGLIU SDF.asset
-  artifactKey: Guid(c76f19e07ae0fb7458fc4d3fc31e595d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/text meshpro/MINGLIU SDF.asset using Guid(c76f19e07ae0fb7458fc4d3fc31e595d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8750fc952bab529ceb21fe16ba2af2e9') in 0.064999 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.798477 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat
-  artifactKey: Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat using Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d63914febad417b6eca881ddf58473') in 0.042001 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Slash.mat
-  artifactKey: Guid(8b3cc142b0783eb40be02cde5b31ca6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Slash.mat using Guid(8b3cc142b0783eb40be02cde5b31ca6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf4ce7599c6320d68a9f8d4902ff4c2') in 0.045848 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
-  artifactKey: Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0110123a533e2e55b1d7340d3cab91ef') in 0.020303 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat
-  artifactKey: Guid(22262639920f43d6be32430e4e58350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat using Guid(22262639920f43d6be32430e4e58350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6241a7c6fe4bfb4b8ea802a1039f54bb') in 0.023163 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.181313 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Stone.mat
-  artifactKey: Guid(5e01cbbef75a454468e5eb490ac64181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Stone.mat using Guid(5e01cbbef75a454468e5eb490ac64181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d977cb53c095b550c15d597dc31f73') in 0.051167 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Trail67.mat
-  artifactKey: Guid(228fc1317f61ac4408d84a68ea9822d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Trail67.mat using Guid(228fc1317f61ac4408d84a68ea9822d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e96b6cf7f20a3437543eb2d0a4a36823') in 0.041071 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 39.772606 seconds.
-  path: Assets/Prefabs/GroupOfKong.prefab
-  artifactKey: Guid(4c9b5f0f4a60b83469e035c4d39f36e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GroupOfKong.prefab using Guid(4c9b5f0f4a60b83469e035c4d39f36e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6120e22ad590cdf8b6f2b7dfa8f93b35') in 0.036765 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Prefabs/PongKongArea.prefab
-  artifactKey: Guid(460e0a834f6978c46ab9b490001c8137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PongKongArea.prefab using Guid(460e0a834f6978c46ab9b490001c8137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11210b8920e7f4806f206e7f62672123') in 0.051205 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Prefabs/Whole Table.prefab
-  artifactKey: Guid(233a65ac4c00e0e4994d6ecdb5293833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Whole Table.prefab using Guid(233a65ac4c00e0e4994d6ecdb5293833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71438dd47d9977585a64ab2366ef0545') in 0.186887 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 74.433341 seconds.
-  path: Assets/model/FBX/Tex/Arms_n.jpg
-  artifactKey: Guid(154a6219d4968f745b0be7128305622a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/model/FBX/Tex/Arms_n.jpg using Guid(154a6219d4968f745b0be7128305622a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79920be1632d3981e4fc5cb03e7d6cf') in 0.108042 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 436.106593 seconds.
-  path: Assets/modle/FBX/Arms_n.jpg
-  artifactKey: Guid(8041cfb6c6af3564497c6a79b710a25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/modle/FBX/Arms_n.jpg using Guid(8041cfb6c6af3564497c6a79b710a25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50e00192940784075eb7a55f2bf863b') in 0.074285 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002556 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.298 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1299ms)
+		BeginReloadAssembly (180ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (993ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (381ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (391ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (247ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3263 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (81.1 KB). Loaded Objects now: 3817.
+Memory consumption went from 139.9 MB to 139.8 MB.
+Total: 6.587600 ms (FindLiveObjects: 0.455200 ms CreateObjectMapping: 0.619000 ms MarkObjects: 5.271400 ms  DeleteObjects: 0.240100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
