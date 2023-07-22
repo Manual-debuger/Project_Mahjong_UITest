@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.25f1 (68ef2c4f8861) revision 6876972'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'zh' Physical Memory: 23981 MB
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'zh' Physical Memory: 16205 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\2021.3.25f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.25f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Project_Mahjong/Project_Mahjong_UITest/mahjong
+E:/github_repo/Project_Mahjong_UITest/mahjong
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56020
-Successfully changed project path to: D:/Project_Mahjong/Project_Mahjong_UITest/mahjong
-D:/Project_Mahjong/Project_Mahjong_UITest/mahjong
+60798
+Successfully changed project path to: E:/github_repo/Project_Mahjong_UITest/mahjong
+E:/github_repo/Project_Mahjong_UITest/mahjong
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,377 +47,975 @@ D:/Project_Mahjong/Project_Mahjong_UITest/mahjong
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [14136] Host "[IP] 192.168.1.110 [Port] 0 [Flags] 2 [Guid] 2342154009 [EditorId] 2342154009 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-8TGAMCPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [17976] Host "[IP] 26.147.234.45 [Port] 0 [Flags] 2 [Guid] 3923124947 [EditorId] 3923124947 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [14136] Host "[IP] 192.168.1.110 [Port] 0 [Flags] 2 [Guid] 2342154009 [EditorId] 2342154009 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-8TGAMCPP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17976] Host "[IP] 26.147.234.45 [Port] 0 [Flags] 2 [Guid] 3923124947 [EditorId] 3923124947 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 111.19 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 88.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
-[Subsystems] Discovering subsystems at path D:/Unity/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Project_Mahjong/Project_Mahjong_UITest/mahjong/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/github_repo/Project_Mahjong_UITest/mahjong/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 with Max-Q Design (ID=0x1f12)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
     Vendor:   NVIDIA
-    VRAM:     5968 MB
-    Driver:   31.0.15.3640
+    VRAM:     3962 MB
+    Driver:   30.0.15.1179
 Initialize mono
-Mono path[0] = 'D:/Unity/2021.3.25f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2021.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: D:/Unity/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002533 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005357 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 492 ms
-Refreshing native plugins compatible for Editor in 117.03 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 422 ms
+Refreshing native plugins compatible for Editor in 85.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.443 seconds
+- Completed reload, in  1.117 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1443ms)
-		BeginReloadAssembly (129ms)
+	ReloadAssembly (1118ms)
+		BeginReloadAssembly (84ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1191ms)
-			LoadAssemblies (129ms)
+		EndReloadAssembly (932ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (151ms)
+			SetupTypeCache (116ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (929ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (741ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (612ms)
+				InitializePlatformSupportModulesInManaged (506ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (117ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (132ms)
-				ProcessInitializeOnLoadMethodAttributes (66ms)
+				RefreshPlugins (86ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (104ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003497 seconds.
+Registered in 0.003580 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Project_Mahjong\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Project_Mahjong\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 Package Manager log level set to [2]
-- Completed reload, in  1.774 seconds
+- Completed reload, in  1.179 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1776ms)
-		BeginReloadAssembly (213ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1391ms)
-			LoadAssemblies (155ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (414ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (715ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (31ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (108ms)
-				ProcessInitializeOnLoadAttributes (542ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3282 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (342.3 KB). Loaded Objects now: 3765.
-Memory consumption went from 145.6 MB to 145.3 MB.
-Total: 7.562000 ms (FindLiveObjects: 0.602600 ms CreateObjectMapping: 0.397400 ms MarkObjects: 6.314200 ms  DeleteObjects: 0.245800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 428971.130895 seconds.
-  path: Assets/Prefabs/PongKongArea.prefab
-  artifactKey: Guid(460e0a834f6978c46ab9b490001c8137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PongKongArea.prefab using Guid(460e0a834f6978c46ab9b490001c8137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b464a0ee942a7236ef0a843f69b39add') in 0.256600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Prefabs/Whole Table.prefab
-  artifactKey: Guid(233a65ac4c00e0e4994d6ecdb5293833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Whole Table.prefab using Guid(233a65ac4c00e0e4994d6ecdb5293833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f25289ebfd939f462196ebba56c904d') in 0.305128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.579783 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Healing circle.prefab
-  artifactKey: Guid(12a56ee4630040c4eb17ae9707ed4cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Healing circle.prefab using Guid(12a56ee4630040c4eb17ae9707ed4cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f609b2b91189c68047fa01f36d938fa0') in 0.039737 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 241.336289 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Snowflake.mat
-  artifactKey: Guid(110e8ef5ba5275f4c864c6b5190c7891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Snowflake.mat using Guid(110e8ef5ba5275f4c864c6b5190c7891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169548fafc87a133b34cfd77a290b94f') in 0.062844 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Stone.mat
-  artifactKey: Guid(5e01cbbef75a454468e5eb490ac64181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Stone.mat using Guid(5e01cbbef75a454468e5eb490ac64181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6ca47afeb98e654501fc868dd2ecd6') in 0.039275 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Trail67.mat
-  artifactKey: Guid(228fc1317f61ac4408d84a68ea9822d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Trail67.mat using Guid(228fc1317f61ac4408d84a68ea9822d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014348c604d4cc6e18df946ea4da5bd2') in 0.029457 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.422894 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat
-  artifactKey: Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat using Guid(e6b276ec991f467aa14ef1f3cc665993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c629962823787464ef3b18f9b9fdd1') in 0.019427 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Slash.mat
-  artifactKey: Guid(8b3cc142b0783eb40be02cde5b31ca6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Slash.mat using Guid(8b3cc142b0783eb40be02cde5b31ca6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a34a11a60df8de6a52ceaf22008e3e5') in 0.028352 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.055183 seconds.
-  path: Assets/text meshpro/MINGLIU SDF.asset
-  artifactKey: Guid(c76f19e07ae0fb7458fc4d3fc31e595d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/text meshpro/MINGLIU SDF.asset using Guid(c76f19e07ae0fb7458fc4d3fc31e595d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad3ebde91674f4647b77b3c01d12d78') in 0.077577 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.237995 seconds.
-  path: Assets/MahjongTiles/Materials/MahjongTile_Mobile_Legacy.mat
-  artifactKey: Guid(44268c0e0ea7ef441a8bea5d89652aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MahjongTiles/Materials/MahjongTile_Mobile_Legacy.mat using Guid(44268c0e0ea7ef441a8bea5d89652aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2464779aa98e00fec443fe50d86da0') in 0.025875 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.056548 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
-  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5766ec724e2814943baafdb5f1649c69') in 0.034595 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat
-  artifactKey: Guid(42df1c7856584b6b8db9a509b6b10074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat using Guid(42df1c7856584b6b8db9a509b6b10074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca67222c92216e590e898d65aede1a8a') in 0.035027 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2203aa6f16ddf063cd54af0c6aa841b') in 0.096101 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004148 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Project_Mahjong\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Project_Mahjong\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.402 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1403ms)
-		BeginReloadAssembly (180ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (49ms)
-		EndReloadAssembly (1109ms)
-			LoadAssemblies (120ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (345ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (578ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (464ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.04 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3263 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (83.2 KB). Loaded Objects now: 3815.
-Memory consumption went from 144.4 MB to 144.3 MB.
-Total: 5.115800 ms (FindLiveObjects: 0.443600 ms CreateObjectMapping: 0.125600 ms MarkObjects: 4.392500 ms  DeleteObjects: 0.152200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 34.438109 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
-  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f9bc216cf95ea25ec623287260a86e') in 0.092251 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
-  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afea461529a85e00a29f2bacd708a279') in 0.027269 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Materials/Green.mat
-  artifactKey: Guid(53a90c1e773ccc54195a87eb04105ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Green.mat using Guid(53a90c1e773ccc54195a87eb04105ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7713a2f85240fed34aadee0c67f754e1') in 0.040756 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
-  artifactKey: Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset using Guid(dc36b3fdc14f47ebb36fd484a67e268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e65a434f40b3a0f5803450afd62d5b9') in 0.042491 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.039369 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
-  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3b930ff01786ad5e2b257082e569721') in 0.025281 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat
-  artifactKey: Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat using Guid(e6b9b44320f4448d9d5e0ee634259966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09431a961056aba066d03721ad1df11') in 0.026053 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.018495 seconds.
-  path: Assets/effect/Hovl Studio/Magic effects pack/Materials/Arrow1.mat
-  artifactKey: Guid(00b2a55319476cf40b84578eb2f8c2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/effect/Hovl Studio/Magic effects pack/Materials/Arrow1.mat using Guid(00b2a55319476cf40b84578eb2f8c2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db7fdde8e322da6b9b33c4a2adbc04a') in 0.029638 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat
-  artifactKey: Guid(f629c6e43dba4bf38cb74d8860150664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat using Guid(f629c6e43dba4bf38cb74d8860150664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca70fd745ad2abaeacd823109eed280') in 0.019364 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.129877 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat
-  artifactKey: Guid(749b9069dc4742c5bfa5c74644049926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat using Guid(749b9069dc4742c5bfa5c74644049926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097abbba0abc3f84630a94cdf71f19bc') in 0.014640 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat
-  artifactKey: Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat using Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f378bcb6067e91a06c5969b9409a614') in 0.035669 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003779 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Project_Mahjong\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Project_Mahjong\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.389 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1390ms)
-		BeginReloadAssembly (176ms)
+	ReloadAssembly (1180ms)
+		BeginReloadAssembly (112ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1105ms)
-			LoadAssemblies (118ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (960ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (293ms)
+			SetupTypeCache (404ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (579ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (368ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (26ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (455ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.76 ms, found 3 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3263 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (81.5 KB). Loaded Objects now: 3819.
-Memory consumption went from 144.4 MB to 144.3 MB.
-Total: 4.830600 ms (FindLiveObjects: 0.410500 ms CreateObjectMapping: 0.131700 ms MarkObjects: 4.073600 ms  DeleteObjects: 0.213000 ms)
+Unloading 3282 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (342.3 KB). Loaded Objects now: 3765.
+Memory consumption went from 141.4 MB to 141.1 MB.
+Total: 4.524800 ms (FindLiveObjects: 0.306400 ms CreateObjectMapping: 0.247900 ms MarkObjects: 3.773100 ms  DeleteObjects: 0.196400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1198118.684704 seconds.
+  path: Assets/effect/m31_teleporter_FX
+  artifactKey: Guid(656d1efee122dc740a6c07648fb78cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX using Guid(656d1efee122dc740a6c07648fb78cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5879e2b19e92c702097b5b306444843e') in 0.016036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 75.227275 seconds.
+  path: Assets/effect/m31_teleporter_FX/01_FX_texture/FxT_empty_blue.png
+  artifactKey: Guid(939b1839757740a41942fbd7a1ccb170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/01_FX_texture/FxT_empty_blue.png using Guid(939b1839757740a41942fbd7a1ccb170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bcc7c2edea0afb61d7529ff71702bbd') in 0.084817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/effect/m31_teleporter_FX/01_FX_texture/FxT_tlpt_alpha2.png
+  artifactKey: Guid(0dd1f870f8bc37d4ca562aa69b919e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/01_FX_texture/FxT_tlpt_alpha2.png using Guid(0dd1f870f8bc37d4ca562aa69b919e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d96b68f39f9e1034372743681a8f2c') in 0.025396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.072795 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df96a10878a6815cad07ed996e7e386') in 0.083414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 211.070484 seconds.
+  path: Assets/effect/m31_teleporter_FX/02_FX_material/FxM_sharpline_blue.mat
+  artifactKey: Guid(7123884b5d1b390448667d9c0b6f2f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/02_FX_material/FxM_sharpline_blue.mat using Guid(7123884b5d1b390448667d9c0b6f2f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba668262528ac2bae8f900aa3f8dd2b') in 0.036502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.400645 seconds.
+  path: Assets/effect/m31_teleporter_FX/03_FX_object/FxObject_cylinder_short.FBX
+  artifactKey: Guid(a646e6dc7d252544ca5c5429cb47d3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/03_FX_object/FxObject_cylinder_short.FBX using Guid(a646e6dc7d252544ca5c5429cb47d3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '784a4feac4c34eecd44c034d6e9ab9c7') in 0.043406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.830238 seconds.
+  path: Assets/effect/m31_teleporter_FX/03_FX_object/FxObject_m31_tlpt_chain.FBX
+  artifactKey: Guid(b9dc1b3e8f038764ebbf50dd1c7610a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/03_FX_object/FxObject_m31_tlpt_chain.FBX using Guid(b9dc1b3e8f038764ebbf50dd1c7610a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b8302d3b5a2372f8bc7c1e76b7ea28') in 0.024586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 246.597795 seconds.
+  path: Assets/effect/m31_teleporter_FX/02_FX_material/FxM_empty_blue.mat
+  artifactKey: Guid(0eaddef61dcbca64a9c42caecbb9d4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/02_FX_material/FxM_empty_blue.mat using Guid(0eaddef61dcbca64a9c42caecbb9d4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c01353a2c81fee9ae69b02e7f6e18a7') in 0.025653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.785814 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18842da644b7316222053c343503178e') in 0.021962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.968593 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e182d79d4fe04252825a343032c738f8') in 0.018647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.075585 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d033afc7a20fadbcc2704fe3e86ef0') in 0.020682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.925392 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0578aea865206f6eafa7db8c93a6c5b8') in 0.019471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.805268 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c182268ca144a527b8465f59fa94e4dc') in 0.020372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.617275 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c37a4aee0d31b68af770aa347ef6ce1') in 0.018949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.190979 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819f3f642d35b0716e46afa2e678b14c') in 0.020339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.644504 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622d693a37a053c88892b72c2f5b3088') in 0.020725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.101796 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cdc13b54239345a297e52cc4f04833') in 0.023018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.193750 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87ce1ac517f849d7483848f84f1a2b4f') in 0.024622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.847596 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60119369778983cfe2a884d0ea90e3f') in 0.020541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.860009 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b4436a4f68f9c116773de4b36d4608') in 0.019762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.583706 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd43176674bedba36d9fe1c3aa4f944cb') in 0.020223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.403903 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e33e0faa827814a5546e11ec48ca3f47') in 0.019798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.521091 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26acf100d498ba4c8a248fa34edebbc') in 0.019336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.592956 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8276c6a7bbf6f4905ff40912ef43072c') in 0.020377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.648044 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d20d765955c5283f3adfb0c2ab4a0a') in 0.020320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.723182 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2d34f60927a04be8c5f52829a7ea43') in 0.020253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.027439 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf7267eefa3e213be4736e150c42fbe') in 0.020415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.324612 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7126d45924351faea0117764e38f2c03') in 0.019533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.637586 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b376d2ad8f221ea64d6d2e9fb5ed78b9') in 0.020284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.669740 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124fba4088186d43d8053d82247c3791') in 0.018843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.222078 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb93eb72504fbbf67000d8db9b72d7ff') in 0.019732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.655826 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c2c593bbaeca87ff099aebbd93bcfa4') in 0.022535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.142756 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31d644a5d867f9e287caff606b112ea') in 0.307647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.751109 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3f9cd885d5c25ad9336782e69184e4') in 0.022537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.207577 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7326c1395fff1e4c6eaf9800e0aa7239') in 0.018667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.501134 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d1c30cf4ac902e5b6ae1df4ed3ffb7') in 0.021097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.801505 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeada4ab4d5fc50e7c58acdf4cb7c7be') in 0.105933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.307303 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b776849372bbc52be449982d7b3df81d') in 0.019449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.411635 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b4325654ce9d2b0f738cf2ad84c813e') in 0.019809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.019610 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '107cc6cfdbbf66a18314a36550a885ed') in 0.019090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.315314 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc6ce0af2bf8fe09009043ea23fe25a') in 0.098933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.936139 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c9255bf1dc39c8404933b41002ebec') in 0.022289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.675385 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01883d183d86c82b28124362a8449375') in 0.020398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.069003 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8c85d521d004951d5e22fb03488523') in 0.020453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.201402 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f186b2bccdadf8b1363c6113412b5cc8') in 0.833088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.275133 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a48d87a9267811699e837249e5ab55') in 0.022062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.211488 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '550809482de2552f73c2263fa3e1e903') in 0.028288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.405640 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c0c3c65d0e9ed19204cb84cdea8970') in 0.171681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.236902 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b56d93407e4c38ddc067f01566bacfa4') in 0.241177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.836028 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '510815b5b7226956b2d0dab527077209') in 0.019306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.051840 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be485e030b1eac23c7428cc53af5dc4') in 0.020771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.027604 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54602e7356010276107f8acc7aefef33') in 0.019860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.868278 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c556838ba5136c911a59f63336fe59d') in 0.869922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.352569 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4e4416de77eadbc3665daac860309a') in 0.029427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.995967 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177a2eca01427fbfb0d5ce1730d2aadd') in 0.106715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.898634 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f8e2b9df5fa36196288d99275a7811') in 0.020132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.463717 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c604ae689b73d0774e5ccf772ddf45') in 1.360096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.844819 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38295436ccb7b279aaadc12c4eb8791e') in 0.019737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.044684 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0232f607fb959ce7cbf9883942699454') in 0.020078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.264257 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8221a0d977a29dd0b06da8dd0d4ae70a') in 0.020937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.151664 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199141155f058b7b2e27bc2004c7c717') in 0.270449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.947857 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfee0042623a46b45a5d88db6e199e40') in 0.020217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.436056 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f0c52c6a83518247fa5a1df8ab0f62') in 0.019014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.413451 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed129b43b6fad0ecaa0f5a20c4a7f0b') in 0.021701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.878605 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded8f858d7fa8ac032f4150129befa3b') in 0.826303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.291986 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbe2dc943b084a6c5392845a356f134') in 0.020592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.847476 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811b041e145ce222a2a2aa36c98c7895') in 0.019203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.552509 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c06b0269fd9544b00f7888d9dfe0cd1') in 0.053896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.746660 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde5820c0eb5fd09bbf544530eac212b') in 0.020042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.414382 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c776d64bd70f56848ec2dc73cfc3db6') in 0.019758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.029784 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31202059c7aaf00369c9bb329c90e0a4') in 0.035900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.595525 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68691dc91669adb69a2154d921bc3a4a') in 0.019674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.459696 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb5eca7c9b0a2823d5ae8d58b5a0d43') in 0.081572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.118015 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8e0190ec6b6f7739aed0b26193b7898') in 0.021850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.204535 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11564772a00ddd8421df21e84e58bd9b') in 0.019765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.420216 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8998b1cb7a5d69e43cebc3f7574b2171') in 0.019447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.650781 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73406eca5d61bfecfeab0013ba0d3aec') in 0.279504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.944757 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9466afe4b314698045e5ee981176b10') in 0.026312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.744264 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb4ee9fe933e6edc06b94578774cab7') in 0.019506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.662563 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a428c01dceecd64eec2d2723ea3b0c') in 0.020965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.731413 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd68d2b149f86c2481d03749018ce70') in 0.227094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.248977 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17f8a176fa33e23db36230c252fcca5a') in 0.019173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.564501 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4250f401a1ced32b46b0553b0b1442e7') in 0.120965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.915936 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa438ac6409b2f2079c9323fe259e3c') in 0.022188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.727238 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ab30b052d04d3ae2f4efd4b93ff13b') in 0.019228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.015958 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d1b208c07e1417c2823dd8799db43e4') in 0.020189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.990218 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48111dcd4dd2f93800cc82c3b534cca') in 0.023885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.759671 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc9df1f7429cba25ad7714537c4d364') in 0.021314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.613372 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '122204271f2eaa1642b1ce8b213f1f15') in 0.084065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.786073 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10315d7729898419b2c04db4fe81699') in 0.019254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.848446 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '303ec48ba1b8e240ac5d2a1a942ac630') in 0.020189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.015390 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259169d65a92e9fb87ccf6e68dae0773') in 0.020583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.006962 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f975ddd7fe081bc31ba8628a150b5635') in 0.285438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.205773 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8f692abaf5438f16e963c7f0760bf1') in 0.023390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.835151 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c875b4395b7994f8496510978ac602e') in 0.022350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.219907 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c65a2689598d7917a35b9fb3048e51d1') in 0.106767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.330986 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c689cc49c2cb5e7426a227e563d113') in 0.192764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 237.421659 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c21eca5d7d79df5e6257a7e804215ec') in 0.020883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 104.076461 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab
+  artifactKey: Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter.prefab using Guid(856ddc11c4d1bd54885aa67f69f72cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66095296dd94b072e752bcd0617b8dd') in 0.022174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 168.406702 seconds.
+  path: Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter 1.prefab
+  artifactKey: Guid(314a2bc517c47344faa50dcbcf03ce26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/04_FX_prefab/teleporter 1.prefab using Guid(314a2bc517c47344faa50dcbcf03ce26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a91aaf45ec8963a483e3afb709f9ac2') in 0.030631 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002843 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\github_repo\Project_Mahjong_UITest\mahjong\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.025 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1025ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (779ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (292ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (310ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3263 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (105.0 KB). Loaded Objects now: 3815.
+Memory consumption went from 140.2 MB to 140.1 MB.
+Total: 4.634400 ms (FindLiveObjects: 0.287800 ms CreateObjectMapping: 0.187800 ms MarkObjects: 3.991000 ms  DeleteObjects: 0.166600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1307.206520 seconds.
+  path: Assets/effect/Magic VFX
+  artifactKey: Guid(0d3c4174848780b43b434e9afd2738a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX using Guid(0d3c4174848780b43b434e9afd2738a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac592eb875b3836d06203d9a32a89fc') in 0.019990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.962303 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)
+  artifactKey: Guid(41b8116736b432c4ea3220784e9742a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE) using Guid(41b8116736b432c4ea3220784e9742a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12789499154a261ade5049bc1bd457ab') in 0.010127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.646679 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models
+  artifactKey: Guid(098cc92c8cf6f624c98fd3d2f8540ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models using Guid(098cc92c8cf6f624c98fd3d2f8540ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91d43ea4a509b67d90ea340c33da3e8') in 0.010215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.338335 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Prefabs
+  artifactKey: Guid(32775f31087289241be115a4221883f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Prefabs using Guid(32775f31087289241be115a4221883f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e56c8329d3027d8668866ecbcc8b010') in 0.012011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.281971 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Scene
+  artifactKey: Guid(31fdf7f3c99a6ed488e5424916d3ae90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Scene using Guid(31fdf7f3c99a6ed488e5424916d3ae90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5980470e72074a83aee85e3b71148f47') in 0.009635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.063963 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Scene/Scene_Demo_01.unity
+  artifactKey: Guid(27e13b5b03cae014997cd804e937f846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Scene/Scene_Demo_01.unity using Guid(27e13b5b03cae014997cd804e937f846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a94025d158f9594b068e9ea0d8cc3f') in 0.010470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.387861 seconds.
+  path: Assets/Scenes/effect scene.unity
+  artifactKey: Guid(a849326f60644df47bd49dc5c45ae6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/effect scene.unity using Guid(a849326f60644df47bd49dc5c45ae6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3defc5c225cf570594c04f52c64853f') in 0.009518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 390.039721 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/_Icon.png
+  artifactKey: Guid(ba410e66d86d04fa08db560ec201dd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/_Icon.png using Guid(ba410e66d86d04fa08db560ec201dd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea1ece832f0a5a800c2be5ef4cf6e35') in 0.047843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.858933 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Metal Plane.mat
+  artifactKey: Guid(aa03ee1f4d9b643b0969216f8712f777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Metal Plane.mat using Guid(aa03ee1f4d9b643b0969216f8712f777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78849b7ae8502ba5701643c70aae00f') in 0.047234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.470615 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Rays.mat
+  artifactKey: Guid(b5ade05b104c5499e8d928af021208d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Rays.mat using Guid(b5ade05b104c5499e8d928af021208d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '694a98d8d123fc6961e8cf872509c4cc') in 0.121523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.807994 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Rune.mat
+  artifactKey: Guid(aeff0be63d81a4f349788dbdeb9c3339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Rune.mat using Guid(aeff0be63d81a4f349788dbdeb9c3339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '602bb869dacf0ca9101e9fa8f7c521c8') in 0.050319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.395880 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials
+  artifactKey: Guid(769b1d456592b4516abfdc1bf5b2014f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials using Guid(769b1d456592b4516abfdc1bf5b2014f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86852c4f11b06b53ad1d2685145cbe8') in 0.010715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.863017 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1
+  artifactKey: Guid(036403167f16045058f0988a7bf56fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1 using Guid(036403167f16045058f0988a7bf56fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f69783869f5b6c4e4b4725a92d02eeb') in 0.010250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.052857 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Glyph.mat
+  artifactKey: Guid(23d1292e6537b4935ad031963236f4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Glyph.mat using Guid(23d1292e6537b4935ad031963236f4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374af652f129174ae90cb7e897205bb1') in 0.039732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Smoke.mat
+  artifactKey: Guid(d69ad2795eb354a9893a27bd4b35b34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Smoke.mat using Guid(d69ad2795eb354a9893a27bd4b35b34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd138b35b843c47cf75599b16c2c952ba') in 0.029802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Rune_3.png
+  artifactKey: Guid(d9e37a0acf3ad461f98379291737416b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Rune_3.png using Guid(d9e37a0acf3ad461f98379291737416b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bde048769ee93a4fe7265b3967f970a') in 0.035206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Spiral_Doodle_1.png
+  artifactKey: Guid(36d92653c7f364164be726549e9f2e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Spiral_Doodle_1.png using Guid(36d92653c7f364164be726549e9f2e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740e46ca069b65ea39630912a0a8111a') in 0.046747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Particle.mat
+  artifactKey: Guid(7b58225624f9946b3b7e6d1c390bf1e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Particle.mat using Guid(7b58225624f9946b3b7e6d1c390bf1e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9257ef7e6b0ac24a10c1475ae797cc71') in 0.029953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Rune.mat
+  artifactKey: Guid(62a42f29c2766463abb8787680972643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Rune.mat using Guid(62a42f29c2766463abb8787680972643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c391dbad35bcfddea243aef97727dd9f') in 0.045811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Smoke_1.png
+  artifactKey: Guid(8abf852b5c6ec4a18ac67fac66f65030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Smoke_1.png using Guid(8abf852b5c6ec4a18ac67fac66f65030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf05ef42020d0d06488a2b5b0d6dc4c') in 0.031100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Particle_1.png
+  artifactKey: Guid(eaf769bc3745348ed909d27ad2053f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Particle_1.png using Guid(eaf769bc3745348ed909d27ad2053f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3ab2bc6349b364647fa458a40b77d54') in 0.029164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Magic Circle.mat
+  artifactKey: Guid(ab50b4694af2b410296680e2d230d9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_1/Magic Circle.mat using Guid(ab50b4694af2b410296680e2d230d9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e0b70a43484b678d846255e900763a') in 0.059017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.000708 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2
+  artifactKey: Guid(a764ed5ea99324ef8a66fc020c9b3466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2 using Guid(a764ed5ea99324ef8a66fc020c9b3466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245aac57b1edadde1a91acda23984768') in 0.010499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.061184 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Magic Circle.mat
+  artifactKey: Guid(9263419daaf9344dd91f615129643e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Magic Circle.mat using Guid(9263419daaf9344dd91f615129643e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ebb334adb4f3739814f0921b40c02d') in 0.454998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Rays_2.png
+  artifactKey: Guid(70592c1e0cbdb48329ec1b5aeaac2ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Rays_2.png using Guid(70592c1e0cbdb48329ec1b5aeaac2ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0583ea6b258223b8079ded8b2e7783a7') in 0.047867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Particle_5.png
+  artifactKey: Guid(291fa2ba53548438eb775f95053100b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Aura_2/Particle_5.png using Guid(291fa2ba53548438eb775f95053100b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '669ce72a0d57a33eea92ef5732163c23') in 0.042524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.197750 seconds.
+  path: Assets/effect/m31_teleporter_FX/03_FX_object/Materials/Fx_Object.mat
+  artifactKey: Guid(89071272588134c479ea7d78dd2f7c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/m31_teleporter_FX/03_FX_object/Materials/Fx_Object.mat using Guid(89071272588134c479ea7d78dd2f7c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdeb2ef5025530db7b9fd0263f3f1bc8') in 0.083079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/Glow_Ice_06.mat
+  artifactKey: Guid(3d2abae981105e5449a12d1d261a9a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/Glow_Ice_06.mat using Guid(3d2abae981105e5449a12d1d261a9a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11499bff3ce642fed2b2ac99c99ffb02') in 0.023358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/Glow_Ice_03.mat
+  artifactKey: Guid(8b42a8c43a646fc4a80707b22e312241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/Glow_Ice_03.mat using Guid(8b42a8c43a646fc4a80707b22e312241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39546be7b2e0cf46c140a25e22a406bf') in 0.186877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/Glow_Ice_02add.mat
+  artifactKey: Guid(d22496696b1e9d040a563e46b9bdc8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/Glow_Ice_02add.mat using Guid(d22496696b1e9d040a563e46b9bdc8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc10e5be92292fb1d5f5a6374d40331') in 0.022662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031467 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/SmokeA1_SphereM.mat
+  artifactKey: Guid(7938db22ecb65c6438c7ec39514a2f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/SmokeA1_SphereM.mat using Guid(7938db22ecb65c6438c7ec39514a2f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90138bc8647b3b5e3fa976379b4401dd') in 0.030769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/SnowFlakes_04.mat
+  artifactKey: Guid(dd81ec89125329b459233f9b5f8959c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/effect/Magic VFX/Magic VFX - Ice (FREE)/Models/Materials/SnowFlakes_04.mat using Guid(dd81ec89125329b459233f9b5f8959c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16effb02ad4b3272f313978db85f2f77') in 0.036951 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
