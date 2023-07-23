@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Duty: To manage the meld tiles area
 public class MeldTilesArea : MonoBehaviour
 {
     private List<TileComponent> _meldTiles = new List<TileComponent>();
