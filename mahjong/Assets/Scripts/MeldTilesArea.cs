@@ -5,6 +5,15 @@ using UnityEngine;
 public class MeldTilesArea : MonoBehaviour
 {
     private List<TileComponent> _meldTiles = new List<TileComponent>();
+
+    public Meld Meld
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

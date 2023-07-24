@@ -24,6 +24,21 @@ public class TileComponentPool : MonoBehaviour
         
     }
 
+    public TileComponent TileComponent
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public TileComponentFactory TileComponentFactory
+    {
+        get => default;
+        set
+        {
+        }
+    }
 }
 
 

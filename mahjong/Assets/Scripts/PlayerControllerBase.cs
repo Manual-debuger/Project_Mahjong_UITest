@@ -7,6 +7,32 @@ public class PlayerControllerBase : MonoBehaviour
 {
     private HandTilesArea _handTiles;
     private MeldTilesArea _meldTiles;
+    private FlowerTileArea _flowerTiles;
+
+    public MeldTilesArea MeldTilesArea
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public HandTilesArea HandTilesArea
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public FlowerTileArea FlowerTileArea
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
