@@ -380,6 +380,7 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerControllerBase.cs"
 "Assets/Scripts/PlayerInfoPlateController.cs"
+"Assets/Scripts/TileAreaControllerBase.cs"
 "Assets/Scripts/TileComponent.cs"
 "Assets/Scripts/TileComponentFactory.cs"
 "Assets/Scripts/TileComponentPool.cs"

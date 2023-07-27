@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Duty:處理花牌區
-public class FlowerTileArea : MonoBehaviour
+public class FlowerTileArea : TileAreaControllerBase
 {
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -16,4 +17,28 @@ public class FlowerTileArea : MonoBehaviour
     {
         
     }
+    public override void AddTile(TileSuits tileSuit)
+    {
+       if(TileCount>8)
+       {
+            Debug.LogError("Error:FlowerTileArea.AddFlowerTile() TileCount>8");
+            return; 
+       }
+       else
+       {
+           if(this.IsFlowerTile(tileSuit)) 
+           {
+                base.AddTile(tileSuit);
+           }
+           else
+           {
+                Debug.LogError("Error:FlowerTileArea.AddFlowerTile() tileSuit is not flower");
+                throw new System.Exception("Error:FlowerTileArea.AddFlowerTile() tileSuit is not flower");
+            
+           }
+       }
+       
+        
+    }
+    
 }
