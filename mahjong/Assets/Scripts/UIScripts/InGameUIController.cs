@@ -8,13 +8,13 @@ public class InGameUIController : MonoBehaviour
     private static InGameUIController _instance = new InGameUIController();
     private InGameUIController() { }
     public static InGameUIController Instance { get { return _instance; } }
-    private HandTilesUIViewer _handTilesUIViewer;
+    private HandTilesUI _handTilesUIViewer;
     private ListeningHolesViewer _meldTilesUIViewer;
     private SettingUIButton _settingUIButton;
-    private DiscardTileUIViewer _discardTileUIViewer;
+    private DiscardTileUI _discardTileUIViewer;
     private SocialUIButton _socialUIButton;
     private SupportUIButton _supportUIButton;
-    private WinningSuggestUIViewer _winningSuggestUIViewer;
+    private WinningSuggestUI _winningSuggestUIViewer;
     private SettlementScreen _settlementScreen;
 
 
@@ -46,7 +46,7 @@ public class InGameUIController : MonoBehaviour
         }
     }
 
-    public HandTilesUIViewer HandTilesUIViewer
+    public HandTilesUI HandTilesUIViewer
     {
         get => default;
         set
@@ -54,7 +54,7 @@ public class InGameUIController : MonoBehaviour
         }
     }
 
-    public WinningSuggestUIViewer WinningSuggestUIViewer
+    public WinningSuggestUI WinningSuggestUIViewer
     {
         get => default;
         set
@@ -86,7 +86,7 @@ public class InGameUIController : MonoBehaviour
         }
     }
 
-    public DiscardTileUIViewer DiscardTileUIViewer
+    public DiscardTileUI DiscardTileUIViewer
     {
         get => default;
         set
