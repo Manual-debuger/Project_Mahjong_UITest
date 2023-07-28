@@ -5,11 +5,13 @@ using UnityEngine;
 //提供基本(本地跟其他三位玩家)都有的基本操作
 public class PlayerControllerBase : MonoBehaviour
 {
-    private HandTilesArea _handTiles;
-    private MeldTilesArea _meldTiles;
-    private FlowerTileArea _flowerTiles;
+    private HandTilesAreaController _handTiles;
+    
+    private FlowerTileAreaController _flowerTileAreaController;
 
-    public MeldTilesArea MeldTilesArea
+
+
+    public HandTilesAreaController HandTilesArea
     {
         get => default;
         set
@@ -17,15 +19,7 @@ public class PlayerControllerBase : MonoBehaviour
         }
     }
 
-    public HandTilesArea HandTilesArea
-    {
-        get => default;
-        set
-        {
-        }
-    }
-
-    public FlowerTileArea FlowerTileArea
+    public FlowerTileAreaController FlowerTileAreaController
     {
         get => default;
         set

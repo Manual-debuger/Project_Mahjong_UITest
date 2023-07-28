@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class TileComponent : MonoBehaviour
+public class TileComponent : MonoBehaviour,IInitiable
 {
     [SerializeField] private MeshFilter _meshFilter;
     [SerializeField] private MeshRenderer _meshRenderer;
@@ -15,6 +15,11 @@ public class TileComponent : MonoBehaviour
         set {
                 _meshFilter.mesh= AssetsPoolController.Instance.TileMeshs[(int)value];
             }
+    }
+    public void Init()
+    {
+        this.Disappear();
+        this.ShowTileBackSide();
     }
     private void Awake()
     {

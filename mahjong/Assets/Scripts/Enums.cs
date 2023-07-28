@@ -55,4 +55,11 @@ public enum TileSuits
     f7,//秋
     f8,//冬
 }
+public enum MeldTypes
+{
+    Sequence,//順子
+    Triplet,//刻子
+    DarkQuadplet,//暗槓子
+    ExposedQuadplet,//明槓子 
+}
 

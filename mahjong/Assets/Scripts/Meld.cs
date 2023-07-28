@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //一刻牌(一組 吃/碰/槓)
-public class Meld : MonoBehaviour
+public class Meld : MonoBehaviour,IInitiable
 {
-    private List<TileComponent> _meldTiles = new List<TileComponent>();
+    private MeldTypes _meldType;
+    [SerializeField]
+    private List<TileComponent> _meldTileComponents = new List<TileComponent>();
+    public MeldTypes MeldType { get { return _meldType; }  }
     public List<TileComponent> MeldTiles
     {
-        get { return _meldTiles; }
+        get { return _meldTileComponents; }
     }
-    enum MeldType
+    public void Init()
     {
-        CHOW,
-        PONG,
-        CONCEALED_KONG,
-        KONG,
+        foreach (var tile in _meldTileComponents)
+        {
+            tile.Disappear();
+            tile.ShowTileBackSide();
+        }
     }
     // Start is called before the first frame update
     void Start()
@@ -27,4 +31,5 @@ public class Meld : MonoBehaviour
     {
         
     }
+   
 }
