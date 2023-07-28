@@ -44,14 +44,28 @@ public class TileComponent : MonoBehaviour,IInitiable
 
     public void ShowTileFrontSide()
     {
-        if(_transform.rotation.z!=0)
-            _transform.rotation = Quaternion.Euler(0, 0, 0);
+        Debug.Log($"_transform.eulerAngles:{_transform.eulerAngles.x}");
+        Debug.Log($"_transform.localEulerAngles:{_transform.localEulerAngles.x}");
+        if (_transform.eulerAngles.x==270)//牌是直立的
+        {
+            
+        }            
+        else
+        {           
+            _transform.rotation = Quaternion.Euler(_transform.eulerAngles.x, _transform.eulerAngles.y, 180);
+        }            
     }
     
     public void ShowTileBackSide()
     {
-        if (_transform.rotation.z != 180)
-            _transform.rotation = Quaternion.Euler(0, 0, 180);
+        if(_transform.eulerAngles.x== 270)//牌是直立的
+        {
+           
+        }            
+        else
+        {
+            _transform.rotation = Quaternion.Euler(_transform.eulerAngles.x, _transform.eulerAngles.y, 0);
+        }            
     }
     public void Disappear()
     {

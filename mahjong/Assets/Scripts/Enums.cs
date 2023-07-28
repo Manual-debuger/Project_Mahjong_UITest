@@ -59,7 +59,7 @@ public enum MeldTypes
 {
     Sequence,//順子
     Triplet,//刻子
-    DarkQuadplet,//暗槓子
+    ConcealedQuadplet,//暗槓子
     ExposedQuadplet,//明槓子 
 }
 

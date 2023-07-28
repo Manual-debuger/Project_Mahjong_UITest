@@ -20,6 +20,32 @@ public class Meld : MonoBehaviour,IInitiable
             tile.ShowTileBackSide();
         }
     }
+
+    public void SetByMeldTypeAndTileSuits(MeldTypes meldTypes, List<TileSuits> tileSuits)
+    {
+        _meldType = meldTypes;
+        for (int i = 0; i < tileSuits.Count; i++)
+        {
+            _meldTileComponents[i].Appear();
+            _meldTileComponents[i].TileSuit=(tileSuits[i]);
+            switch(meldTypes)
+            {
+                case MeldTypes.Sequence:
+                    _meldTileComponents[i].ShowTileFrontSide();
+                    break;
+                case MeldTypes.Triplet:
+                    _meldTileComponents[i].ShowTileFrontSide();
+                    break;
+
+                case MeldTypes.ExposedQuadplet:
+                    _meldTileComponents[i].ShowTileFrontSide();
+                    break;  
+                case MeldTypes.ConcealedQuadplet:
+                    _meldTileComponents[i].ShowTileBackSide();
+                    break;
+            }
+        }        
+    }
     // Start is called before the first frame update
     void Start()
     {
