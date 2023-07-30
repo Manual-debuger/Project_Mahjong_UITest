@@ -98,8 +98,6 @@ namespace Crystal
 
         RectTransform Panel;
         Rect LastSafeArea = new Rect (0, 0, 0, 0);
-        Vector2Int LastScreenSize = new Vector2Int (0, 0);
-        ScreenOrientation LastOrientation = ScreenOrientation.AutoRotation;
         [SerializeField] bool ConformX = true;  // Conform to screen safe area on X-axis (default true, disable to ignore)
         [SerializeField] bool ConformY = true;  // Conform to screen safe area on Y-axis (default true, disable to ignore)
         [SerializeField] bool Logging = false;  // Conform to screen safe area on Y-axis (default true, disable to ignore)
@@ -107,7 +105,6 @@ namespace Crystal
         GameObject MainCamera = null;
         Camera Camera = null;
         CameraAspectRatioAdjuster CameraAspectRatioAdjuster = null;
-        bool LastIsSafeAreaInViewport = true;
 
         void Awake ()
         {
@@ -134,20 +131,6 @@ namespace Crystal
         {
             Rect safeArea = GetSafeArea ();
             ApplySafeArea(safeArea);
-            /*if (safeArea != LastSafeArea
-                || Screen.width != LastScreenSize.x
-                || Screen.height != LastScreenSize.y
-                || Screen.orientation != LastOrientation || CameraAspectRatioAdjuster.isSafeAreaInViewport != LastIsSafeAreaInViewport)
-            {
-                // Fix for having auto-rotate off and manually forcing a screen orientation.
-                // See https://forum.unity.com/threads/569236/#post-4473253 and https://forum.unity.com/threads/569236/page-2#post-5166467
-                LastScreenSize.x = Screen.width;
-                LastScreenSize.y = Screen.height;
-                LastOrientation = Screen.orientation;
-                LastIsSafeAreaInViewport = CameraAspectRatioAdjuster.isSafeAreaInViewport;
-
-                ApplySafeArea (safeArea);
-            }*/
         }
 
         Rect GetSafeArea ()
