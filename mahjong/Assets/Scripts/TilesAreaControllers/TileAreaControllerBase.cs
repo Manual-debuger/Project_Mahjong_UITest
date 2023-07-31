@@ -7,11 +7,11 @@ using UnityEngine;
 
 
 
-public class TileAreaControllerBase : MonoBehaviour,IInitiable
+public class TileAreaControllerBase : MonoBehaviour,IInitiable,IReturnTileSuitsAble
 {
     [SerializeField]
     protected List<TileComponent> _TilesComponents = new List<TileComponent>();
-    protected int TileCount = 0;
+    protected int TileCount = 0;    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,7 @@ public class TileAreaControllerBase : MonoBehaviour,IInitiable
     {
         
     }
+    
     public virtual void AddTile(TileSuits tileSuit)
     {
         _TilesComponents[TileCount].TileSuit = tileSuit;
@@ -46,5 +47,14 @@ public class TileAreaControllerBase : MonoBehaviour,IInitiable
     {
         return (tileSuit>=TileSuits.c1 && tileSuit <= TileSuits.o7);
     }
-    
+
+    public TileSuits[] GetTileSuits()
+    {
+        TileSuits[] tileSuitsList = new TileSuits[TileCount];
+        foreach (var tile in _TilesComponents)
+        {
+            tileSuitsList[TileCount] = tile.TileSuit;
+        }
+        return tileSuitsList;
+    }
 }

@@ -31,15 +31,10 @@ public class Meld : MonoBehaviour,IInitiable
             switch(meldTypes)
             {
                 case MeldTypes.Sequence:
-                    _meldTileComponents[i].ShowTileFrontSide();
-                    break;
                 case MeldTypes.Triplet:
-                    _meldTileComponents[i].ShowTileFrontSide();
-                    break;
-
                 case MeldTypes.ExposedQuadplet:
                     _meldTileComponents[i].ShowTileFrontSide();
-                    break;  
+                    break;                
                 case MeldTypes.ConcealedQuadplet:
                     _meldTileComponents[i].ShowTileBackSide();
                     break;
