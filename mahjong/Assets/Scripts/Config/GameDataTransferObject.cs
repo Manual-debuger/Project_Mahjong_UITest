@@ -66,7 +66,7 @@ public class PlayerResultData<T>
 public class PlayerGameResultData
 {
     public string Avatar;
-    public string AvatarBackground; // ÀY¹³­I´º
+    public string AvatarBackground; // é ­åƒèƒŒæ™¯
     public int Gender;
     public int VoiceLanguage;
     public string Name;
@@ -86,22 +86,22 @@ public class PlayerGameResultData
 /**
  * ReadyInfo => {
  * 
-	¥áªºµP: {
+	ä¸Ÿçš„ç‰Œ: {
 
-		 Å¥ªºµP: ´X¥x,
-		 Å¥ªºµP: ´X¥x   [key: string]: ListeningTilesType;
+		 è½çš„ç‰Œ: å¹¾å°,
+		 è½çš„ç‰Œ: å¹¾å°   
 	}
   }
  */
 [System.Serializable]
 public class ReadyInfoType
 {
-    public Dictionary<string, ListeningTilesType> ListeningTilesType;
+    public Dictionary<string, ListeningTilesType> key;
 }
 
 /**
  * {
- * Å¥ªºµP: ´X¥x [mahjong: string]: number;
+ * è½çš„ç‰Œ: å¹¾å°
  * }
  */
 [System.Serializable]
@@ -113,27 +113,12 @@ public class ListeningTilesType
 public static class Path
 {
     public const string Ack = "auth.ack";
-    public const string Login = "auth.login";
-    public const string Scores = "auth.scores";
-    public const string TableInit = "game.table.init";
-    public const string TableEnter = "game.table.enter";
     public const string TableEvent = "game.table.event";
     public const string TablePlay = "game.table.play";
     public const string TableResult = "game.table.result";
-    public const string TableEnd = "game.table.end";
-    public const string TableAutoPlay = "game.table.autoplay";
-    public const string TableRule = "game.table.rule";
-    public const string TableDissolution = "game.table.dissolution";
-    public const string TableReady = "game.table.ready";
 }
 
-[System.Serializable]
-public class TableResultData
-{
-    public string Path;
-    public string Err;
-    public ResultData[] Data;
-}
+
 
 [System.Serializable]
 public class ResultData

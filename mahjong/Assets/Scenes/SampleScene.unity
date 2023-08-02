@@ -1086,7 +1086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9125152867921059883, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -470
+      value: -469.4344
       objectReference: {fileID: 0}
     - target: {fileID: 9125152867921059883, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1409,7 +1409,7 @@ GameObject:
   - component: {fileID: 180511162}
   - component: {fileID: 180511161}
   m_Layer: 5
-  m_Name: "\u7D50\u7B97\u756B\u9762Back_up"
+  m_Name: Settlement screen Back_up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4296,7 +4296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 682319144}
   m_Layer: 5
-  m_Name: "\u6478\u724C\u5F8C\u68C4\u724C\u524DPanel"
+  m_Name: DiscardPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6823,7 +6823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9125152867921059883, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -330
+      value: -329.62292
       objectReference: {fileID: 0}
     - target: {fileID: 9125152867921059883, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7877,7 +7877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7447312167625899581, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
       propertyPath: m_Name
-      value: "\u9032\u807D\u5F35\u6578"
+      value: ListrningHolesUI
       objectReference: {fileID: 0}
     - target: {fileID: 7447312167625899581, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
       propertyPath: m_IsActive
@@ -9306,7 +9306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9125152867921059883, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -190
+      value: -189.81146
       objectReference: {fileID: 0}
     - target: {fileID: 9125152867921059883, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9818,7 +9818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7447312167625899581, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
       propertyPath: m_Name
-      value: "\u80E1\u724C\u63D0\u793A"
+      value: WinningSuggestUI
       objectReference: {fileID: 0}
     - target: {fileID: 9125152867921059883, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
       propertyPath: m_Pivot.x
@@ -10015,7 +10015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433763597}
   m_Layer: 5
-  m_Name: "\u78B0\u69D3\u5403\u724CPannelN"
+  m_Name: ChowPongKongPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11263,7 +11263,7 @@ GameObject:
   - component: {fileID: 1678656624}
   - component: {fileID: 1678656625}
   m_Layer: 5
-  m_Name: Safe Area
+  m_Name: SafeArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13315,7 +13315,7 @@ GameObject:
   - component: {fileID: 1981678794}
   - component: {fileID: 1981678793}
   m_Layer: 5
-  m_Name: "\u7D50\u7B97\u756B\u9762"
+  m_Name: ' Settlement screen'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

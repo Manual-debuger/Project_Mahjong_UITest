@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class API : MonoBehaviour
 {
@@ -75,6 +76,7 @@ public class API : MonoBehaviour
 
     private void HandleMessage(string data)
     {
+        Debug.Log(data);
         // Parse the incoming JSON data into a Unity C# object
         MessageObject message = JsonUtility.FromJson<MessageObject>(data);
 
@@ -84,16 +86,6 @@ public class API : MonoBehaviour
             case Path.Ack:
                 HandleAck(message.Data);
                 break;
-            case Path.Login:
-                HandleLogin(message.Data);
-                break;
-            case Path.Scores:
-                break;
-            case Path.TableInit:
-                break;
-            case Path.TableEnter:
-                HandleTableEnter(message.Data);
-                break;
             case Path.TableEvent:
                 HandleTableEvent(message.Data);
                 break;
@@ -102,18 +94,6 @@ public class API : MonoBehaviour
                 break;
             case Path.TableResult:
                 HandleTableResult(message.Data);
-                break;
-            case Path.TableEnd:
-                HandleTableEnd(message.Data);
-                break;
-            case Path.TableAutoPlay:
-                HandleTableAutoPlay(message.Data);
-                break;
-            case Path.TableRule:
-                HandleTableRule(message.Data);
-                break;
-            case Path.TableDissolution:
-                // HandleTableDissolution(message.Data);
                 break;
             default:
                 Debug.LogError("Unknown message Path: " + message.Path);
@@ -126,55 +106,64 @@ public class API : MonoBehaviour
     private class MessageObject
     {
         public string Path;
-        public object Data;
+        public TablePlayInfo Data;
     }
 
     // Implement individual message handlers for each message type based on the enums in Game.tso.ts
     private void HandleAck(object data)
     {
-        Debug.Log("HandleAck");
+        Debug.Log("Ack");
         // Implement the logic for handling the ack message
-    }
-
-    private void HandleLogin(object data)
-    {
-        // Implement the logic for handling the login message
-    }
-
-    private void HandleTableEnter(object data)
-    {
-        // Implement the logic for handling the table enter message
     }
 
     private void HandleTableEvent(object data)
     {
-        Debug.Log("HandleTableEvent");
+        Debug.Log("TableEvent");
         // Implement the logic for handling the table event message
     }
 
-    private void HandleTablePlay(object data)
+    private void HandleTablePlay(TablePlayInfo data)
     {
-        // Implement the logic for handling the table play message
+        Debug.Log("TablePlay");
+        if (data != null)
+        {
+            switch (data.Action)
+            {
+                case Action.Pass:
+                    break;
+                case Action.Discard:
+                    break;
+                case Action.Chow:
+                    break;
+                case Action.Pong:
+                    break;
+                case Action.Kong:
+                case Action.AdditionKong:
+                case Action.ConcealedKong:
+                    break;
+                case Action.ReadyHand:
+                    break;
+                case Action.Win:
+                    break;
+                case Action.Drawn: // йт
+                    break;
+                case Action.SelfDrawnWin:
+                    break;
+                case Action.GroundingFlower:
+                    break;
+                case Action.DrawnFromDeadWall:
+                    break;
+            }
+        }
+        else
+        {
+            //CloseAllBtn();
+        }
     }
 
     private void HandleTableResult(object data)
     {
         // Implement the logic for handling the table result message
-    }
-
-    private void HandleTableEnd(object data)
-    {
-        // Implement the logic for handling the table end message
-    }
-
-    private void HandleTableAutoPlay(object data)
-    {
-        // Implement the logic for handling the table auto-play message
-    }
-
-    private void HandleTableRule(object data)
-    {
-        // Implement the logic for handling the table rule message
     }
 
     // Call this method to send data to the WebSocket server
