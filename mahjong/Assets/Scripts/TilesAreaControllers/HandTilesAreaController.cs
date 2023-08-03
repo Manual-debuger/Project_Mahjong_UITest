@@ -23,7 +23,7 @@ public class HandTilesAreaController : TileAreaControllerBase,IPopTileAble
         }
     }
 
-    void IPopTileAble.PopLastTile()
+    public void PopLastTile()
     {
         if(this.TileCount<0)
         {

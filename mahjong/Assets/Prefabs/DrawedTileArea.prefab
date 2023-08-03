@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6416606064018603364}
+  - component: {fileID: 8329185160290168262}
   m_Layer: 0
   m_Name: DrawedTileArea
   m_TagString: Untagged
@@ -32,6 +33,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8329185160290168262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676942531914146485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c0616919b697f449105150e994238f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TilesComponents:
+  - {fileID: 5308225077362488416}
 --- !u!1001 &7608945704366290756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89,6 +104,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f89d9eca21bd4f41930a00a06ba278c, type: 3}
+--- !u!114 &5308225077362488416 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2320195315467961124, guid: 4f89d9eca21bd4f41930a00a06ba278c, type: 3}
+  m_PrefabInstance: {fileID: 7608945704366290756}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599413ab64b53bd46ba758b508eb7a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8514688495461412605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2283931800682731961, guid: 4f89d9eca21bd4f41930a00a06ba278c, type: 3}
