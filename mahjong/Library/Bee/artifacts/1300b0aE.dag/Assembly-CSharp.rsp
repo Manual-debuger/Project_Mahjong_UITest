@@ -377,7 +377,7 @@
 "Assets/Scripts/Common/Enums.cs"
 "Assets/Scripts/Common/Interfaces.cs"
 "Assets/Scripts/Config/GameDataTransferObject.cs"
-"Assets/Scripts/GameManger.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Meld.cs"
 "Assets/Scripts/PlayerController/CompetitorController.cs"
 "Assets/Scripts/PlayerController/PlayerController.cs"
