@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 5125243820820916001}
   - component: {fileID: 7453222804918156496}
   m_Layer: 0
-  m_Name: Plane (2)
+  m_Name: UserNamePlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 4060806382165453231}
   - component: {fileID: 8799691112616689575}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: WindPosisionPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -589,6 +589,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e27d5c0f420ea46a58a2272a884aa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _userAvatarMeshRenderer: {fileID: 1876027942834965298}
+  _userNameTextMeshPro: {fileID: 4457591654060311355}
+  _windPosisionTextMeshPro: {fileID: 1291897550329580349}
 --- !u!1 &7728013812020467975
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +605,7 @@ GameObject:
   - component: {fileID: 1876027942834965298}
   - component: {fileID: 6056694883212089344}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: PhotoPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
