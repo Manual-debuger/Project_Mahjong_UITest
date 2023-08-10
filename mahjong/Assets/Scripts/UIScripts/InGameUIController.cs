@@ -8,14 +8,14 @@ public class InGameUIController : MonoBehaviour
     private static InGameUIController _instance = new InGameUIController();
     private InGameUIController() { }
     public static InGameUIController Instance { get { return _instance; } }
-    private HandTilesUI _handTilesUIViewer;
-    private ListeningHolesViewer _meldTilesUIViewer;
-    private SettingUIButton _settingUIButton;
-    private DiscardTileUI _discardTileUIViewer;
-    private SocialUIButton _socialUIButton;
-    private SupportUIButton _supportUIButton;
-    private WinningSuggestUI _winningSuggestUIViewer;
-    private SettlementScreen _settlementScreen;
+    [SerializeField] private HandTilesUI _handTilesUIViewer;
+    [SerializeField] private ListeningHolesUI _meldTilesUIViewer;
+    [SerializeField] private SettingUIButton _settingUIButton;
+    [SerializeField] private DiscardTileUI _discardTileUIViewer;
+    [SerializeField] private SocialUIButton _socialUIButton;
+    [SerializeField] private SupportUIButton _supportUIButton;
+    [SerializeField] private WinningSuggestUI _winningSuggestUIViewer;
+    [SerializeField] private SettlementScreen _settlementScreen;
 
 
     // Start is called before the first frame update
@@ -78,7 +78,7 @@ public class InGameUIController : MonoBehaviour
         }
     }
 
-    public ListeningHolesViewer ListeningHolesViewer
+    public ListeningHolesUI ListeningHolesUI
     {
         get => default;
         set
