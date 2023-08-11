@@ -5,7 +5,7 @@ using UnityEngine;
 //Server as a Controller for the abandoned tiles area
 public class AbandonedTilesAreaController : MonoBehaviour
 {
-    private List<AbandonedTilesArea> _abandonedTilesAreas;
+    [SerializeField]private List<AbandonedTilesArea> _abandonedTilesAreas;
 
     // Start is called before the first frame update
     void Start()

@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour,IInitiable
     {
         Debug.Log("GM");
         _abandonedTilesAreaController.AddTile(e.PlayerIndex, e.TileSuit);
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
     public void OnChowTileEvent(object sender, ChowTileEventArgs e)
     {
