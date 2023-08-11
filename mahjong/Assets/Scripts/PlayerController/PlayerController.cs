@@ -6,11 +6,17 @@ using UnityEngine;
 public class PlayerController : PlayerControllerBase
 {
     // Start is called before the first frame update
-    private static PlayerController _instance = new PlayerController();
+    private static PlayerController _instance;
     private PlayerController() { }
-    public static PlayerController Instance { get { return _instance; } }    
-    
+    public static PlayerController Instance { get { return _instance; } }
 
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+            Destroy(this.gameObject);
+        else if (_instance == null)
+            _instance = this;
+    }
     void Start()
     {
         

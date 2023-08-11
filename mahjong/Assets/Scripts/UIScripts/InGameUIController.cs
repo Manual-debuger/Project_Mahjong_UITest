@@ -5,8 +5,7 @@ using UnityEngine;
 //Duty: 遊戲中的UI控制器
 public class InGameUIController : MonoBehaviour
 {
-    private static InGameUIController _instance = new InGameUIController();
-    private InGameUIController() { }
+    private static InGameUIController _instance;    
     public static InGameUIController Instance { get { return _instance; } }
     [SerializeField] private HandTilesUI _handTilesUIViewer;
     [SerializeField] private ListeningHolesUI _meldTilesUIViewer;
@@ -17,7 +16,13 @@ public class InGameUIController : MonoBehaviour
     [SerializeField] private WinningSuggestUI _winningSuggestUIViewer;
     [SerializeField] private SettlementScreen _settlementScreen;
 
-
+    private void Awake()
+    {
+        if(_instance != null && _instance != this)
+            Destroy(this.gameObject);
+        else if(_instance == null)
+            _instance = this;
+    }    
     // Start is called before the first frame update
     void Start()
     {

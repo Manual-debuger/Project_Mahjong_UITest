@@ -11,7 +11,7 @@ public class PlayerControllerBase : MonoBehaviour
     [SerializeField] private PlayerInfoPlateController _playerInfoPlateController;
 
     public TileSuits[] FlowerTileSuits { get { return _flowerTileAreaController.GetTileSuits(); } }
-    //public TileSuits[] MeldTilesuits { get { return _meldsAreaController.TilesSuits; } }
+    //public TileSuit[] MeldTilesuits { get { return _meldsAreaController.TilesSuits; } }
 
     // Start is called before the first frame update
     void Start()
