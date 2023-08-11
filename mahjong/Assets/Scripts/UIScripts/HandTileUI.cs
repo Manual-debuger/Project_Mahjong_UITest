@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 //Duty: To display the tiles in the hand of the player跟回傳事件
 public class HandTileUI : MonoBehaviour
 {
+    public event EventHandler<TileIndexEventArgs> DiscardTileEvent;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,11 @@ public class HandTileUI : MonoBehaviour
     void Update()
     {
 
+    }
+    public void Click(int index)
+    {
+        Debug.Log(index);
+        DiscardTileEvent?.Invoke(this, new TileIndexEventArgs(index));
     }
     public void Appear()
     {

@@ -62,4 +62,12 @@ public class WinningSuggestArgs : EventArgs
         PlayerIndex = playerIndex;
     }
 }
+public class TileIndexEventArgs : EventArgs
+{
+    public int TileIndex;
+    public TileIndexEventArgs(int tileIndex)
+    {
+        TileIndex = tileIndex;
+    }
+}
 #endregion

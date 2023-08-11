@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 //Duty: 遊戲中的UI控制器
 public class InGameUIController : MonoBehaviour
@@ -16,12 +17,15 @@ public class InGameUIController : MonoBehaviour
     [SerializeField] private WinningSuggestUI _winningSuggestUIViewer;
     [SerializeField] private SettlementScreen _settlementScreen;
 
+    public event EventHandler<DiscardTileEventArgs> DiscardTileEvent;
     private void Awake()
     {
         if(_instance != null && _instance != this)
             Destroy(this.gameObject);
         else if(_instance == null)
             _instance = this;
+
+        _handTilesUIViewer.DiscardTileEvent += DiscardTile;
     }    
     // Start is called before the first frame update
     void Start()
@@ -33,6 +37,12 @@ public class InGameUIController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void DiscardTile(object sender, DiscardTileEventArgs e)
+    {
+        Debug.Log("UI");
+        DiscardTileEvent?.Invoke(this, e);
     }
 
     public SettingUIButton SettingUIButton

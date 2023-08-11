@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour,IInitiable
             Destroy(this.gameObject);
         else if (_instance == null)
             _instance = this;
+        _inGameUIController.DiscardTileEvent += OnDiscardTileEvent;
     }
     
     public void Init()
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour,IInitiable
     #region UI Event handle
     public void OnDiscardTileEvent(object sender,DiscardTileEventArgs e)
     {
+        Debug.Log("GM");
         _abandonedTilesAreaController.AddTile(e.PlayerIndex, e.TileSuit);
         throw new System.NotImplementedException();
     }
