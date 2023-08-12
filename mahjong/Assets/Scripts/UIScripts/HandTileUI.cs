@@ -17,6 +17,9 @@ public class HandTileUI : MonoBehaviour
     {
 
     }
+    public void SetTile(TileSuits tileSuit)
+    {
+    }
     public void Click(int index)
     {
         Debug.Log(index);
