@@ -13,6 +13,8 @@ public class TileComponent : MonoBehaviour,IInitiable
     public TileSuits TileSuit { 
         get { return this._tileSuits; }
         set {
+                this._tileSuits = value;
+                Debug.Log($"TileCompoent Changing mesh into {value}:{(int)value}");            
                 _meshFilter.mesh= AssetsPoolController.Instance.TileMeshs[(int)value];
             }
     }
@@ -52,7 +54,7 @@ public class TileComponent : MonoBehaviour,IInitiable
         }            
         else
         {           
-            _transform.rotation = Quaternion.Euler(_transform.eulerAngles.x, _transform.eulerAngles.y, 180);
+            _transform.rotation = Quaternion.Euler(_transform.eulerAngles.x, _transform.eulerAngles.y, 0);
         }            
     }
     
@@ -64,7 +66,7 @@ public class TileComponent : MonoBehaviour,IInitiable
         }            
         else
         {
-            _transform.rotation = Quaternion.Euler(_transform.eulerAngles.x, _transform.eulerAngles.y, 0);
+            _transform.rotation = Quaternion.Euler(_transform.eulerAngles.x, _transform.eulerAngles.y, 180);
         }            
     }
     public void Disappear()

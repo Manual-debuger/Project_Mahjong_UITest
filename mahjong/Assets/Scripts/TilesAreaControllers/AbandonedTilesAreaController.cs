@@ -21,6 +21,6 @@ public class AbandonedTilesAreaController : MonoBehaviour
     public void AddTile(int targetIndex, TileSuits tileSuit)
     {
         _abandonedTilesAreas[targetIndex].AddTile(tileSuit);
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 }

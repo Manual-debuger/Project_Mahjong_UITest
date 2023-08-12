@@ -604,6 +604,17 @@ MonoBehaviour:
   ConformX: 1
   ConformY: 1
   Logging: 0
+--- !u!114 &551008950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7825078516428920585, guid: 233a65ac4c00e0e4994d6ecdb5293833, type: 3}
+  m_PrefabInstance: {fileID: 8145787245382771823}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4babd9c2854a8e4a82cc05133475640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &574944572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4358,6 +4369,10 @@ PrefabInstance:
       propertyPath: _inGameUIController
       value: 
       objectReference: {fileID: 1967460404}
+    - target: {fileID: 4357352035240040254, guid: 233a65ac4c00e0e4994d6ecdb5293833, type: 3}
+      propertyPath: _abandonedTilesAreaController
+      value: 
+      objectReference: {fileID: 551008950}
     - target: {fileID: 4357352035240040254, guid: 233a65ac4c00e0e4994d6ecdb5293833, type: 3}
       propertyPath: _playerControllers.Array.size
       value: 4
