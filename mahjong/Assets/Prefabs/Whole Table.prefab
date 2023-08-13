@@ -46,9 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _abandonedTilesAreas:
   - {fileID: 2874426711956863352}
-  - {fileID: 6647384071650094770}
-  - {fileID: 6088683102147876642}
   - {fileID: 258067622659719781}
+  - {fileID: 6088683102147876642}
+  - {fileID: 6647384071650094770}
 --- !u!1 &4997476278241660502
 GameObject:
   m_ObjectHideFlags: 0
