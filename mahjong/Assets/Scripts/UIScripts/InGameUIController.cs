@@ -64,7 +64,7 @@ public class InGameUIController : MonoBehaviour
 
         HandTileSort();
         HandTileSet();
-        DiscardTileEvent?.Invoke(this, new DiscardTileEventArgs(tile, 1));
+        DiscardTileEvent?.Invoke(this, new DiscardTileEventArgs(tile, 0));
     }
 
     public void HandTileSort()
