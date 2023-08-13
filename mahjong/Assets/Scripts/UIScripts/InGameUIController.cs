@@ -22,15 +22,15 @@ public class InGameUIController : MonoBehaviour
 
     private int NumberOfRemainingTiles = 17;
     public List<TileSuits> HandTileSuits = new List<TileSuits>() {
-        TileSuits.c1,
         TileSuits.c8,TileSuits.c8,
+        TileSuits.c1, TileSuits.c1,
         TileSuits.c7, TileSuits.c7,
         TileSuits.c4, TileSuits.c4,
         TileSuits.c2, TileSuits.c2,
         TileSuits.c3, TileSuits.c3,
         TileSuits.c6, TileSuits.c6,
         TileSuits.c5, TileSuits.c5,
-        TileSuits.c1, TileSuits.c1
+        TileSuits.c1
     };
     private void Awake()
     {
@@ -58,7 +58,10 @@ public class InGameUIController : MonoBehaviour
     {
         //Debug.Log("UI");
         TileSuits tile = HandTileSuits[e.TileIndex];
-        HandTileSuits[e.TileIndex] = TileSuits.NULL;
+        //HandTileSuits[e.TileIndex] = TileSuits.NULL;
+        HandTileSuits[e.TileIndex] = HandTileSuits[16];
+        HandTileSuits[16] = TileSuits.NULL;
+
         HandTileSort();
         HandTileSet();
         DiscardTileEvent?.Invoke(this, new DiscardTileEventArgs(tile, 1));
@@ -66,7 +69,13 @@ public class InGameUIController : MonoBehaviour
 
     public void HandTileSort()
     {
-        HandTileSuits.Sort(new Comparison<TileSuits>((x, y) => x.CompareTo(y)));
+        List<TileSuits> sublist = HandTileSuits.GetRange(0, 16);
+        
+        sublist.Sort(new Comparison<TileSuits>((x, y) => x.CompareTo(y)));
+
+        HandTileSuits.RemoveRange(0, 16);
+        HandTileSuits.InsertRange(0, sublist);
+        //HandTileSuits.Sort(new Comparison<TileSuits>((x, y) => x.CompareTo(y)));
     }
 
     public void HandTileSet()
