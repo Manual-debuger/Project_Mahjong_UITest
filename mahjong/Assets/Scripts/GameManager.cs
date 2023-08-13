@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour,IInitiable
     #region UI Event handle
     public void OnDiscardTileEvent(object sender,DiscardTileEventArgs e)
     {
-        Debug.Log("GM");
+        //Debug.Log("GM");
         _abandonedTilesAreaController.AddTile(e.PlayerIndex, e.TileSuit);
         //throw new System.NotImplementedException();
     }

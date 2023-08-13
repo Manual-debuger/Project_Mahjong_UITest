@@ -54,6 +54,7 @@ public enum TileSuits
     f6,//夏
     f7,//秋
     f8,//冬
+    NULL
 }
 public enum MeldTypes
 {

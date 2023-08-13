@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 //Duty: 遊戲中的UI控制器
 public class InGameUIController : MonoBehaviour
@@ -18,6 +19,19 @@ public class InGameUIController : MonoBehaviour
     [SerializeField] private SettlementScreen _settlementScreen;
 
     public event EventHandler<DiscardTileEventArgs> DiscardTileEvent;
+
+    private int NumberOfRemainingTiles = 17;
+    public List<TileSuits> HandTileSuits = new List<TileSuits>() {
+        TileSuits.c1,
+        TileSuits.c8,TileSuits.c8,
+        TileSuits.c7, TileSuits.c7,
+        TileSuits.c4, TileSuits.c4,
+        TileSuits.c2, TileSuits.c2,
+        TileSuits.c3, TileSuits.c3,
+        TileSuits.c6, TileSuits.c6,
+        TileSuits.c5, TileSuits.c5,
+        TileSuits.c1, TileSuits.c1
+    };
     private void Awake()
     {
         if(_instance != null && _instance != this)
@@ -30,7 +44,8 @@ public class InGameUIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        HandTileSort();
+        HandTileSet();
     }
 
     // Update is called once per frame
@@ -39,12 +54,28 @@ public class InGameUIController : MonoBehaviour
         
     }
 
-    private void DiscardTile(object sender, DiscardTileEventArgs e)
+    private void DiscardTile(object sender, TileIndexEventArgs e)
     {
-        Debug.Log("UI");
-        DiscardTileEvent?.Invoke(this, e);
+        //Debug.Log("UI");
+        TileSuits tile = HandTileSuits[e.TileIndex];
+        HandTileSuits[e.TileIndex] = TileSuits.NULL;
+        HandTileSort();
+        HandTileSet();
+        DiscardTileEvent?.Invoke(this, new DiscardTileEventArgs(tile, 1));
     }
 
+    public void HandTileSort()
+    {
+        HandTileSuits.Sort(new Comparison<TileSuits>((x, y) => x.CompareTo(y)));
+    }
+
+    public void HandTileSet()
+    {
+        for (int i = 0; i < 17; i++)
+        {
+            _handTilesUIViewer.HandTileSet(i, HandTileSuits[i]);
+        }
+    }
     public SettingUIButton SettingUIButton
     {
         get => default;
