@@ -21,8 +21,11 @@ public class GameManager : MonoBehaviour,IInitiable
         else if (_instance == null)
             _instance = this;
         _inGameUIController.DiscardTileEvent += OnDiscardTileEvent;
+        _inGameUIController.OnTileBeHoldingEvent += OnTileBeHoldingEvent;
+        _inGameUIController.LeaveTileBeHoldingEvent += OnLeaveTileBeHoldingEvent;
     }
-    
+
+  
     public void Init()
     {
         throw new System.NotImplementedException();
@@ -36,8 +39,18 @@ public class GameManager : MonoBehaviour,IInitiable
     void Update()
     {
         
-    }  
+    }
     #region UI Event handle
+    private void OnTileBeHoldingEvent(object sender, TileSuitEventArgs e)
+    {
+        _abandonedTilesAreaController.HighLightDiscardTiles(e.TileSuit);
+    }
+    private void OnLeaveTileBeHoldingEvent(object sender, TileSuitEventArgs e)
+    {
+        _abandonedTilesAreaController.UnHighLightDiscardTiles();        
+    }
+
+
     public void OnDiscardTileEvent(object sender,DiscardTileEventArgs e)
     {
         //Debug.Log("GM");

@@ -19,6 +19,8 @@ public class InGameUIController : MonoBehaviour
     [SerializeField] private SettlementScreen _settlementScreen;
 
     public event EventHandler<DiscardTileEventArgs> DiscardTileEvent;
+    public event EventHandler<TileSuitEventArgs> OnTileBeHoldingEvent;
+    public event EventHandler<TileSuitEventArgs> LeaveTileBeHoldingEvent;
 
     private int NumberOfRemainingTiles = 17;
     public List<TileSuits> HandTileSuits = new() {
@@ -73,11 +75,13 @@ public class InGameUIController : MonoBehaviour
         Debug.Log("OnDiscardTileSuggestEvent");
         //我猜你會需要這個
         //new TileSuitEventArgs(HandTileSuits[e.TileIndex])
+        OnTileBeHoldingEvent?.Invoke(this, new TileSuitEventArgs(HandTileSuits[e.TileIndex]));
     }
 
     private void LeaveDiscardTileSuggestEvent(object sender, TileIndexEventArgs e)
     {
         Debug.Log("LeaveDiscardTileSuggestEvent");
+        LeaveTileBeHoldingEvent?.Invoke(this, new TileSuitEventArgs(HandTileSuits[e.TileIndex]));
     }
 
     public void HandTileSort()

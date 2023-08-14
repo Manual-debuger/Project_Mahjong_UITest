@@ -52,8 +52,8 @@ public class TileComponent : MonoBehaviour,IInitiable
 
     public void ShowTileFrontSide()
     {
-        Debug.Log($"_transform.eulerAngles:{_transform.eulerAngles.x}");
-        Debug.Log($"_transform.localEulerAngles:{_transform.localEulerAngles.x}");
+        //Debug.Log($"_transform.eulerAngles:{_transform.eulerAngles.x}");
+        //Debug.Log($"_transform.localEulerAngles:{_transform.localEulerAngles.x}");
         if (_transform.eulerAngles.x==270)//牌是直立的
         {
             

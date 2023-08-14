@@ -55,6 +55,7 @@ public class AbandonedTilesArea : TileAreaControllerBase,IPopTileAble
         {
             tileComponent.UnHighLight();
         }
+        _highLightedTilesComponents.Clear();
     }
     private void UnHighLightAllTiles()
     {
@@ -63,7 +64,10 @@ public class AbandonedTilesArea : TileAreaControllerBase,IPopTileAble
             tileComponent.UnHighLight();
         }
     }
-    
+    private void Awake()
+    {
+        _highLightedTilesComponents=new List<TileComponent>();
+    }
     // Start is called before the first frame update
     void Start()
     {
