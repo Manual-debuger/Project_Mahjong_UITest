@@ -70,9 +70,14 @@ public class InGameUIController : MonoBehaviour
     public void HandTileSort()
     {
         List<TileSuits> sublist = HandTileSuits.GetRange(0, 16);
-        
-        sublist.Sort(new Comparison<TileSuits>((x, y) => x.CompareTo(y)));
 
+        sublist.Sort(new Comparison<TileSuits>((x, y) => x.CompareTo(y)));
+        sublist.RemoveAll(x => x == TileSuits.NULL);
+        while (sublist.Count < 16)
+        {
+            sublist.Insert(0, TileSuits.NULL);
+        }
+        
         HandTileSuits.RemoveRange(0, 16);
         HandTileSuits.InsertRange(0, sublist);
         //HandTileSuits.Sort(new Comparison<TileSuits>((x, y) => x.CompareTo(y)));

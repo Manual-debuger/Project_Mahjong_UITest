@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 //Duty: To display the tiles in the hand of the player跟回傳事件
-public class HandTileUI : MonoBehaviour
+public class HandTileUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] 
     private Image _image;
@@ -36,5 +37,13 @@ public class HandTileUI : MonoBehaviour
     public void Disappear()
     {
         this.gameObject.SetActive(false);
+    }
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        //Debug.Log("test");
+    }
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        //Debug.Log("test");
     }
 }
