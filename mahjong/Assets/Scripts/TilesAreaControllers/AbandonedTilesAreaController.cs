@@ -23,4 +23,19 @@ public class AbandonedTilesAreaController : MonoBehaviour
         _abandonedTilesAreas[targetIndex].AddTile(tileSuit);
         //throw new System.NotImplementedException();
     }
+
+    public void HighLightDiscardTiles(TileSuits tileSuit)
+    {
+        foreach (var abandonedTilesArea in _abandonedTilesAreas)
+        {
+            abandonedTilesArea.HighLightDiscardTiles(tileSuit);
+        }
+    }
+    public void UnHighLightDiscardTiles()
+    {
+        foreach (var abandonedTilesArea in _abandonedTilesAreas)
+        {
+            abandonedTilesArea.UnHighLightDiscardTiles();
+        }
+    }
 }

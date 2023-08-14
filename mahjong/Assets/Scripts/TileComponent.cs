@@ -8,6 +8,8 @@ public class TileComponent : MonoBehaviour,IInitiable
     [SerializeField] private MeshFilter _meshFilter;
     [SerializeField] private MeshRenderer _meshRenderer;
     [SerializeField] private Transform _transform;
+    private Material _defaultTileMaterial;
+    private Material _highLightedTileMaterial;
     private TileSuits _tileSuits;
     
     public TileSuits TileSuit { 
@@ -31,6 +33,10 @@ public class TileComponent : MonoBehaviour,IInitiable
             _meshRenderer = this.GetComponent<MeshRenderer>();
         if(_transform==null)
             _transform = this.GetComponent<Transform>();
+        if (_defaultTileMaterial == null)
+            _defaultTileMaterial = AssetsPoolController.Instance.DefaultTileMaterial;
+        if (_highLightedTileMaterial == null)
+            _highLightedTileMaterial = AssetsPoolController.Instance.HighLightedTileMaterial;
     }
     // Start is called before the first frame update
     void Start()
@@ -76,5 +82,16 @@ public class TileComponent : MonoBehaviour,IInitiable
     public void Appear()
     {
         this._meshRenderer.enabled = true;
+    }
+    public void HighLight()
+    {
+        if(this._meshRenderer.material!=_highLightedTileMaterial)
+            this._meshRenderer.material = _highLightedTileMaterial;
+
+    }
+    public void UnHighLight()
+    {
+        if(this._meshRenderer.material!=_defaultTileMaterial)
+            this._meshRenderer.material = _defaultTileMaterial;
     }
 }

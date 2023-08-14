@@ -6,7 +6,7 @@ using UnityEngine;
 public class AbandonedTilesArea : TileAreaControllerBase,IPopTileAble
 {
     
-
+    private List<TileComponent> _highLightedTilesComponents;
     public override void AddTile(TileSuits tileSuit)
     {
         if(TileCount>24) { Debug.LogError("Error:AbandonedTilesArea.AddTile() TileCount>24"); return; }
@@ -36,10 +36,39 @@ public class AbandonedTilesArea : TileAreaControllerBase,IPopTileAble
         }
         
     }
+
+    public void HighLightDiscardTiles(TileSuits tileSuit)
+    {
+        foreach (var tileComponent in _TilesComponents)
+        {
+            if (tileComponent.TileSuit == tileSuit)
+            {
+                tileComponent.HighLight();
+                _highLightedTilesComponents.Add(tileComponent);
+            }
+                
+        }
+    }
+    public void UnHighLightDiscardTiles()
+    {
+        foreach (var tileComponent in _highLightedTilesComponents)
+        {
+            tileComponent.UnHighLight();
+        }
+    }
+    private void UnHighLightAllTiles()
+    {
+        foreach (var tileComponent in _TilesComponents)
+        {
+            tileComponent.UnHighLight();
+        }
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
         Init();
+        this.UnHighLightAllTiles();
     }
 
     // Update is called once per frame

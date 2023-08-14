@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class  AssetsPoolController:MonoBehaviour
@@ -8,6 +9,18 @@ public class  AssetsPoolController:MonoBehaviour
     public Mesh[] TileMeshs {
         get { return _instance._tileMeshs; }
     }
+    [SerializeField] private Material _defaultTileMaterial;
+    [SerializeField] private Material _highLightedTileMaterial;
+    
+    public Material DefaultTileMaterial
+    {
+        get { return _instance._defaultTileMaterial; }
+    }
+    public Material HighLightedTileMaterial
+    {
+        get { return _instance._highLightedTileMaterial; }
+    }
+
     private static AssetsPoolController _instance;
     public static AssetsPoolController Instance
     {
