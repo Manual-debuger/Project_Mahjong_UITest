@@ -7,10 +7,12 @@ using UnityEngine.UI;
 public class HandTilesUI : MonoBehaviour
 {
     [SerializeField]
-    public List<HandTileUI> _TilesComponents = new List<HandTileUI>();
+    public List<HandTileUI> _TilesComponents = new();
     [SerializeField] 
     private Sprite[] _tileMeshs;
     public event EventHandler<TileIndexEventArgs> DiscardTileEvent;
+    public event EventHandler<TileIndexEventArgs> OnPointerDownEvent;
+    public event EventHandler<TileIndexEventArgs> OnPointerUpEvent;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,8 @@ public class HandTilesUI : MonoBehaviour
         {
             //Debug.Log(i);
             _TilesComponents[i].DiscardTileEvent += DiscardTile;
+            _TilesComponents[i].OnPointerDownEvent += OnPointerDown;
+            _TilesComponents[i].OnPointerUpEvent += OnPointerUp;
         }
     }
 
@@ -35,6 +39,14 @@ public class HandTilesUI : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
+    
+    public void HandTileSet(int index,TileSuits HandTileSuit)
+    {
+        if (HandTileSuit != TileSuits.NULL)
+            _TilesComponents[index].SetTile(_tileMeshs[(int)HandTileSuit]);
+        else
+            _TilesComponents[index].Disappear();
+    }
     private void DiscardTile(object sender, TileIndexEventArgs e)
     {
         //Debug.Log("Tiles");
@@ -46,11 +58,15 @@ public class HandTilesUI : MonoBehaviour
 
         DiscardTileEvent?.Invoke(this, e);
     }
-    public void HandTileSet(int index,TileSuits HandTileSuit)
+    private void OnPointerDown(object sender, TileIndexEventArgs e)
     {
-        if (HandTileSuit != TileSuits.NULL)
-            _TilesComponents[index].SetTile(_tileMeshs[(int)HandTileSuit]);
-        else
-            _TilesComponents[index].Disappear();
+        //Debug.Log("UI");
+        OnPointerDownEvent?.Invoke(this, e);
+    }
+
+    private void OnPointerUp(object sender, TileIndexEventArgs e)
+    {
+        //Debug.Log("UI");
+        OnPointerUpEvent?.Invoke(this, e);
     }
 }

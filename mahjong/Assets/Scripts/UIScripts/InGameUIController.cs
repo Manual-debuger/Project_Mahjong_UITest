@@ -21,7 +21,7 @@ public class InGameUIController : MonoBehaviour
     public event EventHandler<DiscardTileEventArgs> DiscardTileEvent;
 
     private int NumberOfRemainingTiles = 17;
-    public List<TileSuits> HandTileSuits = new List<TileSuits>() {
+    public List<TileSuits> HandTileSuits = new() {
         TileSuits.c8,TileSuits.c8,
         TileSuits.c1, TileSuits.c1,
         TileSuits.c7, TileSuits.c7,
@@ -40,6 +40,8 @@ public class InGameUIController : MonoBehaviour
             _instance = this;
 
         _handTilesUIViewer.DiscardTileEvent += DiscardTile;
+        _handTilesUIViewer.OnPointerDownEvent += OnDiscardTileSuggestEvent;
+        _handTilesUIViewer.OnPointerUpEvent += LeaveDiscardTileSuggestEvent;
     }    
     // Start is called before the first frame update
     void Start()
@@ -65,6 +67,17 @@ public class InGameUIController : MonoBehaviour
         HandTileSort();
         HandTileSet();
         DiscardTileEvent?.Invoke(this, new DiscardTileEventArgs(tile, 0));
+    }
+    private void OnDiscardTileSuggestEvent(object sender, TileIndexEventArgs e)
+    {
+        Debug.Log("OnDiscardTileSuggestEvent");
+        //我猜你會需要這個
+        //new TileSuitEventArgs(HandTileSuits[e.TileIndex])
+    }
+
+    private void LeaveDiscardTileSuggestEvent(object sender, TileIndexEventArgs e)
+    {
+        Debug.Log("LeaveDiscardTileSuggestEvent");
     }
 
     public void HandTileSort()

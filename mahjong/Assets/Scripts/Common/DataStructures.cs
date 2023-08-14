@@ -46,12 +46,12 @@ public class KongTileEventArgs : TileSuitsLIstEventArgs
         IsConcealedKong = isConcealedKong;
     }
 }
-public class DiscardTileSuggestArgs:DiscardTileEventArgs
-{
-    public DiscardTileSuggestArgs(TileSuits tileSuits, int playerIndex) : base(tileSuits, playerIndex)
-    {
-    }
-}
+//public class DiscardTileSuggestArgs:DiscardTileEventArgs
+//{
+//    public DiscardTileSuggestArgs(TileSuits tileSuits, int playerIndex) : base(tileSuits, playerIndex)
+//    {
+//    }
+//}
 public class WinningSuggestArgs : EventArgs
 {
     public TileSuits TileSuits;
@@ -68,6 +68,15 @@ public class TileIndexEventArgs : EventArgs
     public TileIndexEventArgs(int tileIndex)
     {
         TileIndex = tileIndex;
+    }
+}
+
+public class TileSuitEventArgs : EventArgs
+{
+    public TileSuits TileSuit;
+    public TileSuitEventArgs(TileSuits tileSuit)
+    {
+        TileSuit = tileSuit;
     }
 }
 #endregion
