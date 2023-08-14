@@ -12,7 +12,7 @@ public class CameraAspectRatioAdjuster : MonoBehaviour
     {
         // originFOV = cam.fieldOfView;
         mainCamera = GetComponent<Camera>();
-        safeArea = GameObject.Find("Safe Area");
+        safeArea = GameObject.Find("SafeArea");
         Panel = safeArea.GetComponent<RectTransform>();
     }   
 

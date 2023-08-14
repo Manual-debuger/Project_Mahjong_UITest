@@ -1,10 +1,34 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values-v30_values-v30.arsc.flat",
+            "outputFile": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values-v28_values-v28.arsc.flat",
             "map": [
                 {
-                    "source": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values-v30\\values-v30.xml",
+                    "source": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values-v28\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "0",
+                        "startOffsets": "53",
+                        "endLines": "4",
+                        "endColumns": "8",
+                        "endOffsets": "229"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "8",
+                        "endOffsets": "229"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values-v30_values-v30.arsc.flat",
+            "map": [
+                {
+                    "source": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values-v30\\values-v30.xml",
                     "from": {
                         "startLines": "2,3,4,5,6",
                         "startColumns": "4,4,4,4,4",
@@ -16,10 +40,10 @@
             ]
         },
         {
-            "outputFile": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values-v21_values-v21.arsc.flat",
+            "outputFile": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values-v21_values-v21.arsc.flat",
             "map": [
                 {
-                    "source": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values-v21\\styles.xml",
+                    "source": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "0",
@@ -40,44 +64,10 @@
             ]
         },
         {
-            "outputFile": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values-v28_values-v28.arsc.flat",
+            "outputFile": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values_values.arsc.flat",
             "map": [
                 {
-                    "source": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values-v28\\styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "0",
-                        "startOffsets": "53",
-                        "endLines": "4",
-                        "endColumns": "8",
-                        "endOffsets": "229"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "8",
-                        "endOffsets": "229"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\res\\merged\\release\\values_values.arsc.flat",
-            "map": [
-                {
-                    "source": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,101,158,214,263,309",
-                        "endColumns": "45,56,55,48,45,46",
-                        "endOffsets": "96,153,209,258,304,351"
-                    }
-                },
-                {
-                    "source": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\strings.xml",
+                    "source": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "2,2",
@@ -94,7 +84,17 @@
                     }
                 },
                 {
-                    "source": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\styles.xml",
+                    "source": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,101,158,214,263,309",
+                        "endColumns": "45,56,55,48,45,46",
+                        "endOffsets": "96,153,209,258,304,351"
+                    }
+                },
+                {
+                    "source": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "5,2,7",
                         "startColumns": "0,0,0",

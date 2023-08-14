@@ -1,10 +1,11 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net.WebSockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 
 public class API : MonoBehaviour
 {
@@ -14,10 +15,12 @@ public class API : MonoBehaviour
     private CancellationTokenSource cancellationTokenSource;
     private Uri uri;
 
+    private bool isLoggedInAndEnterTable = false; // 僅在初次按下進入遊戲登入且成功進桌時會被設定
+
     private void Awake()
     {
         Instance = this;
-        uri = new Uri("wss://s9628.nyc1.piesocket.com/v3/1?api_key=XOToxWSiT1gPHYVVzxOjHWBLelW9tbB3U8g5Cbz9&notify_self=1");
+        uri = new Uri("ws://localhost:80/api/v1/games/mahjong16");
     }
 
     private async void Start()
@@ -34,10 +37,7 @@ public class API : MonoBehaviour
         {
             await socket.ConnectAsync(uri, cancellationTokenSource.Token);
             Debug.Log("WebSocket connected.");
-            /*var buffer = new ArraySegment<byte>(Encoding.UTF8.GetBytes("WebSocket connected."));
-            await socket.SendAsync(buffer, WebSocketMessageType.Text, true, cancellationTokenSource.Token);
-*/
-            // Start listening for incoming messages
+            await Login();
             _ = StartListening();
         }
         catch (Exception ex)
@@ -50,15 +50,25 @@ public class API : MonoBehaviour
     {
         try
         {
-            var buffer = new byte[1024];
+            var receiveBuffer = new List<byte>();
+            var bufferSize = 1024; // Use a larger buffer size
             while (socket.State == WebSocketState.Open)
             {
+                var buffer = new byte[bufferSize];
                 var result = await socket.ReceiveAsync(new ArraySegment<byte>(buffer), cancellationTokenSource.Token);
+
                 if (result.MessageType == WebSocketMessageType.Text)
                 {
-                    var message = Encoding.UTF8.GetString(buffer, 0, result.Count);
-                    // Handle incoming message
-                    HandleMessage(message);
+                    receiveBuffer.AddRange(buffer.Take(result.Count)); // Add received bytes to the buffer
+
+                    if (result.EndOfMessage) // Check if it's the end of the message
+                    {
+                        var message = Encoding.UTF8.GetString(receiveBuffer.ToArray());
+                        // Handle incoming message
+                        HandleMessage(message);
+
+                        receiveBuffer.Clear(); // Clear the buffer for the next message
+                    }
                 }
             }
         }
@@ -68,15 +78,40 @@ public class API : MonoBehaviour
         }
     }
 
-    private async Task SendData(string data)
+    public async Task Login(string token = null)
     {
-        var buffer = new ArraySegment<byte>(Encoding.UTF8.GetBytes(data));
-        await socket.SendAsync(buffer, WebSocketMessageType.Text, true, cancellationTokenSource.Token);
+        var requestData = new LoginObject
+        {
+            Path = Path.Login,
+            Data = new LoginData
+            {
+                IsGuest = true,
+                Token = token
+            }
+        };
+
+        string jsonData = JsonUtility.ToJson(requestData);
+        Debug.Log("Login request: " + jsonData);
+        await SendDataToServer(jsonData);
+    }
+
+    public async Task TableEnter(object config = null)
+    {
+        // Simulate sending data
+        var requestData = new TableEnterObject
+        {
+            Path = "game.table.enter",
+            Data = config
+        };
+
+        string jsonData = JsonUtility.ToJson(requestData);
+        Debug.Log("TableEnter request: " + jsonData);
+        await SendDataToServer(jsonData);
     }
 
     private void HandleMessage(string data)
     {
-        Debug.Log(data);
+        Debug.Log("From Server: " + data);
         // Parse the incoming JSON data into a Unity C# object
         MessageObject message = JsonUtility.FromJson<MessageObject>(data);
 
@@ -85,6 +120,12 @@ public class API : MonoBehaviour
         {
             case Path.Ack:
                 HandleAck(message.Data);
+                break;
+            case Path.Login:
+                HandleLogin(message.Data);
+                break;
+            case Path.TableEnter:
+                HandleTableEnter(message.Data);
                 break;
             case Path.TableEvent:
                 HandleTableEvent(message.Data);
@@ -101,33 +142,99 @@ public class API : MonoBehaviour
         }
     }
 
-    // Define the MessageObject structure to match the incoming JSON data
-    [System.Serializable]
-    private class MessageObject
-    {
-        public string Path;
-        public TablePlayInfo Data;
-    }
-
     // Implement individual message handlers for each message type based on the enums in Game.tso.ts
-    private void HandleAck(object data)
+    private void HandleAck(string data)
     {
         Debug.Log("Ack");
-        // Implement the logic for handling the ack message
     }
 
-    private void HandleTableEvent(object data)
+    private async void HandleLogin(string data)
     {
-        Debug.Log("TableEvent");
-        // Implement the logic for handling the table event message
+        await TableEnter();
     }
 
-    private void HandleTablePlay(TablePlayInfo data)
+    private void HandleTableEnter(string data)
     {
-        Debug.Log("TablePlay");
-        if (data != null)
+        if (!this.isLoggedInAndEnterTable)
         {
-            switch (data.Action)
+            this.isLoggedInAndEnterTable = true;
+        }
+    }
+
+    private void HandleTableEvent(string data)
+    {
+        try
+        {
+            TableEventData eventData = JsonUtility.FromJson<TableEventData>(data);
+            Debug.Log("TableEvent: " + eventData.State);
+
+            switch (eventData.State)
+            {
+                case "Waiting":
+                    //GameClass.instance.HandleWaitingState(eventData);
+                    break;
+                case "RandomSeat":
+                    //GameClass.instance.HandleRandomSeatState(eventData);
+                    break;
+                case "DecideBanker":
+                    //GameClass.instance.HandleDecideBankerState(eventData);
+                    break;
+                case "OpenDoor":
+                    //GameClass.instance.HandleOpenDoorState(eventData);
+                    break;
+                case "GroundingFlower":
+                    //GameClass.instance.HandleGroundingFlowerState(eventData);
+                    break;
+                case "SortingTiles":
+                    //GameClass.instance.HandleSortingTiles(eventData);
+                    break;
+                case "Playing":
+                    //GameClass.instance.HandlePlayingState(eventData);
+                    break;
+                case "DelayPlaying":
+                    //GameClass.instance.HandleDelayPlayingState(eventData);
+                    break;
+                case "WaitingAction":
+                    //GameClass.instance.HandleWaitingActionState(eventData);
+                    break;
+                case "HandEnd":
+                    //GameClass.instance.HandleHandEndState(eventData);
+                    break;
+                case "GameEnd":
+                    //GameClass.instance.HandleGameEndState(eventData);
+                    break;
+                case "Closing":
+                    //GameClass.instance.HandleClosingState(eventData);
+                    break;
+                default:
+                    Debug.LogError("Unknown state: " + eventData.State);
+                    break;
+            }
+
+            // GameClass.instance.UpdateEventTimer(); eventTimer = System.DateTime.Now.Ticks / 10000;
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Error deserializing TableEventData: " + e.Message);
+        }
+
+
+        /*if (GameClass.instance == null)
+        {
+            Global.UpdateTableBasicInfo(eventData);
+            return;
+        }*/
+
+
+    }
+
+    private void HandleTablePlay(string data)
+    {
+        TablePlayData playData = JsonUtility.FromJson<TablePlayData>(data);
+        Debug.Log("TablePlay");
+        if (playData != null)
+        {
+            switch (playData.Action)
             {
                 case Action.Pass:
                     break;
@@ -161,18 +268,25 @@ public class API : MonoBehaviour
         }
     }
 
-    private void HandleTableResult(object data)
+    private void HandleTableResult(string data)
     {
         // Implement the logic for handling the table result message
     }
 
     // Call this method to send data to the WebSocket server
-    public async void SendDataToServer(string data)
+    public async Task SendDataToServer(string data)
     {
         if (socket != null && socket.State == WebSocketState.Open)
         {
             await SendData(data);
         }
+    }
+
+    private async Task SendData(string data)
+    {
+
+        var buffer = new ArraySegment<byte>(Encoding.UTF8.GetBytes(data));
+        await socket.SendAsync(buffer, WebSocketMessageType.Text, true, cancellationTokenSource.Token);
     }
 
     private async Task CloseConnection()

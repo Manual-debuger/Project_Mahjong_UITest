@@ -64,3 +64,19 @@ public enum MeldTypes
     ExposedQuadplet,//明槓子 
 }
 
+public enum Action
+{
+    Pass,
+    Discard,
+    Chow,
+    Pong,
+    Kong,
+    AdditionKong,
+    ConcealedKong,
+    ReadyHand,
+    Win,
+    Drawn,
+    GroundingFlower,
+    DrawnFromDeadWall,
+    SelfDrawnWin,
+}

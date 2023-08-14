@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v28\\values-v28.xml",
+            "outputFile": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v28\\values-v28.xml",
             "map": [
                 {
-                    "source": "E:\\github_repo\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values-v28\\styles.xml",
+                    "source": "F:\\Ntust\\3-2\\project\\Project_Mahjong_UITest\\mahjong\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values-v28\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "0",
