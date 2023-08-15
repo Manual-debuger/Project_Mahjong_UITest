@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour,IInitiable
     [SerializeField] private InGameUIController _inGameUIController;
     [SerializeField] private AnimController _animController;
     [SerializeField] private AudioController _audioManager;
+    [SerializeField] private API _api;
+
     public void Awake()
     {
         if (_instance != null && _instance != this)
@@ -23,6 +25,8 @@ public class GameManager : MonoBehaviour,IInitiable
         _inGameUIController.DiscardTileEvent += OnDiscardTileEvent;
         _inGameUIController.OnTileBeHoldingEvent += OnTileBeHoldingEvent;
         _inGameUIController.LeaveTileBeHoldingEvent += OnLeaveTileBeHoldingEvent;
+        
+        _api.RandomSeatEvent += OnRandomSeatEvent;
     }
 
   
@@ -78,7 +82,16 @@ public class GameManager : MonoBehaviour,IInitiable
     public void OnWinningSuggestEvent(object sender, WinningSuggestArgs e)
     {
         throw new System.NotImplementedException();
-    }    
+    }
     #endregion
 
+    
+    #region API handle
+    private void OnRandomSeatEvent(object sender, RandomSeatEventArgs e)
+    {
+        Debug.Log("RandomSeatEvent");
+        //throw new System.NotImplementedException();
+    }
+
+    #endregion
 }

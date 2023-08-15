@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using Newtonsoft.Json;
 
 public class API : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class API : MonoBehaviour
     private Uri uri;
 
     private bool isLoggedInAndEnterTable = false; // 僅在初次按下進入遊戲登入且成功進桌時會被設定
+
+    private string NowState = "";
+    private string NextState = "";
+
+    public event EventHandler<RandomSeatEventArgs> RandomSeatEvent;
 
     private void Awake()
     {
@@ -111,9 +117,11 @@ public class API : MonoBehaviour
 
     private void HandleMessage(string data)
     {
-        Debug.Log("From Server: " + data);
+        Debug.Log("1111111 From Server: " + data);
         // Parse the incoming JSON data into a Unity C# object
-        MessageObject message = JsonUtility.FromJson<MessageObject>(data);
+
+        MessageObject message = JsonConvert.DeserializeObject<MessageObject>(data);
+        Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(message.Data));
 
         // Switch based on the Path to handle different message types
         switch (message.Path)
@@ -143,17 +151,17 @@ public class API : MonoBehaviour
     }
 
     // Implement individual message handlers for each message type based on the enums in Game.tso.ts
-    private void HandleAck(string data)
+    private void HandleAck(MessageData data)
     {
         Debug.Log("Ack");
     }
 
-    private async void HandleLogin(string data)
+    private async void HandleLogin(MessageData data)
     {
         await TableEnter();
     }
 
-    private void HandleTableEnter(string data)
+    private void HandleTableEnter(MessageData data)
     {
         if (!this.isLoggedInAndEnterTable)
         {
@@ -161,11 +169,13 @@ public class API : MonoBehaviour
         }
     }
 
-    private void HandleTableEvent(string data)
+    private void HandleTableEvent(MessageData eventData)
     {
+        Debug.Log("Event data:" + eventData);
+        
         try
         {
-            TableEventData eventData = JsonUtility.FromJson<TableEventData>(data);
+            //TableEventData eventData = JsonUtility.FromJson<TableEventData>(data);
             Debug.Log("TableEvent: " + eventData.State);
 
             switch (eventData.State)
@@ -174,6 +184,8 @@ public class API : MonoBehaviour
                     //GameClass.instance.HandleWaitingState(eventData);
                     break;
                 case "RandomSeat":
+                    Debug.Log("TableEvent.seat: " + eventData.Seats);
+                    RandomSeat(eventData);
                     //GameClass.instance.HandleRandomSeatState(eventData);
                     break;
                 case "DecideBanker":
@@ -218,19 +230,16 @@ public class API : MonoBehaviour
             Debug.LogError("Error deserializing TableEventData: " + e.Message);
         }
 
-
         /*if (GameClass.instance == null)
         {
             Global.UpdateTableBasicInfo(eventData);
             return;
         }*/
-
-
     }
 
-    private void HandleTablePlay(string data)
+    private void HandleTablePlay(MessageData playData)
     {
-        TablePlayData playData = JsonUtility.FromJson<TablePlayData>(data);
+        //TablePlayData playData = JsonUtility.FromJson<TablePlayData>(data);
         Debug.Log("TablePlay");
         if (playData != null)
         {
@@ -268,9 +277,26 @@ public class API : MonoBehaviour
         }
     }
 
-    private void HandleTableResult(string data)
+    private void HandleTableResult(MessageData data)
     {
         // Implement the logic for handling the table result message
+    }
+
+    public void RandomSeat(MessageData eventData)
+    {
+        long dateTime = eventData.Time;
+        long? nextTime = eventData.NextStateTime;
+
+        Debug.Log("RandomSeat Invoke");
+        Debug.Log(eventData.Seats);
+
+        RandomSeatEventArgs randomSeatEventArgs = new RandomSeatEventArgs(eventData.Seats);
+        Debug.Log(randomSeatEventArgs.SeatInfos);
+        RandomSeatEvent?.Invoke(this, randomSeatEventArgs);
+        if (NowState != eventData.State)
+        {
+            
+        }
     }
 
     // Call this method to send data to the WebSocket server

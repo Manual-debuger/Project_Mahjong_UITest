@@ -79,4 +79,13 @@ public class TileSuitEventArgs : EventArgs
         TileSuit = tileSuit;
     }
 }
+
+public class RandomSeatEventArgs : EventArgs
+{
+    public SeatInfo[] SeatInfos;
+    public RandomSeatEventArgs(SeatInfo[] seatInfos)
+    {
+        SeatInfos = seatInfos;
+    }
+}
 #endregion

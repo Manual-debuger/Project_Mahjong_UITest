@@ -26,12 +26,57 @@ public class Seat<T>
 }
 
 [System.Serializable]
-public class TablePlayData
+public class MessageData
 {
-    //public int Index;
+    public int Ante;
+    public int ScorePerPoint;
+    public int ClubID;
+    public int TableID;
+    public int MaxHand;
+    public int Hand;
+    public int Round;
+    public int Index;
+    public SeatInfo[] Seats;
+    public string State;
+    public long Time;
+    public ActionData[] Actions;
+    public long? NextStateTime;
+    public int? Dice;
+    public string[] Doras;
+    public int? BankerIndex;
+    public int? RemainingBankerCount;
+    public int? WallCount;
+    public int? PlayingIndex;
+    public string[] Tiles;
+    public List<string[]> Door;
+    public long? PlayingDeadline;
+    public List<string[]> AllTiles;
+    public ListeningTilesType ListeningTiles;
+    // 遊戲回放給予
+    public int? PrePlayingIndex;
+    public string RoundID;
+    public bool? PassingWin;
+
+
+    public Action ID;
+    public List<string[]> Options;
+    public ReadyInfoType ReadyInfo;
+
     public Action Action;
-    public string[] Option;
     public int? DrawnCount;
+
+    public string NickName;
+    public int PlayerID;
+    public int WinScores;
+    public int Scores;
+    public bool Winner;
+    public bool Loser;
+    public bool Banker;
+    public bool SelfDrawn;
+    public int CardinalDirection;
+    public int Points;
+    public PointType[] PointList;
+    public string LastTile;
 }
 
 // Define the MessageObject structure to match the incoming JSON data
@@ -39,7 +84,7 @@ public class TablePlayData
 public class MessageObject
 {
     public string Path;
-    public string Data;
+    public MessageData Data;
 }
 
 [System.Serializable]
@@ -189,6 +234,15 @@ public class TableEventData
     public int? PrePlayingIndex;
     public string RoundID;
     public bool? PassingWin;
+}
+
+[System.Serializable]
+public class TablePlayData
+{
+    //public int Index;
+    public Action Action;
+    public string[] Option;
+    public int? DrawnCount;
 }
 
 [System.Serializable]
