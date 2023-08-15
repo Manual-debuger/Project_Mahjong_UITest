@@ -88,4 +88,13 @@ public class RandomSeatEventArgs : EventArgs
         SeatInfos = seatInfos;
     }
 }
+
+public class FloatEventArgs : EventArgs
+{
+    public float f;
+    public FloatEventArgs(float Float)
+    {
+        f = Float;
+    }
+}
 #endregion

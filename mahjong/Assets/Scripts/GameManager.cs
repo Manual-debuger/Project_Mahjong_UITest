@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour,IInitiable
         _inGameUIController.DiscardTileEvent += OnDiscardTileEvent;
         _inGameUIController.OnTileBeHoldingEvent += OnTileBeHoldingEvent;
         _inGameUIController.LeaveTileBeHoldingEvent += OnLeaveTileBeHoldingEvent;
-        
+
         _api.RandomSeatEvent += OnRandomSeatEvent;
     }
 

@@ -21,6 +21,8 @@ public class InGameUIController : MonoBehaviour
     public event EventHandler<DiscardTileEventArgs> DiscardTileEvent;
     public event EventHandler<TileSuitEventArgs> OnTileBeHoldingEvent;
     public event EventHandler<TileSuitEventArgs> LeaveTileBeHoldingEvent;
+    public event EventHandler<FloatEventArgs> SetMusicEvent;
+    public event EventHandler<FloatEventArgs> SetSoundEvent;
 
     private int NumberOfRemainingTiles = 17;
     public List<TileSuits> HandTileSuits = new() {
@@ -44,6 +46,8 @@ public class InGameUIController : MonoBehaviour
         _handTilesUIViewer.DiscardTileEvent += DiscardTile;
         _handTilesUIViewer.OnPointerDownEvent += OnDiscardTileSuggestEvent;
         _handTilesUIViewer.OnPointerUpEvent += LeaveDiscardTileSuggestEvent;
+        _settingUIButton.SetMusicEvent += SetMusic;
+        _settingUIButton.SetSoundEvent += SetSound;
     }    
     // Start is called before the first frame update
     void Start()
@@ -72,7 +76,7 @@ public class InGameUIController : MonoBehaviour
     }
     private void OnDiscardTileSuggestEvent(object sender, TileIndexEventArgs e)
     {
-        Debug.Log("OnDiscardTileSuggestEvent");
+        //Debug.Log("OnDiscardTileSuggestEvent");
         //我猜你會需要這個
         //new TileSuitEventArgs(HandTileSuits[e.TileIndex])
         OnTileBeHoldingEvent?.Invoke(this, new TileSuitEventArgs(HandTileSuits[e.TileIndex]));
@@ -80,7 +84,7 @@ public class InGameUIController : MonoBehaviour
 
     private void LeaveDiscardTileSuggestEvent(object sender, TileIndexEventArgs e)
     {
-        Debug.Log("LeaveDiscardTileSuggestEvent");
+        //Debug.Log("LeaveDiscardTileSuggestEvent");
         LeaveTileBeHoldingEvent?.Invoke(this, new TileSuitEventArgs(HandTileSuits[e.TileIndex]));
     }
 
@@ -107,6 +111,19 @@ public class InGameUIController : MonoBehaviour
             _handTilesUIViewer.HandTileSet(i, HandTileSuits[i]);
         }
     }
+
+    private void SetMusic(object sender, FloatEventArgs e)
+    {
+        //Debug.Log(e.f);
+        SetMusicEvent?.Invoke(this, e);
+    }
+
+    private void SetSound(object sender, FloatEventArgs e)
+    {
+        //Debug.Log(e.f);
+        SetSoundEvent?.Invoke(this, e);
+    }
+
     public SettingUIButton SettingUIButton
     {
         get => default;
