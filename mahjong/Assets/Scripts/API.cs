@@ -18,10 +18,20 @@ public class API : MonoBehaviour
 
     private bool isLoggedInAndEnterTable = false; // 僅在初次按下進入遊戲登入且成功進桌時會被設定
 
+    private long Time;
+    private long? PlayingDeadline;
     private string NowState = "";
     private string NextState = "";
 
     public event EventHandler<RandomSeatEventArgs> RandomSeatEvent;
+    public event EventHandler<DecideBankerEventArgs> DecideBankerEvent;
+    public event EventHandler<OpenDoorEventArgs> OpenDoorEvent;
+    public event EventHandler<GroundingFlowerEventArgs> GroundingFlowerEvent;
+    public event EventHandler<PlayingEventArgs> PlayingEvent;
+    public event EventHandler<DiscardActionEventArgs> DiscardEvent;
+    public event EventHandler<DrawnActionEventArgs> DrawnEvent;
+    public event EventHandler<GroundingFlowerActionEventArgs> GroundingFlowerActionEvent;
+
 
     private void Awake()
     {
@@ -117,11 +127,9 @@ public class API : MonoBehaviour
 
     private void HandleMessage(string data)
     {
-        Debug.Log("1111111 From Server: " + data);
+        Debug.Log("From Server: " + data);
         // Parse the incoming JSON data into a Unity C# object
-
         MessageObject message = JsonConvert.DeserializeObject<MessageObject>(data);
-        Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(message.Data));
 
         // Switch based on the Path to handle different message types
         switch (message.Path)
@@ -171,37 +179,34 @@ public class API : MonoBehaviour
 
     private void HandleTableEvent(MessageData eventData)
     {
-        Debug.Log("Event data:" + eventData);
-        
         try
         {
             //TableEventData eventData = JsonUtility.FromJson<TableEventData>(data);
             Debug.Log("TableEvent: " + eventData.State);
 
+            Time = eventData.Time;
             switch (eventData.State)
             {
                 case "Waiting":
                     //GameClass.instance.HandleWaitingState(eventData);
                     break;
                 case "RandomSeat":
-                    Debug.Log("TableEvent.seat: " + eventData.Seats);
-                    RandomSeat(eventData);
-                    //GameClass.instance.HandleRandomSeatState(eventData);
+                    HandleRandomSeatState(eventData);
                     break;
                 case "DecideBanker":
-                    //GameClass.instance.HandleDecideBankerState(eventData);
+                    HandleDecideBankerState(eventData);
                     break;
                 case "OpenDoor":
-                    //GameClass.instance.HandleOpenDoorState(eventData);
+                    HandleOpenDoorState(eventData);
                     break;
                 case "GroundingFlower":
-                    //GameClass.instance.HandleGroundingFlowerState(eventData);
+                    HandleGroundingFlowerState(eventData);
                     break;
                 case "SortingTiles":
                     //GameClass.instance.HandleSortingTiles(eventData);
                     break;
                 case "Playing":
-                    //GameClass.instance.HandlePlayingState(eventData);
+                    HandlePlayingState(eventData);
                     break;
                 case "DelayPlaying":
                     //GameClass.instance.HandleDelayPlayingState(eventData);
@@ -239,8 +244,6 @@ public class API : MonoBehaviour
 
     private void HandleTablePlay(MessageData playData)
     {
-        //TablePlayData playData = JsonUtility.FromJson<TablePlayData>(data);
-        Debug.Log("TablePlay");
         if (playData != null)
         {
             switch (playData.Action)
@@ -248,6 +251,7 @@ public class API : MonoBehaviour
                 case Action.Pass:
                     break;
                 case Action.Discard:
+                    HandleDiscardAction(playData);
                     break;
                 case Action.Chow:
                     break;
@@ -261,13 +265,15 @@ public class API : MonoBehaviour
                     break;
                 case Action.Win:
                     break;
-                case Action.Drawn: // 抽
-                    break;
-                case Action.SelfDrawnWin:
+                case Action.Drawn: // Action:9 摸牌
+                    HandleDrawnAction(playData);
                     break;
                 case Action.GroundingFlower:
+                    HandleGroundingFlowerAction(playData);
                     break;
                 case Action.DrawnFromDeadWall:
+                    break;
+                case Action.SelfDrawnWin:
                     break;
             }
         }
@@ -282,21 +288,99 @@ public class API : MonoBehaviour
         // Implement the logic for handling the table result message
     }
 
-    public void RandomSeat(MessageData eventData)
+    public void HandleRandomSeatState(MessageData eventData)
     {
-        long dateTime = eventData.Time;
-        long? nextTime = eventData.NextStateTime;
-
-        Debug.Log("RandomSeat Invoke");
-        Debug.Log(eventData.Seats);
+        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
 
         RandomSeatEventArgs randomSeatEventArgs = new RandomSeatEventArgs(eventData.Seats);
-        Debug.Log(randomSeatEventArgs.SeatInfos);
-        RandomSeatEvent?.Invoke(this, randomSeatEventArgs);
+        
         if (NowState != eventData.State)
         {
-            
+            NowState = eventData.State;
+            RandomSeatEvent?.Invoke(this, randomSeatEventArgs);
         }
+    }
+
+    public void HandleDecideBankerState(MessageData eventData)
+    {
+        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
+
+        DecideBankerEventArgs decideBankerEventArgs = new DecideBankerEventArgs(eventData.BankerIndex);
+
+        if (NowState != eventData.State)
+        {
+            NowState = eventData.State;
+            DecideBankerEvent?.Invoke(this, decideBankerEventArgs);
+        }
+    }
+
+    public void HandleOpenDoorState(MessageData eventData)
+    {
+        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
+
+        OpenDoorEventArgs openDoorEventArgs = new OpenDoorEventArgs(eventData.WallCount, eventData.Tiles);
+
+        if (NowState != eventData.State)
+        {
+            NowState = eventData.State;
+            OpenDoorEvent?.Invoke(this, openDoorEventArgs);
+        }
+    }
+    
+    public void HandleGroundingFlowerState(MessageData eventData)
+    {
+        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
+
+        GroundingFlowerEventArgs groundingFlowerEventArgs = new GroundingFlowerEventArgs(eventData.WallCount, eventData.Tiles, eventData.Seats);
+
+        //Debug.Log("HandleGroundingFlowerState");
+        //Debug.Log("NowState:" + NowState);
+        if (NowState != eventData.State)
+        {
+            NowState = eventData.State;
+            GroundingFlowerEvent?.Invoke(this, groundingFlowerEventArgs);
+        }
+    }
+    
+    public void HandlePlayingState(MessageData eventData)
+    {
+        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
+
+        PlayingEventArgs playingEventArgs = new PlayingEventArgs(eventData.PlayingIndex, eventData.PlayingDeadline, eventData.WallCount, eventData.Tiles, eventData.Seats);
+
+        // Playing State not change until action
+        if(PlayingDeadline != eventData.PlayingDeadline)
+        {
+            PlayingDeadline = eventData.PlayingDeadline;
+            PlayingEvent?.Invoke(this, playingEventArgs);
+        }
+    }
+    
+    public void HandleDiscardAction(MessageData playData)
+    {
+        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
+
+        DiscardActionEventArgs discardActionEventArgs = new DiscardActionEventArgs(playData.Index, playData.Action, playData.Options);
+
+        DiscardEvent?.Invoke(this, discardActionEventArgs);
+    }
+    
+    public void HandleDrawnAction(MessageData playData)
+    {
+        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
+
+        DrawnActionEventArgs drawnActionEventArgs = new DrawnActionEventArgs(playData.Index, playData.Action, playData.DrawnCount);
+
+        DrawnEvent?.Invoke(this, drawnActionEventArgs);
+    }
+    
+    public void HandleGroundingFlowerAction(MessageData playData)
+    {
+        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
+
+        GroundingFlowerActionEventArgs groundingFlowerActionEventArgs = new GroundingFlowerActionEventArgs(playData.Index, playData.Action, playData.DrawnCount);
+
+        GroundingFlowerActionEvent?.Invoke(this, groundingFlowerActionEventArgs);
     }
 
     // Call this method to send data to the WebSocket server

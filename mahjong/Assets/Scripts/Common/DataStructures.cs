@@ -80,14 +80,106 @@ public class TileSuitEventArgs : EventArgs
     }
 }
 
+#region State Event
 public class RandomSeatEventArgs : EventArgs
 {
     public SeatInfo[] SeatInfos;
-    public RandomSeatEventArgs(SeatInfo[] seatInfos)
+    public RandomSeatEventArgs(SeatInfo[] seats)
     {
-        SeatInfos = seatInfos;
+        SeatInfos = seats;
     }
 }
+
+public class DecideBankerEventArgs : EventArgs
+{
+    public int? BankerIndex;
+    public DecideBankerEventArgs(int? bankerIndex)
+    {
+        BankerIndex = bankerIndex;
+    }
+}
+
+public class OpenDoorEventArgs : EventArgs
+{
+    public int? WallCount;
+    public string[] Tiles;
+    public OpenDoorEventArgs(int? wallCount, string[] tiles)
+    {
+        WallCount = wallCount;
+        Tiles = tiles;
+    }
+}
+
+public class GroundingFlowerEventArgs : EventArgs
+{
+    public int? WallCount;
+    public string[] Tiles;
+    public SeatInfo[] Seats;
+    public GroundingFlowerEventArgs(int? wallCount, string[] tiles, SeatInfo[] seats)
+    {
+        WallCount = wallCount;
+        Tiles = tiles;
+        Seats = seats;
+    }
+}
+
+public class PlayingEventArgs : EventArgs
+{
+    public int? PlayingIndex;
+    public long? PlayingDeadline;
+    public int? WallCount;
+    public string[] Tiles;
+    public SeatInfo[] Seats;
+    public PlayingEventArgs(int? playingIndex, long? playingDeadline, int? wallCount, string[] tiles, SeatInfo[] seats)
+    {
+        PlayingIndex = playingIndex;
+        PlayingDeadline = playingDeadline;
+        WallCount = wallCount;
+        Tiles = tiles;
+        Seats = seats;
+    }
+}
+#endregion
+#region Action Event
+public class DiscardActionEventArgs : EventArgs
+{
+    public int Index;
+    public Action Action;
+    public List<string[]> Options;
+    public DiscardActionEventArgs(int index, Action action, List<string[]> options)
+    {
+        Index = index;
+        Action = action;
+        Options = options;
+    }
+}
+
+public class DrawnActionEventArgs : EventArgs
+{
+    public int Index;
+    public Action Action;
+    public int? DrawnCount;
+    public DrawnActionEventArgs(int index, Action action, int? drawnCount)
+    {
+        Index = index;
+        Action = action;
+        DrawnCount = drawnCount;
+    }
+}
+
+public class GroundingFlowerActionEventArgs : EventArgs
+{
+    public int Index;
+    public Action Action;
+    public int? DrawnCount;
+    public GroundingFlowerActionEventArgs(int index, Action action, int? drawnCount)
+    {
+        Index = index;
+        Action = action;
+        DrawnCount = drawnCount;
+    }
+}
+#endregion
 
 public class FloatEventArgs : EventArgs
 {

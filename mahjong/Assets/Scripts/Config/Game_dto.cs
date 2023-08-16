@@ -3,53 +3,71 @@ using System.Collections.Generic;
 
 public class Seat<T>
 {
+    public string Name; // 玩家ID
+    public string Nickname; // 玩家名
     public string Avatar; // 頭像
     public string AvatarBackground; // 頭像背景
     public int Gender; //  0 男生 1 女生 
     public string VoiceLanguage; // 0 國語 1 台語
-    public string Name; // 玩家ID
-    public string Nickname; // 玩家名
+    public int? TileCount; // 玩家手牌數量
+    public string[] Flowers; // 玩家花牌
+    public string[] Sea; // 玩家海底
+    public string DoorWind; // 玩家此局風向
+    public int WinScores; // 該場遊戲輸贏分
+
+
     public int Scores; // 玩家金錢分數
     public int Index; // 玩家在陣列中的index
     public int? WinCount; // 玩家贏的場次
     public int? LoseCount; // 玩家輸的場次
-    public T Flowers; // 玩家花牌
-    public T Sea; // 玩家海底
     public List<T> Door; // 玩家有碰槓吃等資訊
-    public string DoorWind; // 玩家此局風向
-    public int? TileCount; // 玩家手牌數量
+    
     public bool? Ready; // 是否準備
     public bool? ReadyHand; // 是否聽
     public int[] Location; // 玩家座標位置
-    public bool? AutoPlaying; // 是否託管 
-    public int WinScores; // 該場遊戲輸贏分
+    public bool? AutoPlaying; // 是否託管
+    
+}
+
+public class SeatInfo : Seat<List<string[]>>
+{
 }
 
 [System.Serializable]
 public class MessageData
 {
-    public int Ante;
-    public int ScorePerPoint;
+    #region Event data
+    public long Time;
     public int ClubID;
     public int TableID;
+    public string State;
+    public int? PlayingIndex;
+    public long? PlayingDeadline;
+    public long? NextStateTime;
+    public int Index;
+    public int Round;
     public int MaxHand;
     public int Hand;
-    public int Round;
-    public int Index;
-    public SeatInfo[] Seats;
-    public string State;
-    public long Time;
-    public ActionData[] Actions;
-    public long? NextStateTime;
-    public int? Dice;
-    public string[] Doras;
-    public int? BankerIndex;
-    public int? RemainingBankerCount;
     public int? WallCount;
-    public int? PlayingIndex;
+    public int? BankerIndex;
+    public int? Dice;
     public string[] Tiles;
+    public ActionData[] Actions;
+    public SeatInfo[] Seats;
+    public int Ante;
+    public int ScorePerPoint;
+    public string[] Doras;
+    #endregion
+
+    #region Play data
+    // public int Index; Have it already
+    public Action Action;
+    public int? DrawnCount;
+    public List<string[]> Options;
+    #endregion
+
+    public int? RemainingBankerCount;
     public List<string[]> Door;
-    public long? PlayingDeadline;
     public List<string[]> AllTiles;
     public ListeningTilesType ListeningTiles;
     // 遊戲回放給予
@@ -59,11 +77,9 @@ public class MessageData
 
 
     public Action ID;
-    public List<string[]> Options;
     public ReadyInfoType ReadyInfo;
 
-    public Action Action;
-    public int? DrawnCount;
+    
 
     public string NickName;
     public int PlayerID;
@@ -199,9 +215,7 @@ public class TableEnterObject
     public object Data;
 }
 
-public class SeatInfo : Seat<List<string[]>>
-{
-}
+
 
 [Serializable]
 public class TableEventData

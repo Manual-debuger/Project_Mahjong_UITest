@@ -27,6 +27,13 @@ public class GameManager : MonoBehaviour,IInitiable
         _inGameUIController.LeaveTileBeHoldingEvent += OnLeaveTileBeHoldingEvent;
 
         _api.RandomSeatEvent += OnRandomSeatEvent;
+        _api.DecideBankerEvent += OnDecideBankerEvent;
+        _api.OpenDoorEvent += OnOpenDoorEvent;
+        _api.GroundingFlowerEvent += OnGroundingFlowerEvent;
+        _api.PlayingEvent += OnPlayingEvent;
+        _api.DiscardEvent += OnDiscardActionEvent;
+        _api.DrawnEvent += OnDrawnActionEvent;
+        _api.GroundingFlowerActionEvent += OnGroundingFlowerActionEvent;
     }
 
   
@@ -89,9 +96,50 @@ public class GameManager : MonoBehaviour,IInitiable
     #region API handle
     private void OnRandomSeatEvent(object sender, RandomSeatEventArgs e)
     {
-        Debug.Log("RandomSeatEvent");
+        Debug.Log("!!!!!!!!!!!!OnRandomSeatEvent!!!!!!!!!!!!");
         //throw new System.NotImplementedException();
     }
 
+    private void OnDecideBankerEvent(object sender, DecideBankerEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnDecideBankerEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+
+    private void OnOpenDoorEvent(object sender, OpenDoorEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnOpenDoorEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+
+    private void OnGroundingFlowerEvent(object sender, GroundingFlowerEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnGroundingFlowerEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+    
+    private void OnPlayingEvent(object sender, PlayingEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnPlayingEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+    
+    private void OnDiscardActionEvent(object sender, DiscardActionEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnDiscardActionEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+    
+    private void OnDrawnActionEvent(object sender, DrawnActionEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnDrawnActionEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+    
+    private void OnGroundingFlowerActionEvent(object sender, GroundingFlowerActionEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnGroundingFlowerActionEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
     #endregion
 }
