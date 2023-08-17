@@ -28,6 +28,9 @@ public class API : MonoBehaviour
     public event EventHandler<OpenDoorEventArgs> OpenDoorEvent;
     public event EventHandler<GroundingFlowerEventArgs> GroundingFlowerEvent;
     public event EventHandler<PlayingEventArgs> PlayingEvent;
+    public event EventHandler<WaitingActionEventArgs> WaitingActionEvent;
+
+    public event EventHandler<PassActionEventArgs> PassEvent;
     public event EventHandler<DiscardActionEventArgs> DiscardEvent;
     public event EventHandler<DrawnActionEventArgs> DrawnEvent;
     public event EventHandler<GroundingFlowerActionEventArgs> GroundingFlowerActionEvent;
@@ -188,7 +191,7 @@ public class API : MonoBehaviour
             switch (eventData.State)
             {
                 case "Waiting":
-                    //GameClass.instance.HandleWaitingState(eventData);
+                    NowState = eventData.State;
                     break;
                 case "RandomSeat":
                     HandleRandomSeatState(eventData);
@@ -212,7 +215,7 @@ public class API : MonoBehaviour
                     //GameClass.instance.HandleDelayPlayingState(eventData);
                     break;
                 case "WaitingAction":
-                    //GameClass.instance.HandleWaitingActionState(eventData);
+                    HandleWaitingActionState(eventData);
                     break;
                 case "HandEnd":
                     //GameClass.instance.HandleHandEndState(eventData);
@@ -249,6 +252,7 @@ public class API : MonoBehaviour
             switch (playData.Action)
             {
                 case Action.Pass:
+                    HandlePassAction(playData);
                     break;
                 case Action.Discard:
                     HandleDiscardAction(playData);
@@ -290,86 +294,144 @@ public class API : MonoBehaviour
 
     public void HandleRandomSeatState(MessageData eventData)
     {
-        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
-
-        RandomSeatEventArgs randomSeatEventArgs = new RandomSeatEventArgs(eventData.Seats);
-        
-        if (NowState != eventData.State)
+        RandomSeatEventArgs randomSeatEventArgs = new (eventData.Index, eventData.Seats);
+        try
         {
-            NowState = eventData.State;
-            RandomSeatEvent?.Invoke(this, randomSeatEventArgs);
+            if (NowState != eventData.State)
+            {
+                NowState = eventData.State;
+                RandomSeatEvent?.Invoke(this, randomSeatEventArgs);
+            }
+        }
+        catch(Exception e)
+        {
+            Debug.LogError("Error HandleRandomSeatState: " + e.Message);
         }
     }
 
     public void HandleDecideBankerState(MessageData eventData)
     {
-        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
+        try
+        { 
+            DecideBankerEventArgs decideBankerEventArgs = new (eventData.BankerIndex);
 
-        DecideBankerEventArgs decideBankerEventArgs = new DecideBankerEventArgs(eventData.BankerIndex);
-
-        if (NowState != eventData.State)
+            if (NowState != eventData.State)
+            {
+                NowState = eventData.State;
+                DecideBankerEvent?.Invoke(this, decideBankerEventArgs);
+            }
+        }
+        catch(Exception e)
         {
-            NowState = eventData.State;
-            DecideBankerEvent?.Invoke(this, decideBankerEventArgs);
+            Debug.LogError("Error HandleDecideBankerState: " + e.Message);
         }
     }
 
     public void HandleOpenDoorState(MessageData eventData)
     {
-        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
+        try 
+        { 
+            List<TileSuits> tileSuitsList = ReturnTileToIndex(eventData.Tiles);
 
-        OpenDoorEventArgs openDoorEventArgs = new OpenDoorEventArgs(eventData.WallCount, eventData.Tiles);
+            OpenDoorEventArgs openDoorEventArgs = new (eventData.WallCount, tileSuitsList);
 
-        if (NowState != eventData.State)
+            if (NowState != eventData.State)
+            {
+                NowState = eventData.State;
+                OpenDoorEvent?.Invoke(this, openDoorEventArgs);
+            }
+        }
+        catch(Exception e)
         {
-            NowState = eventData.State;
-            OpenDoorEvent?.Invoke(this, openDoorEventArgs);
+            Debug.LogError("Error HandleOpenDoorState: " + e.Message);
         }
     }
     
     public void HandleGroundingFlowerState(MessageData eventData)
     {
-        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
-
-        GroundingFlowerEventArgs groundingFlowerEventArgs = new GroundingFlowerEventArgs(eventData.WallCount, eventData.Tiles, eventData.Seats);
-
-        //Debug.Log("HandleGroundingFlowerState");
-        //Debug.Log("NowState:" + NowState);
-        if (NowState != eventData.State)
+        try
         {
-            NowState = eventData.State;
-            GroundingFlowerEvent?.Invoke(this, groundingFlowerEventArgs);
+            List<TileSuits> tileSuitsList = ReturnTileToIndex(eventData.Tiles);
+
+            GroundingFlowerEventArgs groundingFlowerEventArgs = new (eventData.WallCount, tileSuitsList, eventData.Seats);
+
+            if (NowState != eventData.State)
+            {
+                NowState = eventData.State;
+                GroundingFlowerEvent?.Invoke(this, groundingFlowerEventArgs);
+            }
+        }
+        catch(Exception e)
+        {
+            Debug.LogError("Error HandleGroundingFlowerState: " + e.Message);
         }
     }
     
     public void HandlePlayingState(MessageData eventData)
     {
-        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
-
-        PlayingEventArgs playingEventArgs = new PlayingEventArgs(eventData.PlayingIndex, eventData.PlayingDeadline, eventData.WallCount, eventData.Tiles, eventData.Seats);
-
-        // Playing State not change until action
-        if(PlayingDeadline != eventData.PlayingDeadline)
+        try
         {
-            PlayingDeadline = eventData.PlayingDeadline;
-            PlayingEvent?.Invoke(this, playingEventArgs);
+            List<TileSuits> tileSuitsList = ReturnTileToIndex(eventData.Tiles);
+
+            PlayingEventArgs playingEventArgs = new (eventData.PlayingIndex, eventData.PlayingDeadline, eventData.WallCount, tileSuitsList, eventData.Seats);
+
+            // Playing State not change until action
+            if(PlayingDeadline != eventData.PlayingDeadline)
+            {
+                PlayingDeadline = eventData.PlayingDeadline;
+                PlayingEvent?.Invoke(this, playingEventArgs);
+            }
         }
+        catch(Exception e)
+        {
+            Debug.LogError("Error HandleGroundingFlowerState: " + e.Message);
+        }
+    }
+    
+    public void HandleWaitingActionState(MessageData eventData)
+    {
+        try
+        {
+            List<TileSuits> tileSuitsList = ReturnTileToIndex(eventData.Tiles);
+
+            WaitingActionEventArgs waitingActionEventArgs = new (eventData.PlayingIndex, eventData.PlayingDeadline, eventData.WallCount, tileSuitsList, eventData.Actions, eventData.Seats);
+
+            // Playing State not change until action
+            if(PlayingDeadline != eventData.PlayingDeadline)
+            {
+                PlayingDeadline = eventData.PlayingDeadline;
+                WaitingActionEvent?.Invoke(this, waitingActionEventArgs);
+            }
+        }
+        catch(Exception e)
+        {
+            Debug.LogError("Error HandleGroundingFlowerState: " + e.Message);
+        }
+    }
+    
+    public void HandlePassAction(MessageData playData)
+    {
+
+        DiscardActionEventArgs discardActionEventArgs = new (playData.Index, playData.Action, playData.Options);
+
+        DiscardEvent?.Invoke(this, discardActionEventArgs);
     }
     
     public void HandleDiscardAction(MessageData playData)
     {
         //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
 
-        DiscardActionEventArgs discardActionEventArgs = new DiscardActionEventArgs(playData.Index, playData.Action, playData.Options);
+        DiscardActionEventArgs discardActionEventArgs = new (playData.Index, playData.Action, playData.Options);
 
         DiscardEvent?.Invoke(this, discardActionEventArgs);
     }
     
+        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
     public void HandleDrawnAction(MessageData playData)
     {
         //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
 
-        DrawnActionEventArgs drawnActionEventArgs = new DrawnActionEventArgs(playData.Index, playData.Action, playData.DrawnCount);
+        DrawnActionEventArgs drawnActionEventArgs = new (playData.Index, playData.Action, playData.DrawnCount);
 
         DrawnEvent?.Invoke(this, drawnActionEventArgs);
     }
@@ -378,7 +440,7 @@ public class API : MonoBehaviour
     {
         //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
 
-        GroundingFlowerActionEventArgs groundingFlowerActionEventArgs = new GroundingFlowerActionEventArgs(playData.Index, playData.Action, playData.DrawnCount);
+        GroundingFlowerActionEventArgs groundingFlowerActionEventArgs = new (playData.Index, playData.Action, playData.DrawnCount);
 
         GroundingFlowerActionEvent?.Invoke(this, groundingFlowerActionEventArgs);
     }
@@ -394,7 +456,6 @@ public class API : MonoBehaviour
 
     private async Task SendData(string data)
     {
-
         var buffer = new ArraySegment<byte>(Encoding.UTF8.GetBytes(data));
         await socket.SendAsync(buffer, WebSocketMessageType.Text, true, cancellationTokenSource.Token);
     }
@@ -412,5 +473,43 @@ public class API : MonoBehaviour
     private void OnDestroy()
     {
         CloseConnection().Wait();
+    }
+
+    private static List<TileSuits> ReturnTileToIndex(string[] data)
+    {
+        if (data != null && data.Length > 0)
+        {
+            List<TileSuits> tileSuitsList = new List<TileSuits>();
+
+            foreach (string tile in data)
+            {
+                if (tile[0] == '_')
+                {
+                    string typeString = tile.Substring(1, 2);
+                    if (Enum.TryParse(typeString, out TileSuits tileSuit))
+                    {
+                        tileSuitsList.Add(tileSuit + 100);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Error: Invalid tile value '{tile}'. Possible values are: {string.Join(", ", Enum.GetNames(typeof(TileSuits)))}");
+                    }
+                }
+                else
+                {
+                    if (Enum.TryParse(tile, out TileSuits tileSuit))
+                    {
+                        tileSuitsList.Add(tileSuit);
+                    }
+                    // Handle error case if enum parsing fails
+                }
+            }
+
+            return tileSuitsList;
+        }
+        else
+        {
+            return new List<TileSuits>();
+        }
     }
 }

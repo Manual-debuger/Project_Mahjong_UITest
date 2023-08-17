@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour,IInitiable
         _api.OpenDoorEvent += OnOpenDoorEvent;
         _api.GroundingFlowerEvent += OnGroundingFlowerEvent;
         _api.PlayingEvent += OnPlayingEvent;
+        _api.WaitingActionEvent += OnWaitingActionEvent;
+        _api.PassEvent += OnPassActionEvent;
         _api.DiscardEvent += OnDiscardActionEvent;
         _api.DrawnEvent += OnDrawnActionEvent;
         _api.GroundingFlowerActionEvent += OnGroundingFlowerActionEvent;
@@ -97,7 +99,7 @@ public class GameManager : MonoBehaviour,IInitiable
     #region API handle
     private void OnRandomSeatEvent(object sender, RandomSeatEventArgs e)
     {
-        foreach (SeatInfo seatInfo in e.SeatInfos)
+        foreach (SeatInfo seatInfo in e.SeatInfos)  
         {
            _playerControllers[seatInfo.Index].SetSeatInfo(seatInfo);
             _centralAreaController.SetScore(seatInfo.Index, seatInfo.WinScores);
@@ -116,6 +118,10 @@ public class GameManager : MonoBehaviour,IInitiable
     private void OnOpenDoorEvent(object sender, OpenDoorEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnOpenDoorEvent!!!!!!!!!!!!");
+        foreach(int tileIndex in e.Tiles)
+        {
+            Debug.Log(tileIndex);
+        }
         //throw new System.NotImplementedException();
     }
 
@@ -128,6 +134,18 @@ public class GameManager : MonoBehaviour,IInitiable
     private void OnPlayingEvent(object sender, PlayingEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnPlayingEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+    
+    private void OnWaitingActionEvent(object sender, WaitingActionEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnWaitingActionEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+    
+    private void OnPassActionEvent(object sender, PassActionEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnPassActionEvent!!!!!!!!!!!!");
         //throw new System.NotImplementedException();
     }
     

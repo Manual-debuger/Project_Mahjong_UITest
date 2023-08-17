@@ -83,9 +83,11 @@ public class TileSuitEventArgs : EventArgs
 #region State Event
 public class RandomSeatEventArgs : EventArgs
 {
+    public int Index;
     public SeatInfo[] SeatInfos;
-    public RandomSeatEventArgs(SeatInfo[] seats)
+    public RandomSeatEventArgs(int index, SeatInfo[] seats)
     {
+        Index = index;
         SeatInfos = seats;
     }
 }
@@ -102,8 +104,8 @@ public class DecideBankerEventArgs : EventArgs
 public class OpenDoorEventArgs : EventArgs
 {
     public int? WallCount;
-    public string[] Tiles;
-    public OpenDoorEventArgs(int? wallCount, string[] tiles)
+    public List<TileSuits> Tiles;
+    public OpenDoorEventArgs(int? wallCount, List<TileSuits> tiles)
     {
         WallCount = wallCount;
         Tiles = tiles;
@@ -113,9 +115,9 @@ public class OpenDoorEventArgs : EventArgs
 public class GroundingFlowerEventArgs : EventArgs
 {
     public int? WallCount;
-    public string[] Tiles;
+    public List<TileSuits> Tiles;
     public SeatInfo[] Seats;
-    public GroundingFlowerEventArgs(int? wallCount, string[] tiles, SeatInfo[] seats)
+    public GroundingFlowerEventArgs(int? wallCount, List<TileSuits> tiles, SeatInfo[] seats)
     {
         WallCount = wallCount;
         Tiles = tiles;
@@ -128,9 +130,9 @@ public class PlayingEventArgs : EventArgs
     public int? PlayingIndex;
     public long? PlayingDeadline;
     public int? WallCount;
-    public string[] Tiles;
+    public List<TileSuits> Tiles;
     public SeatInfo[] Seats;
-    public PlayingEventArgs(int? playingIndex, long? playingDeadline, int? wallCount, string[] tiles, SeatInfo[] seats)
+    public PlayingEventArgs(int? playingIndex, long? playingDeadline, int? wallCount, List<TileSuits> tiles, SeatInfo[] seats)
     {
         PlayingIndex = playingIndex;
         PlayingDeadline = playingDeadline;
@@ -139,14 +141,57 @@ public class PlayingEventArgs : EventArgs
         Seats = seats;
     }
 }
+
+public class WaitingActionEventArgs : EventArgs
+{
+    public int? PlayingIndex;
+    public long? PlayingDeadline;
+    public int? WallCount;
+    public List<TileSuits> Tiles;
+    public ActionData[] Actions;
+    public SeatInfo[] Seats;
+    public WaitingActionEventArgs(int? playingIndex, long? playingDeadline, int? wallCount, List<TileSuits> tiles, ActionData[] actions, SeatInfo[] seats)
+    {
+        PlayingIndex = playingIndex;
+        PlayingDeadline = playingDeadline;
+        WallCount = wallCount;
+        Tiles = tiles;
+        Actions = actions;
+        Seats = seats;
+    }
+}
 #endregion
 #region Action Event
+public class PassActionEventArgs : EventArgs
+{
+    public int Index;
+    public Action Action;
+    public PassActionEventArgs(int index, Action action)
+    {
+        Index = index;
+        Action = action;
+    }
+}
+
 public class DiscardActionEventArgs : EventArgs
 {
     public int Index;
     public Action Action;
     public List<string[]> Options;
     public DiscardActionEventArgs(int index, Action action, List<string[]> options)
+    {
+        Index = index;
+        Action = action;
+        Options = options;
+    }
+}
+
+public class ChowActionEventArgs : EventArgs
+{
+    public int Index;
+    public Action Action;
+    public List<string[]> Options;
+    public ChowActionEventArgs(int index, Action action, List<string[]> options)
     {
         Index = index;
         Action = action;
