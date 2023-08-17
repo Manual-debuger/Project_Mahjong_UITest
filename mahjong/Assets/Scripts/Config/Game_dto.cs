@@ -60,7 +60,7 @@ public class MessageData
     #endregion
 
     #region Play data
-    // public int Index; Have it already
+    // public int SelfSeatIndex; Have it already
     public Action Action;
     public int? DrawnCount;
     public List<string[]> Options;
@@ -253,7 +253,7 @@ public class TableEventData
 [System.Serializable]
 public class TablePlayData
 {
-    //public int Index;
+    //public int SelfSeatIndex;
     public Action Action;
     public string[] Option;
     public int? DrawnCount;

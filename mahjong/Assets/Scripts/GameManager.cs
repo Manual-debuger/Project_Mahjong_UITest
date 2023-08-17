@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour,IInitiable
     private static GameManager _instance;    
 
     public static GameManager Instance { get { return _instance; } }
+    private int _playerIndex;
     [SerializeField] private AbandonedTilesAreaController _abandonedTilesAreaController;
     [SerializeField] private CentralAreaController _centralAreaController;
     [SerializeField] private PlayerControllerBase[] _playerControllers;
@@ -99,9 +100,11 @@ public class GameManager : MonoBehaviour,IInitiable
     #region API handle
     private void OnRandomSeatEvent(object sender, RandomSeatEventArgs e)
     {
+        _playerIndex = e.SelfSeatIndex;
         foreach (SeatInfo seatInfo in e.SeatInfos)  
         {
            _playerControllers[seatInfo.Index].SetSeatInfo(seatInfo);
+
             _centralAreaController.SetScore(seatInfo.Index, seatInfo.WinScores);
         }
 

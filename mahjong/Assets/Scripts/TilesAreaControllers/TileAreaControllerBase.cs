@@ -46,6 +46,13 @@ public class TileAreaControllerBase : MonoBehaviour,IInitiable,IReturnTileSuitsA
         return (tileSuit>=TileSuits.c1 && tileSuit <= TileSuits.o7);
     }
 
+    public virtual void SetTiles(List<TileSuits> tileSuits)
+    {
+        foreach(var tileSuit in tileSuits)
+        {
+            AddTile(tileSuit);
+        }
+    }
     public TileSuits[] GetTileSuits()
     {
         TileSuits[] tileSuitsList = new TileSuits[TileCount];

@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441092675885399771}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -7.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
@@ -2124,15 +2124,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _numberOfRemainedTilesTextMeshPro: {fileID: 2221322818441307690}
   _scoresTextMeshProList:
-  - {fileID: 5216349243527489381}
   - {fileID: 185758290490838961}
   - {fileID: 5718251493181655495}
   - {fileID: 4063600863593592885}
+  - {fileID: 5216349243527489381}
   _dealersTextMeshProList:
-  - {fileID: 175896411873043026}
   - {fileID: 2329361887235791238}
   - {fileID: 7139752960288002658}
   - {fileID: 2482864357904757294}
+  - {fileID: 175896411873043026}
 --- !u!1 &7657212017868352305
 GameObject:
   m_ObjectHideFlags: 0

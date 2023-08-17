@@ -83,11 +83,11 @@ public class TileSuitEventArgs : EventArgs
 #region State Event
 public class RandomSeatEventArgs : EventArgs
 {
-    public int Index;
+    public int SelfSeatIndex;
     public SeatInfo[] SeatInfos;
     public RandomSeatEventArgs(int index, SeatInfo[] seats)
     {
-        Index = index;
+        SelfSeatIndex = index;
         SeatInfos = seats;
     }
 }

@@ -43,6 +43,6 @@ public class PlayerControllerBase : MonoBehaviour
     {
         _playerInfoPlateController.SetUserName(seatInfo.Nickname);
         _playerInfoPlateController.SetWindPosision(seatInfo.DoorWind.ToString());
-
+        //_flowerTileAreaController.SetTiles(seatInfo.Flowers);
     }
 }

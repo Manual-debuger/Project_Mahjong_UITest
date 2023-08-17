@@ -36,9 +36,11 @@ public class FlowerTileAreaController : TileAreaControllerBase
                 throw new System.Exception("Error:FlowerTileArea.AddFlowerTile() tileSuit is not flower");
             
            }
-       }
-       
-        
+       }               
     }
-    
+    public override void SetTiles(List<TileSuits> tileSuits)
+    {
+        base.SetTiles(tileSuits);
+    }
+
 }
