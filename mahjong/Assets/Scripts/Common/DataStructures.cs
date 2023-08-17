@@ -84,11 +84,11 @@ public class TileSuitEventArgs : EventArgs
 public class RandomSeatEventArgs : EventArgs
 {
     public int SelfSeatIndex;
-    public SeatInfo[] SeatInfos;
-    public RandomSeatEventArgs(int index, SeatInfo[] seats)
+    public List<SeatInfo> Seats;
+    public RandomSeatEventArgs(int index, List<SeatInfo> seats)
     {
         SelfSeatIndex = index;
-        SeatInfos = seats;
+        Seats = seats;
     }
 }
 
@@ -116,8 +116,8 @@ public class GroundingFlowerEventArgs : EventArgs
 {
     public int? WallCount;
     public List<TileSuits> Tiles;
-    public SeatInfo[] Seats;
-    public GroundingFlowerEventArgs(int? wallCount, List<TileSuits> tiles, SeatInfo[] seats)
+    public List<SeatInfo> Seats;
+    public GroundingFlowerEventArgs(int? wallCount, List<TileSuits> tiles, List<SeatInfo> seats)
     {
         WallCount = wallCount;
         Tiles = tiles;
@@ -131,8 +131,8 @@ public class PlayingEventArgs : EventArgs
     public long? PlayingDeadline;
     public int? WallCount;
     public List<TileSuits> Tiles;
-    public SeatInfo[] Seats;
-    public PlayingEventArgs(int? playingIndex, long? playingDeadline, int? wallCount, List<TileSuits> tiles, SeatInfo[] seats)
+    public List<SeatInfo> Seats;
+    public PlayingEventArgs(int? playingIndex, long? playingDeadline, int? wallCount, List<TileSuits> tiles, List<SeatInfo> seats)
     {
         PlayingIndex = playingIndex;
         PlayingDeadline = playingDeadline;
@@ -149,8 +149,8 @@ public class WaitingActionEventArgs : EventArgs
     public int? WallCount;
     public List<TileSuits> Tiles;
     public ActionData[] Actions;
-    public SeatInfo[] Seats;
-    public WaitingActionEventArgs(int? playingIndex, long? playingDeadline, int? wallCount, List<TileSuits> tiles, ActionData[] actions, SeatInfo[] seats)
+    public List<SeatInfo> Seats;
+    public WaitingActionEventArgs(int? playingIndex, long? playingDeadline, int? wallCount, List<TileSuits> tiles, ActionData[] actions, List<SeatInfo> seats)
     {
         PlayingIndex = playingIndex;
         PlayingDeadline = playingDeadline;
@@ -177,8 +177,8 @@ public class DiscardActionEventArgs : EventArgs
 {
     public int Index;
     public Action Action;
-    public List<string[]> Options;
-    public DiscardActionEventArgs(int index, Action action, List<string[]> options)
+    public List<TileSuits> Options;
+    public DiscardActionEventArgs(int index, Action action, List<TileSuits> options)
     {
         Index = index;
         Action = action;
@@ -190,8 +190,34 @@ public class ChowActionEventArgs : EventArgs
 {
     public int Index;
     public Action Action;
-    public List<string[]> Options;
-    public ChowActionEventArgs(int index, Action action, List<string[]> options)
+    public List<List<TileSuits>> Options;
+    public ChowActionEventArgs(int index, Action action, List<List<TileSuits>> options)
+    {
+        Index = index;
+        Action = action;
+        Options = options;
+    }
+}
+
+public class PongActionEventArgs : EventArgs
+{
+    public int Index;
+    public Action Action;
+    public List<List<TileSuits>> Options;
+    public PongActionEventArgs(int index, Action action, List<List<TileSuits>> options)
+    {
+        Index = index;
+        Action = action;
+        Options = options;
+    }
+}
+
+public class KongActionEventArgs : EventArgs
+{
+    public int Index;
+    public Action Action;
+    public List<List<TileSuits>> Options;
+    public KongActionEventArgs(int index, Action action, List<List<TileSuits>> options)
     {
         Index = index;
         Action = action;

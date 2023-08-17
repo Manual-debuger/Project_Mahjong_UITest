@@ -36,6 +36,9 @@ public class GameManager : MonoBehaviour,IInitiable
         _api.WaitingActionEvent += OnWaitingActionEvent;
         _api.PassEvent += OnPassActionEvent;
         _api.DiscardEvent += OnDiscardActionEvent;
+        _api.ChowEvent += OnChowActionEvent;
+        _api.PongEvent += OnPongActionEvent;
+        _api.KongEvent += OnKongActionEvent;
         _api.DrawnEvent += OnDrawnActionEvent;
         _api.GroundingFlowerActionEvent += OnGroundingFlowerActionEvent;
     }
@@ -101,7 +104,7 @@ public class GameManager : MonoBehaviour,IInitiable
     private void OnRandomSeatEvent(object sender, RandomSeatEventArgs e)
     {
         _playerIndex = e.SelfSeatIndex;
-        foreach (SeatInfo seatInfo in e.SeatInfos)  
+        foreach (SeatInfo seatInfo in e.Seats)  
         {
            _playerControllers[seatInfo.Index].SetSeatInfo(seatInfo);
 
@@ -136,6 +139,18 @@ public class GameManager : MonoBehaviour,IInitiable
     
     private void OnPlayingEvent(object sender, PlayingEventArgs e)
     {
+        /*foreach (SeatInfo seatInfo in e.Seats)
+        {
+            foreach (TileSuits Flower in seatInfo.FlowerTile)
+            {
+                Debug.Log(Flower + "Flowers");
+            }
+            foreach (TileSuits Sea in seatInfo.SeaTile)
+            {
+                Debug.Log(Sea + "Sea");
+            }
+        }*/
+        
         Debug.Log("!!!!!!!!!!!!OnPlayingEvent!!!!!!!!!!!!");
         //throw new System.NotImplementedException();
     }
@@ -155,6 +170,24 @@ public class GameManager : MonoBehaviour,IInitiable
     private void OnDiscardActionEvent(object sender, DiscardActionEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnDiscardActionEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+    
+    private void OnChowActionEvent(object sender, ChowActionEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnChowActionEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+    
+    private void OnPongActionEvent(object sender, PongActionEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnPongActionEvent!!!!!!!!!!!!");
+        //throw new System.NotImplementedException();
+    }
+    
+    private void OnKongActionEvent(object sender, KongActionEventArgs e)
+    {
+        Debug.Log("!!!!!!!!!!!!OnKongActionEvent!!!!!!!!!!!!");
         //throw new System.NotImplementedException();
     }
     

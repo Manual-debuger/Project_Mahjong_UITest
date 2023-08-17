@@ -7,6 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 using Newtonsoft.Json;
+using static UnityEditor.Profiling.RawFrameDataView;
 
 public class API : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class API : MonoBehaviour
     private CancellationTokenSource cancellationTokenSource;
     private Uri uri;
 
-    private bool isLoggedInAndEnterTable = false; // ¶È¦bªì¦¸«ö¤U¶i¤J¹CÀ¸µn¤J¥B¦¨¥\¶i®à®É·|³Q³]©w
+    private bool isLoggedInAndEnterTable = false; // ï¿½È¦bï¿½ì¦¸ï¿½ï¿½ï¿½Uï¿½iï¿½Jï¿½Cï¿½ï¿½ï¿½nï¿½Jï¿½Bï¿½ï¿½ï¿½\ï¿½iï¿½ï¿½É·|ï¿½Qï¿½]ï¿½w
 
     private long Time;
     private long? PlayingDeadline;
@@ -32,6 +33,9 @@ public class API : MonoBehaviour
 
     public event EventHandler<PassActionEventArgs> PassEvent;
     public event EventHandler<DiscardActionEventArgs> DiscardEvent;
+    public event EventHandler<ChowActionEventArgs> ChowEvent;
+    public event EventHandler<PongActionEventArgs> PongEvent;
+    public event EventHandler<KongActionEventArgs> KongEvent;
     public event EventHandler<DrawnActionEventArgs> DrawnEvent;
     public event EventHandler<GroundingFlowerActionEventArgs> GroundingFlowerActionEvent;
 
@@ -258,18 +262,21 @@ public class API : MonoBehaviour
                     HandleDiscardAction(playData);
                     break;
                 case Action.Chow:
+                    HandleChowAction(playData);
                     break;
                 case Action.Pong:
+                    HandlePongAction(playData);
                     break;
                 case Action.Kong:
                 case Action.AdditionKong:
                 case Action.ConcealedKong:
+                    HandleKongAction(playData);
                     break;
                 case Action.ReadyHand:
                     break;
                 case Action.Win:
                     break;
-                case Action.Drawn: // Action:9 ºNµP
+                case Action.Drawn: // Action:9 ï¿½Nï¿½P
                     HandleDrawnAction(playData);
                     break;
                 case Action.GroundingFlower:
@@ -294,9 +301,10 @@ public class API : MonoBehaviour
 
     public void HandleRandomSeatState(MessageData eventData)
     {
-        RandomSeatEventArgs randomSeatEventArgs = new (eventData.Index, eventData.Seats);
         try
         {
+            List<SeatInfo> processedSeats = ProcessAllSeats(eventData.Seats);
+            RandomSeatEventArgs randomSeatEventArgs = new(eventData.Index, processedSeats);
             if (NowState != eventData.State)
             {
                 NowState = eventData.State;
@@ -314,7 +322,6 @@ public class API : MonoBehaviour
         try
         { 
             DecideBankerEventArgs decideBankerEventArgs = new (eventData.BankerIndex);
-
             if (NowState != eventData.State)
             {
                 NowState = eventData.State;
@@ -351,9 +358,10 @@ public class API : MonoBehaviour
     {
         try
         {
+            List<SeatInfo> processedSeats = ProcessAllSeats(eventData.Seats);
             List<TileSuits> tileSuitsList = ReturnTileToIndex(eventData.Tiles);
 
-            GroundingFlowerEventArgs groundingFlowerEventArgs = new (eventData.WallCount, tileSuitsList, eventData.Seats);
+            GroundingFlowerEventArgs groundingFlowerEventArgs = new (eventData.WallCount, tileSuitsList, processedSeats);
 
             if (NowState != eventData.State)
             {
@@ -371,9 +379,10 @@ public class API : MonoBehaviour
     {
         try
         {
+            List<SeatInfo> processedSeats = ProcessAllSeats(eventData.Seats);
             List<TileSuits> tileSuitsList = ReturnTileToIndex(eventData.Tiles);
 
-            PlayingEventArgs playingEventArgs = new (eventData.PlayingIndex, eventData.PlayingDeadline, eventData.WallCount, tileSuitsList, eventData.Seats);
+            PlayingEventArgs playingEventArgs = new (eventData.PlayingIndex, eventData.PlayingDeadline, eventData.WallCount, tileSuitsList, processedSeats);
 
             // Playing State not change until action
             if(PlayingDeadline != eventData.PlayingDeadline)
@@ -392,9 +401,10 @@ public class API : MonoBehaviour
     {
         try
         {
+            List<SeatInfo> processedSeats = ProcessAllSeats(eventData.Seats);
             List<TileSuits> tileSuitsList = ReturnTileToIndex(eventData.Tiles);
 
-            WaitingActionEventArgs waitingActionEventArgs = new (eventData.PlayingIndex, eventData.PlayingDeadline, eventData.WallCount, tileSuitsList, eventData.Actions, eventData.Seats);
+            WaitingActionEventArgs waitingActionEventArgs = new (eventData.PlayingIndex, eventData.PlayingDeadline, eventData.WallCount, tileSuitsList, eventData.Actions, processedSeats);
 
             // Playing State not change until action
             if(PlayingDeadline != eventData.PlayingDeadline)
@@ -411,19 +421,45 @@ public class API : MonoBehaviour
     
     public void HandlePassAction(MessageData playData)
     {
+        PassActionEventArgs passActionEventArgs = new (playData.Index, playData.Action);
 
-        DiscardActionEventArgs discardActionEventArgs = new (playData.Index, playData.Action, playData.Options);
-
-        DiscardEvent?.Invoke(this, discardActionEventArgs);
+        PassEvent?.Invoke(this, passActionEventArgs);
     }
     
     public void HandleDiscardAction(MessageData playData)
     {
-        //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
+        List<TileSuits> optionTile = ReturnTileToIndex(playData.Option);
 
-        DiscardActionEventArgs discardActionEventArgs = new (playData.Index, playData.Action, playData.Options);
+        DiscardActionEventArgs discardActionEventArgs = new (playData.Index, playData.Action, optionTile);
 
         DiscardEvent?.Invoke(this, discardActionEventArgs);
+    }
+    
+    public void HandleChowAction(MessageData playData)
+    {
+        List<List<TileSuits>> optionsTile = ConvertOptionsToTileSuitsList(playData.Options);
+
+        ChowActionEventArgs chowActionEventArgs = new (playData.Index, playData.Action, optionsTile);
+
+        ChowEvent?.Invoke(this, chowActionEventArgs);
+    }
+    
+    public void HandlePongAction(MessageData playData)
+    {
+        List<List<TileSuits>> optionsTile = ConvertOptionsToTileSuitsList(playData.Options);
+
+        PongActionEventArgs pongActionEventArgs = new (playData.Index, playData.Action, optionsTile);
+
+        PongEvent?.Invoke(this, pongActionEventArgs);
+    }
+    
+    public void HandleKongAction(MessageData playData)
+    {
+        List<List<TileSuits>> optionsTileSuitsList = ConvertOptionsToTileSuitsList(playData.Options);
+
+        KongActionEventArgs kongActionEventArgs = new (playData.Index, playData.Action, optionsTileSuitsList);
+
+        KongEvent?.Invoke(this, kongActionEventArgs);
     }
     
         //Debug.Log("2222222 From Server: " + JsonConvert.SerializeObject(eventData));
@@ -511,5 +547,34 @@ public class API : MonoBehaviour
         {
             return new List<TileSuits>();
         }
+    }
+
+    private List<SeatInfo> ProcessAllSeats(IEnumerable<SeatInfo> seats)
+    {
+        List<SeatInfo> processedSeats = new List<SeatInfo>();
+        foreach (SeatInfo seat in seats)
+        {
+            SeatInfo processedSeat = ProcessSeat(seat);
+            processedSeats.Add(processedSeat);
+        }
+        return processedSeats;
+    }
+
+    private SeatInfo ProcessSeat(SeatInfo seat)
+    {
+        List<TileSuits> flowerList = ReturnTileToIndex(seat.Flowers);
+        List<TileSuits> seaList = ReturnTileToIndex(seat.Sea);
+        return seat.CloneWithTiles(flowerList, seaList);
+    }
+
+    private List<List<TileSuits>> ConvertOptionsToTileSuitsList(List<string[]> options)
+    {
+        List<List<TileSuits>> optionsTileSuitsList = new List<List<TileSuits>>();
+        foreach (string[] option in options)
+        {
+            List<TileSuits> tileSuitsList = ReturnTileToIndex(option);
+            optionsTileSuitsList.Add(tileSuitsList);
+        }
+        return optionsTileSuitsList;
     }
 }
