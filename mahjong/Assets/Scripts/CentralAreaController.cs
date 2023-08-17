@@ -34,9 +34,10 @@ public class CentralAreaController : MonoBehaviour,IInitiable
         _numberOfRemainedTilesTextMeshPro.text = "88";
         throw new System.NotImplementedException();
     }
-    public void SetScore()
+    public void SetScore(int plyaerIndex, int score)
     {
-        throw new System.NotImplementedException();
+        _scoresTextMeshProList[plyaerIndex].text = score.ToString();
+        //throw new System.NotImplementedException();
     }
     public void SetDealer()
     {

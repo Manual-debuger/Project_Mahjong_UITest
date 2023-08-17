@@ -8,7 +8,8 @@ public class PlayerControllerBase : MonoBehaviour
     //private HandTilesAreaController _handTiles;    
     [SerializeField] private FlowerTileAreaController _flowerTileAreaController;
     [SerializeField] private MeldsAreaController _meldsAreaController;
-    [SerializeField] private PlayerInfoPlateController _playerInfoPlateController;
+    [SerializeField] private PlayerInfoPlateController _playerInfoPlateController;    
+
 
     public TileSuits[] FlowerTileSuits { get { return _flowerTileAreaController.GetTileSuits(); } }
     //public TileSuit[] MeldTilesuits { get { return _meldsAreaController.TilesSuits; } }
@@ -37,4 +38,11 @@ public class PlayerControllerBase : MonoBehaviour
     }
     public virtual void RemoveHandTile(TileSuits tileSuit) { }
     public virtual void RemoveDrawedTile(TileSuits tileSuit) { }
+
+    public virtual void SetSeatInfo(SeatInfo seatInfo)
+    {
+        _playerInfoPlateController.SetUserName(seatInfo.Nickname);
+        _playerInfoPlateController.SetWindPosision(seatInfo.DoorWind.ToString());
+
+    }
 }
