@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour,IInitiable
 {
@@ -71,7 +72,7 @@ public class GameManager : MonoBehaviour,IInitiable
     {
         
     }
-    public int CastSeatIndexToLocalIndex(int seatIndex)
+    public int CastAPIIndexToLocalIndex(int seatIndex)
     {
         return (seatIndex - _playerIndex + 4) % 4;
     }
@@ -126,8 +127,8 @@ public class GameManager : MonoBehaviour,IInitiable
         for(int i=0;i<4;i++)
         {
             e.Seats[i].DoorWind = WindString[i];          
-            _playerControllers[CastSeatIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
-            _centralAreaController.SetScore(CastSeatIndexToLocalIndex(i), e.Seats[i].Scores);
+            _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
+            _centralAreaController.SetScore(CastAPIIndexToLocalIndex(i), e.Seats[i].Scores);
         }
         //throw new System.NotImplementedException();
     }
@@ -135,7 +136,7 @@ public class GameManager : MonoBehaviour,IInitiable
     private void OnDecideBankerEvent(object sender, DecideBankerEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnDecideBankerEvent!!!!!!!!!!!!");
-        _centralAreaController.SetBanker(CastSeatIndexToLocalIndex(e.BankerIndex??0),e.RemainingBankerCount??1);
+        _centralAreaController.SetBanker(CastAPIIndexToLocalIndex(e.BankerIndex??0),e.RemainingBankerCount??1);
         //throw new System.NotImplementedException();
     }
 
@@ -153,37 +154,48 @@ public class GameManager : MonoBehaviour,IInitiable
         _centralAreaController.SetWallCount(e.WallCount ?? -1);
         for(int i=0;i<4;i++)
         {            
-            _playerControllers[CastSeatIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
+            _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
             if(i==this._playerIndex)
-                _playerControllers[CastSeatIndexToLocalIndex(i)].SetHandTiles(e.Tiles);
+                _playerControllers[CastAPIIndexToLocalIndex(i)].SetHandTiles(e.Tiles);
             else
-                _playerControllers[CastSeatIndexToLocalIndex(i)].SetHandTiles(e.Seats[i].TileCount??5);
-            _abandonedTilesAreaController.SetTiles(CastSeatIndexToLocalIndex(i), e.Seats[i].SeaTile);
+                _playerControllers[CastAPIIndexToLocalIndex(i)].SetHandTiles(e.Seats[i].TileCount??5);
+            _abandonedTilesAreaController.SetTiles(CastAPIIndexToLocalIndex(i), e.Seats[i].SeaTile);
         }
         //throw new System.NotImplementedException();
     }
     
     private void OnPlayingEvent(object sender, PlayingEventArgs e)
     {
-        /*foreach (SeatInfo seatInfo in e.Seats)
-        {
-            foreach (TileSuits Flower in seatInfo.FlowerTile)
-            {
-                Debug.Log(Flower + "Flowers");
-            }
-            foreach (TileSuits Sea in seatInfo.SeaTile)
-            {
-                Debug.Log(Sea + "Sea");
-            }
-        }*/
-        
         Debug.Log("!!!!!!!!!!!!OnPlayingEvent!!!!!!!!!!!!");
+        _centralAreaController.SetWallCount(e.WallCount??-1);
+        foreach(var seatInfo in e.Seats)
+        {
+            _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].UpdateFlowerTiles(seatInfo.FlowerTile);
+            //_centralAreaController.SetSeatInfo(seatInfo);
+            if(seatInfo.Index==this._playerIndex)
+                _playerControllers[this._playerIndex].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
+            else
+                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetHandTiles(seatInfo.TileCount??5, e.PlayingIndex==seatInfo.Index);            
+            _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
+        }
         //throw new System.NotImplementedException();
     }
     
     private void OnWaitingActionEvent(object sender, WaitingActionEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnWaitingActionEvent!!!!!!!!!!!!");
+        _centralAreaController.SetWallCount(e.WallCount ?? -1);        
+        _playerControllers[this._playerIndex].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex); _centralAreaController.SetWallCount(e.WallCount ?? -1);
+        foreach (var seatInfo in e.Seats)
+        {
+            _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetSeatInfo(seatInfo);
+            if (seatInfo.Index == this._playerIndex)
+                _playerControllers[this._playerIndex].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
+            else
+                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetHandTiles(seatInfo.TileCount ?? 5, e.PlayingIndex == seatInfo.Index);
+            _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
+        }
+
         //throw new System.NotImplementedException();
     }
     
@@ -196,6 +208,9 @@ public class GameManager : MonoBehaviour,IInitiable
     private void OnDiscardActionEvent(object sender, DiscardActionEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnDiscardActionEvent!!!!!!!!!!!!");
+        if (e.Options.Count > 1)
+            Debug.LogWarning("Options of DiscardActionEventArgs more than 1");       
+        _playerControllers[CastAPIIndexToLocalIndex(e.Index)].DiscardTile(e.Options[0]);
         //throw new System.NotImplementedException();
     }
     
@@ -219,7 +234,7 @@ public class GameManager : MonoBehaviour,IInitiable
     
     private void OnDrawnActionEvent(object sender, DrawnActionEventArgs e)
     {
-        Debug.Log("!!!!!!!!!!!!OnDrawnActionEvent!!!!!!!!!!!!");
+        Debug.Log("!!!!!!!!!!!!OnDrawnActionEvent!!!!!!!!!!!!");        
         //throw new System.NotImplementedException();
     }
     

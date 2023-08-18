@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -53,6 +54,30 @@ public class TileAreaControllerBase : MonoBehaviour,IInitiable,IReturnTileSuitsA
         {
             AddTile(tileSuit);
         }
+    }
+    public virtual void UpdateTiles(List<TileSuits> tileSuits)
+    {
+        for(int i=0;i<Math.Max(tileSuits.Count,this.TileCount);i++)
+        {
+            if(i>tileSuits.Count)
+            {
+                _TilesComponents[i].Disappear();
+            }
+            else if (i>this.TileCount)
+            {
+                _TilesComponents[i].TileSuit = tileSuits[i];
+                _TilesComponents[i].Appear();
+            }
+            else
+            {
+                if (tileSuits[i] != _TilesComponents[i].TileSuit)
+                {
+                    _TilesComponents[i].TileSuit = tileSuits[i];
+                    _TilesComponents[i].Appear();
+                }
+            }
+        }
+        this.TileCount=tileSuits.Count;
     }
     public TileSuits[] GetTileSuits()
     {

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts.UIScripts
@@ -26,35 +27,58 @@ namespace Assets.Scripts.UIScripts
             _drawedTileAreaController.Init();          
             base.Init();
         }
-        public override void SetHandTiles(int tileCount)
+        public override void SetHandTiles(int tileCount, bool IsDrawing = false)
         {
-            for(int i=0;i<tileCount;i++)
+            _drawedTileAreaController.Init();
+            if(IsDrawing)
             {
-                _handTilesAreaController.AddTile(TileSuits.b1);
-            }           
+                _drawedTileAreaController.AddTile(TileSuits.b1);
+                tileCount--;
+            }
+            if (_handTilesAreaController.GetTileSuits().Length == tileCount)
+                return;
+            else 
+            {
+                _handTilesAreaController.Init();
+                for(int i=0;i<tileCount;i++)
+                {
+                    _handTilesAreaController.AddTile(TileSuits.b1);
+                }                       
+            }
         }
-        public override void SetHandTiles(List<TileSuits> tileSuits)
+        public override void SetHandTiles(List<TileSuits> tileSuits, bool IsDrawing=false)
         {
-            foreach(var tileSuit in tileSuits)
+            _drawedTileAreaController.Init();
+            if (IsDrawing)
             {
-                _handTilesAreaController.AddTile(tileSuit);
-            }            
+                _drawedTileAreaController.AddTile(tileSuits.Last());                
+            }
+            if (_handTilesAreaController.GetTileSuits().Length == tileSuits.Count -( IsDrawing ? 1 : 0))
+                return;
+            else
+            {
+                _handTilesAreaController.Init();
+                for(int i=0;i<tileSuits.Count-(IsDrawing?1:0);i++)
+                {
+                    _handTilesAreaController.AddTile(tileSuits[i]);
+                }
+            }                       
         }
         public override void AddDrawedTile(TileSuits tileSuit)
         {
             _drawedTileAreaController.AddTile(tileSuit);
         }
-        public override void AddHandTile(TileSuits tileSuit)
+        /*public override void AddHandTile(TileSuits tileSuit)
         {
             _handTilesAreaController.AddTile(tileSuit);
-        }
-        public override void RemoveDrawedTile(TileSuits tileSuit)
+        }*/
+        public override void DiscardTile(TileSuits tileSuit)
         {
             _drawedTileAreaController.PopLastTile();
         }
-        public override void RemoveHandTile(TileSuits tileSuit)
+        /*public override void RemoveHandTile(TileSuits tileSuit)
         {
             _handTilesAreaController.PopLastTile();
-        }
+        }*/
     }
 }

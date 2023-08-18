@@ -30,7 +30,8 @@ public class PlayerControllerBase : MonoBehaviour,IInitiable
     {
         
     }
-    public virtual void AddHandTile(TileSuits tileSuit) { Debug.LogWarning("Must override this function AddHandTile, Do NOT Use this base function"); }
+    
+    
     public virtual void AddDrawedTile(TileSuits tileSuit) { Debug.LogWarning("Must override this function AddDrawedTile, Do NOT Use this base function"); }
                
     public void AddFlowerTile(TileSuits tileSuit)
@@ -40,9 +41,8 @@ public class PlayerControllerBase : MonoBehaviour,IInitiable
     public void AddMeldTile(MeldTypes meldType,List<TileSuits> tileSuitsList)
     {
         _meldsAreaController.AddMeld(meldType,tileSuitsList);
-    }
-    public virtual void RemoveHandTile(TileSuits tileSuit) { Debug.LogWarning("Must override this function RemoveHandTile, Do NOT Use this base function"); }
-    public virtual void RemoveDrawedTile(TileSuits tileSuit) {Debug.LogWarning("Must override this function RemoveDrawedTile, Do NOT Use this base function"); }
+    }    
+    public virtual void DiscardTile(TileSuits tileSuit) {Debug.LogWarning("Must override this function DiscardTile, Do NOT Use this base function"); }
 
     public virtual void SetSeatInfo(SeatInfo seatInfo)
     {
@@ -50,11 +50,15 @@ public class PlayerControllerBase : MonoBehaviour,IInitiable
         _playerInfoPlateController.SetWindPosision(seatInfo.DoorWind.ToString());
         _flowerTileAreaController.SetTiles(seatInfo.FlowerTile);
     }
-    public virtual void SetHandTiles(List<TileSuits> tileSuits)
+    public virtual void UpdateFlowerTiles(List<TileSuits> tileSuits)
+    {
+        _flowerTileAreaController.UpdateTiles(tileSuits);
+    }
+    public virtual void SetHandTiles(List<TileSuits> tileSuits,bool IsDrawing = false)
     {
         Debug.LogWarning("Must override this function SetHandTiles, Do NOT Use this base function");
     }
-    public virtual void SetHandTiles(int tileCount)
+    public virtual void SetHandTiles(int tileCount, bool IsDrawing=false)
     {
         Debug.LogWarning("Must override this function SetHandTiles, Do NOT Use this base function");
     }
