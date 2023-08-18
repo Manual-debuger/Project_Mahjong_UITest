@@ -276,7 +276,7 @@ public class API : MonoBehaviour
                     break;
                 case Action.Win:
                     break;
-                case Action.Drawn: // Action:9 �N�P
+                case Action.Drawn: // Action=9 
                     HandleDrawnAction(playData);
                     break;
                 case Action.GroundingFlower:
@@ -313,7 +313,7 @@ public class API : MonoBehaviour
         }
         catch(Exception e)
         {
-            Debug.LogError("Error HandleRandomSeatState: " + e.Message);    
+            Debug.LogError("Error HandleRandomSeatState: " + e.Message);
         }
     }
 
@@ -321,7 +321,7 @@ public class API : MonoBehaviour
     {
         try
         { 
-            DecideBankerEventArgs decideBankerEventArgs = new (eventData.BankerIndex);
+            DecideBankerEventArgs decideBankerEventArgs = new (eventData.BankerIndex, eventData.RemainingBankerCount);
             if (NowState != eventData.State)
             {
                 NowState = eventData.State;

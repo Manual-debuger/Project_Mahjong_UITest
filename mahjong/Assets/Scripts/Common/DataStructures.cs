@@ -95,9 +95,11 @@ public class RandomSeatEventArgs : EventArgs
 public class DecideBankerEventArgs : EventArgs
 {
     public int? BankerIndex;
-    public DecideBankerEventArgs(int? bankerIndex)
+    public int? RemainingBankerCount;
+    public DecideBankerEventArgs(int? bankerIndex, int? remainingBankerCount)
     {
         BankerIndex = bankerIndex;
+        RemainingBankerCount = remainingBankerCount;
     }
 }
 
