@@ -31,8 +31,7 @@ namespace Assets.Scripts.UIScripts
             for(int i=0;i<tileCount;i++)
             {
                 _handTilesAreaController.AddTile(TileSuits.b1);
-            }
-            Debug.LogWarning("new void SetHandTiles(int tileCount) in CompetitorController.cs be called");
+            }           
         }
         public override void SetHandTiles(List<TileSuits> tileSuits)
         {

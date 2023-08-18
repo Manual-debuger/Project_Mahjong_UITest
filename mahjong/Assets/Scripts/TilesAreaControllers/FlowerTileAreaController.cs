@@ -29,6 +29,7 @@ public class FlowerTileAreaController : TileAreaControllerBase
            if(this.IsFlowerTile(tileSuit)) 
            {
                 base.AddTile(tileSuit);
+                _TilesComponents[TileCount-1].ShowTileFrontSide();
            }
            else
            {

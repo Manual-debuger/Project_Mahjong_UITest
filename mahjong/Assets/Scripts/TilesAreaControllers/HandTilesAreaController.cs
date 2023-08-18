@@ -6,7 +6,7 @@ public class HandTilesAreaController : TileAreaControllerBase,IPopTileAble
 {
     public override void AddTile(TileSuits tileSuit)
     {
-        if(this.TileCount<16)
+        if(this.TileCount<=16)
         {
             if(this.IsNormalTile(tileSuit))
                 base.AddTile(tileSuit);

@@ -2,6 +2,7 @@ using Assets.Scripts.UIScripts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -28,10 +29,12 @@ public class GameManager : MonoBehaviour,IInitiable
 
         _playerControllers = new List<PlayerControllerBase>
         {
+
             GameObject.Find("Main_Tiles").GetComponent<PlayerController>(),
-            GameObject.Find("Player_Tiles E").GetComponent<CompetitorController>(),
+            GameObject.Find("Player_Tiles W").GetComponent<CompetitorController>(),
             GameObject.Find("Player_Tiles N").GetComponent<CompetitorController>(),
-            GameObject.Find("Player_Tiles W").GetComponent<CompetitorController>()
+            GameObject.Find("Player_Tiles E").GetComponent<CompetitorController>()
+           
         };
 
         _inGameUIController.DiscardTileEvent += OnDiscardTileEvent;
@@ -68,6 +71,11 @@ public class GameManager : MonoBehaviour,IInitiable
     {
         
     }
+    public int CastSeatIndexToLocalIndex(int seatIndex)
+    {
+        return (seatIndex - _playerIndex + 4) % 4;
+    }
+
     #region UI Event handle
     private void OnTileBeHoldingEvent(object sender, TileSuitEventArgs e)
     {
@@ -108,52 +116,50 @@ public class GameManager : MonoBehaviour,IInitiable
         throw new System.NotImplementedException();
     }
     #endregion
-
     
     #region API handle
     private void OnRandomSeatEvent(object sender, RandomSeatEventArgs e)
     {
-        _playerIndex = e.SelfSeatIndex;
-        foreach (SeatInfo seatInfo in e.Seats)  
-        {
-            _playerControllers[seatInfo.Index].SetSeatInfo(seatInfo);
-            _abandonedTilesAreaController.SetTiles(seatInfo.Index, seatInfo.SeaTile);
-            _centralAreaController.SetScore(seatInfo.Index, seatInfo.WinScores);
-            Debug.LogWarning(seatInfo.Index);
-            if (seatInfo.Index == e.SelfSeatIndex)//玩家自己的手牌，需特別處理
-            {
-                //throw new System.NotImplementedException();
-            }
-            else
-            {
-                //Debug.Log(_playerControllers[seatInfo.Index]);
-                _playerControllers[seatInfo.Index].SetHandTiles(seatInfo.TileCount ?? 16);
-            }
-        }
-
         Debug.Log("!!!!!!!!!!!!OnRandomSeatEvent!!!!!!!!!!!!");
+        _playerIndex = e.SelfSeatIndex;
+        List<string> WindString=new List<string> { "東", "南", "西", "北" };
+        for(int i=0;i<4;i++)
+        {
+            e.Seats[i].DoorWind = WindString[i];          
+            _playerControllers[CastSeatIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
+            _centralAreaController.SetScore(CastSeatIndexToLocalIndex(i), e.Seats[i].Scores);
+        }
         //throw new System.NotImplementedException();
     }
 
     private void OnDecideBankerEvent(object sender, DecideBankerEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnDecideBankerEvent!!!!!!!!!!!!");
+        _centralAreaController.SetBanker(CastSeatIndexToLocalIndex(e.BankerIndex??0),e.RemainingBankerCount??1);
         //throw new System.NotImplementedException();
     }
 
     private void OnOpenDoorEvent(object sender, OpenDoorEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnOpenDoorEvent!!!!!!!!!!!!");
-        foreach(int tileIndex in e.Tiles)
-        {
-            Debug.Log(tileIndex);
-        }
+        _playerControllers[0].SetHandTiles(e.Tiles);
+        _centralAreaController.SetWallCount(e.WallCount ?? -1);
         //throw new System.NotImplementedException();
     }
 
     private void OnGroundingFlowerEvent(object sender, GroundingFlowerEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnGroundingFlowerEvent!!!!!!!!!!!!");
+        _centralAreaController.SetWallCount(e.WallCount ?? -1);
+        for(int i=0;i<4;i++)
+        {            
+            _playerControllers[CastSeatIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
+            if(i==this._playerIndex)
+                _playerControllers[CastSeatIndexToLocalIndex(i)].SetHandTiles(e.Tiles);
+            else
+                _playerControllers[CastSeatIndexToLocalIndex(i)].SetHandTiles(e.Seats[i].TileCount??5);
+            _abandonedTilesAreaController.SetTiles(CastSeatIndexToLocalIndex(i), e.Seats[i].SeaTile);
+        }
         //throw new System.NotImplementedException();
     }
     

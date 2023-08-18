@@ -22,7 +22,7 @@ public class CameraAspectRatioAdjuster : MonoBehaviour
         float currentAspectRatio = (float)Screen.width / Screen.height;
         float scaleFactor = currentAspectRatio / targetAspectRatio;
         
-        Debug.Log("scaleFactor: " + scaleFactor);
+        //Debug.Log("scaleFactor: " + scaleFactor);
         if (scaleFactor < 1f)
         {
             Rect rect = camera.rect;

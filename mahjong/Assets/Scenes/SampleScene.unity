@@ -1645,6 +1645,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9125152867921059883, guid: 0b7a686ea97737c438e733431cf1dafb, type: 3}
   m_PrefabInstance: {fileID: 1065669327}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1092575368 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8059225629281146814, guid: 233a65ac4c00e0e4994d6ecdb5293833, type: 3}
+  m_PrefabInstance: {fileID: 8145787245382771823}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1110219019
 GameObject:
   m_ObjectHideFlags: 0
@@ -4868,10 +4879,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44268c0e0ea7ef441a8bea5d89652aa3, type: 2}
+    - target: {fileID: 288065730966360108, guid: 233a65ac4c00e0e4994d6ecdb5293833, type: 3}
+      propertyPath: m_Name
+      value: WallCount
+      objectReference: {fileID: 0}
     - target: {fileID: 380979392920325173, guid: 233a65ac4c00e0e4994d6ecdb5293833, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44268c0e0ea7ef441a8bea5d89652aa3, type: 2}
+    - target: {fileID: 907751052648793937, guid: 233a65ac4c00e0e4994d6ecdb5293833, type: 3}
+      propertyPath: _WallCountTextMeshPro
+      value: 
+      objectReference: {fileID: 1092575368}
     - target: {fileID: 2374390031334903964, guid: 233a65ac4c00e0e4994d6ecdb5293833, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -63,7 +63,13 @@ public enum MeldTypes
     ConcealedQuadplet,//暗槓子
     ExposedQuadplet,//明槓子 
 }
-
+public enum DoorWind
+{
+    East,
+    South,
+    West,
+    North,
+}
 public enum Action
 {
     Pass,
