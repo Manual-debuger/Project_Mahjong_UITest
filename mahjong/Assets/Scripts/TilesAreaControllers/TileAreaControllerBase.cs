@@ -26,7 +26,7 @@ public class TileAreaControllerBase : MonoBehaviour,IInitiable,IReturnTileSuitsA
     {
         _TilesComponents[TileCount].TileSuit = tileSuit;
         _TilesComponents[TileCount].Appear();
-        _TilesComponents[TileCount].ShowTileFrontSide();
+        //_TilesComponents[TileCount].ShowTileFrontSide();
         TileCount++;
     }
     public virtual void Init()

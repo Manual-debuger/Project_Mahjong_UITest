@@ -38,4 +38,8 @@ public class AbandonedTilesAreaController : MonoBehaviour
             abandonedTilesArea.UnHighLightDiscardTiles();
         }
     }
+    public void SetTiles(int targetIndex, List<TileSuits> tileSuits)
+    {
+        _abandonedTilesAreas[targetIndex].SetTiles(tileSuits);
+    }
 }

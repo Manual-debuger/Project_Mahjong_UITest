@@ -1,3 +1,4 @@
+using Assets.Scripts.UIScripts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ public class GameManager : MonoBehaviour,IInitiable
     private int _playerIndex;
     [SerializeField] private AbandonedTilesAreaController _abandonedTilesAreaController;
     [SerializeField] private CentralAreaController _centralAreaController;
-    [SerializeField] private PlayerControllerBase[] _playerControllers;
+    private List<PlayerControllerBase> _playerControllers;
     [SerializeField] private InGameUIController _inGameUIController;
     [SerializeField] private AnimController _animController;
     [SerializeField] private AudioController _audioManager;
@@ -24,6 +25,15 @@ public class GameManager : MonoBehaviour,IInitiable
             Destroy(this.gameObject);
         else if (_instance == null)
             _instance = this;
+
+        _playerControllers = new List<PlayerControllerBase>
+        {
+            GameObject.Find("Main_Tiles").GetComponent<PlayerController>(),
+            GameObject.Find("Player_Tiles E").GetComponent<CompetitorController>(),
+            GameObject.Find("Player_Tiles N").GetComponent<CompetitorController>(),
+            GameObject.Find("Player_Tiles W").GetComponent<CompetitorController>()
+        };
+
         _inGameUIController.DiscardTileEvent += OnDiscardTileEvent;
         _inGameUIController.OnTileBeHoldingEvent += OnTileBeHoldingEvent;
         _inGameUIController.LeaveTileBeHoldingEvent += OnLeaveTileBeHoldingEvent;
@@ -106,9 +116,19 @@ public class GameManager : MonoBehaviour,IInitiable
         _playerIndex = e.SelfSeatIndex;
         foreach (SeatInfo seatInfo in e.Seats)  
         {
-           _playerControllers[seatInfo.Index].SetSeatInfo(seatInfo);
-
+            _playerControllers[seatInfo.Index].SetSeatInfo(seatInfo);
+            _abandonedTilesAreaController.SetTiles(seatInfo.Index, seatInfo.SeaTile);
             _centralAreaController.SetScore(seatInfo.Index, seatInfo.WinScores);
+            Debug.LogWarning(seatInfo.Index);
+            if (seatInfo.Index == e.SelfSeatIndex)//玩家自己的手牌，需特別處理
+            {
+                //throw new System.NotImplementedException();
+            }
+            else
+            {
+                //Debug.Log(_playerControllers[seatInfo.Index]);
+                _playerControllers[seatInfo.Index].SetHandTiles(seatInfo.TileCount ?? 16);
+            }
         }
 
         Debug.Log("!!!!!!!!!!!!OnRandomSeatEvent!!!!!!!!!!!!");

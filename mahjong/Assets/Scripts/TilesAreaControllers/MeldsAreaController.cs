@@ -19,7 +19,12 @@ public class MeldsAreaController : MonoBehaviour,IInitiable
     {
         _meldControllers[_meldCount].SetByMeldTypeAndTileSuits(meldTypes, tileSuits);
         _meldCount++;
-    }                
+    }            
+    
+    void Awake()
+    {
+        Init();
+    }
     // Start is called before the first frame update
     void Start()
     {

@@ -313,7 +313,7 @@ public class API : MonoBehaviour
         }
         catch(Exception e)
         {
-            Debug.LogError("Error HandleRandomSeatState: " + e.Message);
+            Debug.LogError("Error HandleRandomSeatState: " + e.Message);    
         }
     }
 

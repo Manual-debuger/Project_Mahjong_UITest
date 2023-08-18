@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Scripts.UIScripts
@@ -18,6 +19,27 @@ namespace Assets.Scripts.UIScripts
         void Update()
         {
 
+        }
+        public override void Init()
+        {
+            _handTilesAreaController.Init();
+            _drawedTileAreaController.Init();          
+            base.Init();
+        }
+        public override void SetHandTiles(int tileCount)
+        {
+            for(int i=0;i<tileCount;i++)
+            {
+                _handTilesAreaController.AddTile(TileSuits.b1);
+            }
+            Debug.LogWarning("new void SetHandTiles(int tileCount) in CompetitorController.cs be called");
+        }
+        public override void SetHandTiles(List<TileSuits> tileSuits)
+        {
+            foreach(var tileSuit in tileSuits)
+            {
+                _handTilesAreaController.AddTile(tileSuit);
+            }            
         }
         public override void AddDrawedTile(TileSuits tileSuit)
         {
