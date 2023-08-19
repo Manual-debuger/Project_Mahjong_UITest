@@ -107,10 +107,12 @@ public class OpenDoorEventArgs : EventArgs
 {
     public int? WallCount;
     public List<TileSuits> Tiles;
-    public OpenDoorEventArgs(int? wallCount, List<TileSuits> tiles)
+    public List<SeatInfo> Seats;
+    public OpenDoorEventArgs(int? wallCount, List<TileSuits> tiles, List<SeatInfo> seats)
     {
         WallCount = wallCount;
         Tiles = tiles;
+        Seats = seats;
     }
 }
 

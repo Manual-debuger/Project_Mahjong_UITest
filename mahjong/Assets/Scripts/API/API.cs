@@ -344,8 +344,9 @@ public class API : MonoBehaviour
         try 
         { 
             List<TileSuits> tileSuitsList = ReturnTileToIndex(eventData.Tiles);
+            List<SeatInfo> processedSeats = ProcessAllSeats(eventData.Seats);
 
-            OpenDoorEventArgs openDoorEventArgs = new (eventData.WallCount, tileSuitsList);
+            OpenDoorEventArgs openDoorEventArgs = new (eventData.WallCount, tileSuitsList, processedSeats);
 
             if (NowState != eventData.State)
             {
@@ -363,8 +364,8 @@ public class API : MonoBehaviour
     {
         try
         {
-            List<SeatInfo> processedSeats = ProcessAllSeats(eventData.Seats);
             List<TileSuits> tileSuitsList = ReturnTileToIndex(eventData.Tiles);
+            List<SeatInfo> processedSeats = ProcessAllSeats(eventData.Seats);
 
             GroundingFlowerEventArgs groundingFlowerEventArgs = new (eventData.WallCount, tileSuitsList, processedSeats);
 
