@@ -31,12 +31,10 @@ public class GameManager : MonoBehaviour,IInitiable
 
         _playerControllers = new List<PlayerControllerBase>
         {
-
             GameObject.Find("Main_Tiles").GetComponent<PlayerController>(),
             GameObject.Find("Player_Tiles W").GetComponent<CompetitorController>(),
             GameObject.Find("Player_Tiles N").GetComponent<CompetitorController>(),
             GameObject.Find("Player_Tiles E").GetComponent<CompetitorController>()
-           
         };
 
         _inGameUIController.DiscardTileEvent += OnDiscardTileEvent;
@@ -142,7 +140,7 @@ public class GameManager : MonoBehaviour,IInitiable
         catch (Exception ex)
         {
             Debug.Log(ex.Message);
-            throw ;
+            throw;
         }
         
         //throw new System.NotImplementedException();
@@ -167,23 +165,11 @@ public class GameManager : MonoBehaviour,IInitiable
     {
         Debug.Log("!!!!!!!!!!!!OnGroundingFlowerEvent!!!!!!!!!!!!");
         _centralAreaController.SetWallCount(e.WallCount ?? -1);
-                   
-            for(int i=0;i<e.Seats.Count;i++)
-            {
-                _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
-                try
-                {
-                    if (i == this._playerIndex)
-                        _playerControllers[CastAPIIndexToLocalIndex(i)].SetHandTiles(e.Tiles);
-                    else
-                        _playerControllers[CastAPIIndexToLocalIndex(i)].SetHandTiles(e.Seats[i].TileCount ?? 5);
-                }
-                catch (Exception ex)
-                {
-                    Debug.LogError(ex.Message);
-                    throw;
-                }
-            }
+
+        for(int i = 0; i < e.Seats.Count; i++)
+        {
+            _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
+        }
         
         //throw new System.NotImplementedException();
     }
@@ -208,7 +194,7 @@ public class GameManager : MonoBehaviour,IInitiable
         catch (Exception ex)
         {
             Debug.LogError(ex.Message);
-            throw ex;
+            throw;
         }        
         //throw new System.NotImplementedException();
     }
