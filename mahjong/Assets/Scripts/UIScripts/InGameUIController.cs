@@ -53,7 +53,7 @@ public class InGameUIController : MonoBehaviour
     void Start()
     {
         HandTileSort();
-        HandTileSet();
+        HandTileUISet();
     }
 
     // Update is called once per frame
@@ -71,7 +71,7 @@ public class InGameUIController : MonoBehaviour
         HandTileSuits[16] = TileSuits.NULL;
 
         HandTileSort();
-        HandTileSet();
+        HandTileUISet();
         DiscardTileEvent?.Invoke(this, new DiscardTileEventArgs(tile, 0));
     }
     private void OnDiscardTileSuggestEvent(object sender, TileIndexEventArgs e)
@@ -104,11 +104,29 @@ public class InGameUIController : MonoBehaviour
         //HandTileSuits.Sort(new Comparison<TileSuits>((x, y) => x.CompareTo(y)));
     }
 
-    public void HandTileSet()
+    public void HandTileUISet()
     {
         for (int i = 0; i < 17; i++)
         {
             _handTilesUIViewer.HandTileSet(i, HandTileSuits[i]);
+        }
+    }
+
+    public void SetHandTile(List<TileSuits> tileSuits, bool IsDrawing)
+    {
+        if (IsDrawing)
+        {
+            HandTileSuits[17] = tileSuits[tileSuits.Count - 1];
+            tileSuits.RemoveAt(tileSuits.Count - 1);
+        }
+
+        for (int i = 0; i < tileSuits.Count; i++)
+        {
+            HandTileSuits[16 - tileSuits.Count + i] = tileSuits[i];
+        }
+        for (int i = 0; i < 16 - tileSuits.Count; i++)
+        {
+            HandTileSuits[i] = TileSuits.NULL;
         }
     }
 
