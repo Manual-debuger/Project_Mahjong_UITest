@@ -72,14 +72,14 @@ namespace Assets.Scripts.UIScripts
         }
         public override void UpdateSeatInfo(SeatInfo seatInfo)
         {
-            base.UpdateSeatInfo(seatInfo);
+            base.SetSeatInfo(seatInfo);
             if(seatInfo.TileCount!=null && seatInfo.TileCount>16)
             {
-                _drawedTileAreaController.UpdateTiles(1);
-                _handTilesAreaController.UpdateTiles(16);
+                _drawedTileAreaController.SetTiles(1);
+                _handTilesAreaController.SetTiles(16);
             }
             else            
-                _handTilesAreaController.UpdateTiles(seatInfo.TileCount??3);
+                _handTilesAreaController.SetTiles(seatInfo.TileCount??3);
             
         }
         public override void AddDrawedTile(TileSuits tileSuit)
@@ -89,6 +89,8 @@ namespace Assets.Scripts.UIScripts
         public override void DiscardTile(TileSuits tileSuit)
         {
             _drawedTileAreaController.PopLastTile();
+            _seaTilesAreaController.AddTile(tileSuit);
+            
         }
         /*public override void RemoveHandTile(TileSuits tileSuit)
         {

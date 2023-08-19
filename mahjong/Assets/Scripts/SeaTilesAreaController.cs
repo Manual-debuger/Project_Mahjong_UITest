@@ -14,6 +14,7 @@ public class SeaTilesAreaController : TileAreaControllerBase,IPopTileAble
         if(this.IsNormalTile(tileSuit))
         {
             base.AddTile(tileSuit);
+            _TilesComponents[TileCount-1].ShowTileFrontSide();
         }
         else
         {

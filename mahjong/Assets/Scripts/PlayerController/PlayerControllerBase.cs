@@ -8,10 +8,10 @@ using UnityEngine;
 public class PlayerControllerBase : MonoBehaviour,IInitiable
 {
     //private HandTilesAreaController _handTiles;    
-    [SerializeField] private FlowerTileAreaController _flowerTileAreaController;
-    [SerializeField] private MeldsAreaController _meldsAreaController;
-    [SerializeField] private PlayerInfoPlateController _playerInfoPlateController;
-    [SerializeField] private SeaTilesAreaController _seaTilesAreaController;
+    [SerializeField] protected FlowerTileAreaController _flowerTileAreaController;
+    [SerializeField] protected MeldsAreaController _meldsAreaController;
+    [SerializeField] protected PlayerInfoPlateController _playerInfoPlateController;
+    [SerializeField] protected SeaTilesAreaController _seaTilesAreaController;
 
 
     public TileSuits[] FlowerTileSuits { get { return _flowerTileAreaController.GetTileSuits(); } }
@@ -52,7 +52,11 @@ public class PlayerControllerBase : MonoBehaviour,IInitiable
 
     public virtual void SetSeatInfo(SeatInfo seatInfo)
     {
-        Debug.LogWarning(seatInfo.ToString());
+        //Debug.LogWarning(seatInfo.ToString());
+        //List<TileSuits> TestseaTile = new List<TileSuits>();
+        //TestseaTile.Add(TileSuits.c1);
+        //TestseaTile.Add(TileSuits.c2);
+        
         try { _playerInfoPlateController.SetUserName(seatInfo.Nickname); } catch { Debug.LogWarning("SetUserName Wrong"); throw; }
         try { _playerInfoPlateController.SetWindPosision(seatInfo.DoorWind.ToString()); } catch { Debug.LogWarning("SetWindPosision Wrong"); throw; }
         try { _seaTilesAreaController.SetTiles(seatInfo.SeaTile); } catch { Debug.LogWarning("SetSeaTiles Wrong");throw;}
@@ -62,16 +66,22 @@ public class PlayerControllerBase : MonoBehaviour,IInitiable
     }
     public virtual void UpdateSeatInfo(SeatInfo seatInfo)
     {
-        try
-        {
-            _seaTilesAreaController.UpdateTiles(seatInfo.SeaTile);
-            _flowerTileAreaController.UpdateTiles(seatInfo.FlowerTile);
-        }
-        catch
-        {
-            Debug.LogError("UpdateSeatInfo Error");
-            throw;
-        }
+        _seaTilesAreaController.SetTiles(seatInfo.SeaTile);
+        _flowerTileAreaController.SetTiles(seatInfo.FlowerTile);
+        //try
+        //{
+        //    List<TileSuits> TestseaTile = new List<TileSuits>();
+        //    TestseaTile.Add(TileSuits.c1);
+        //    TestseaTile.Add(TileSuits.c2);
+        //    Debug.LogWarning($"UpdateSeatInfo(seatinfo) seatinfo.Seatile:{seatInfo.SeaTile}");
+        //    _seaTilesAreaController.UpdateTiles(seatInfo.SeaTile);
+        //    _flowerTileAreaController.UpdateTiles(seatInfo.FlowerTile);
+        //}
+        //catch
+        //{
+        //    Debug.LogError("UpdateSeatInfo Error");
+        //    throw;
+        //}
     }   
     public virtual void SetHandTiles(List<TileSuits> tileSuits,bool IsDrawing = false)
     {

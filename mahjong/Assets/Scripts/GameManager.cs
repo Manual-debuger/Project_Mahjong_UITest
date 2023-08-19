@@ -2,6 +2,7 @@ using Assets.Scripts.UIScripts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -156,17 +157,21 @@ public class GameManager : MonoBehaviour,IInitiable
     private void OnOpenDoorEvent(object sender, OpenDoorEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnOpenDoorEvent!!!!!!!!!!!!");
-        _playerControllers[0].SetHandTiles(e.Tiles);
+        //_playerControllers[this._playerIndex].SetHandTiles(e.Tiles);
         _centralAreaController.SetWallCount(e.WallCount ?? -1);
+        for (int i = 0; i < e.Seats.Count; i++)
+        {
+            _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
+        }
         //throw new System.NotImplementedException();
     }
 
     private void OnGroundingFlowerEvent(object sender, GroundingFlowerEventArgs e)
     {
-        Debug.Log("!!!!!!!!!!!!OnGroundingFlowerEvent!!!!!!!!!!!!");
+        Debug.Log("!!!!!!!!!!!!OnGroundingFlowerEvent!!!!!!!!!!!!");;
         _centralAreaController.SetWallCount(e.WallCount ?? -1);
-
-        for(int i = 0; i < e.Seats.Count; i++)
+        //_playerControllers[this._playerIndex].SetHandTiles(e.Tiles);
+        for (int i = 0; i < e.Seats.Count; i++)
         {
             _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
         }
@@ -177,17 +182,13 @@ public class GameManager : MonoBehaviour,IInitiable
     private void OnPlayingEvent(object sender, PlayingEventArgs e)
     {
         Debug.Log("!!!!!!!!!!!!OnPlayingEvent!!!!!!!!!!!!");
-        _centralAreaController.SetWallCount(e.WallCount??-1);
+        _centralAreaController.SetWallCount(e.WallCount??-1);       
+        _playerControllers[this._playerIndex].UpdateHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
         try
         {
             foreach(var seatInfo in e.Seats)
             {
-                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].UpdateSeatInfo(seatInfo);
-                //_centralAreaController.SetSeatInfo(seatInfo);
-                if(seatInfo.Index==this._playerIndex)
-                    _playerControllers[this._playerIndex].UpdateHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
-                else
-                    _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].UpdateHandTiles(seatInfo.TileCount??5, e.PlayingIndex==seatInfo.Index);            
+                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].UpdateSeatInfo(seatInfo);                                                            
                 _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
             }
         }
@@ -228,7 +229,7 @@ public class GameManager : MonoBehaviour,IInitiable
         Debug.Log("!!!!!!!!!!!!OnDiscardActionEvent!!!!!!!!!!!!");
         if (e.Options.Count > 1)
             Debug.LogWarning("Options of DiscardActionEventArgs more than 1");       
-        _playerControllers[CastAPIIndexToLocalIndex(e.Index)].DiscardTile(e.Options[0]);
+        //_playerControllers[CastAPIIndexToLocalIndex(e.Index)].DiscardTile(e.Options[0]);
         //throw new System.NotImplementedException();
     }
     
