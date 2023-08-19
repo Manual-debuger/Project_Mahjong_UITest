@@ -133,7 +133,8 @@ public class GameManager : MonoBehaviour,IInitiable
         {
             for(int i=0;i<4;i++)
             {
-                e.Seats[i].DoorWind = WindString[i];          
+                //e.Seats[i].DoorWind = WindString[i];
+                
                 _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
                 _centralAreaController.SetScore(CastAPIIndexToLocalIndex(i), e.Seats[i].Scores);
             }
@@ -173,6 +174,8 @@ public class GameManager : MonoBehaviour,IInitiable
         //_playerControllers[this._playerIndex].SetHandTiles(e.Tiles);
         for (int i = 0; i < e.Seats.Count; i++)
         {
+            e.Seats[i].SeaTile.Add(TileSuits.c1);
+            e.Seats[i].SeaTile.Add(TileSuits.c2);
             _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
         }
         
@@ -181,14 +184,16 @@ public class GameManager : MonoBehaviour,IInitiable
     
     private void OnPlayingEvent(object sender, PlayingEventArgs e)
     {
-        Debug.Log("!!!!!!!!!!!!OnPlayingEvent!!!!!!!!!!!!");
-        _centralAreaController.SetWallCount(e.WallCount??-1);       
-        _playerControllers[this._playerIndex].UpdateHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
+        Debug.LogWarning("!!!!!!!!!!!!OnPlayingEvent!!!!!!!!!!!!");
+        Debug.LogWarning($"OnplayingEvent e.Seats.Count={e.Seats.Count}");
         try
         {
-            foreach(var seatInfo in e.Seats)
+            _centralAreaController.SetWallCount(e.WallCount??-1);       
+            _playerControllers[CastAPIIndexToLocalIndex(this._playerIndex)].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);        
+            foreach (var seatInfo in e.Seats)
             {
-                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].UpdateSeatInfo(seatInfo);                                                            
+                Debug.LogWarning($"OnplayingEvent {seatInfo.DoorWind}'s GM._playerIndex={this._playerIndex} seatInfo.Index={seatInfo.Index} SeaTiles.count={seatInfo.SeaTile.Count}");
+                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetSeatInfo(seatInfo);                                                            
                 _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
             }
         }
@@ -202,17 +207,26 @@ public class GameManager : MonoBehaviour,IInitiable
     
     private void OnWaitingActionEvent(object sender, WaitingActionEventArgs e)
     {
-        Debug.Log("!!!!!!!!!!!!OnWaitingActionEvent!!!!!!!!!!!!");
-        _centralAreaController.SetWallCount(e.WallCount ?? -1);        
-        _playerControllers[this._playerIndex].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex); _centralAreaController.SetWallCount(e.WallCount ?? -1);
-        foreach (var seatInfo in e.Seats)
+        Debug.LogWarning("!!!!!!!!!!!!OnWaitingActionEvent!!!!!!!!!!!!");
+        Debug.LogWarning($"OnWaitingActionEvent e.Seats.Count={e.Seats.Count}");
+        try
         {
-            _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetSeatInfo(seatInfo);
-            if (seatInfo.Index == this._playerIndex)
-                _playerControllers[this._playerIndex].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
-            else
-                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetHandTiles(seatInfo.TileCount ?? 5, e.PlayingIndex == seatInfo.Index);
-            _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
+            _centralAreaController.SetWallCount(e.WallCount ?? -1);
+            //_playerControllers[CastAPIIndexToLocalIndex(this._playerIndex)].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
+            foreach (var seatInfo in e.Seats)
+            {
+                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetSeatInfo(seatInfo);
+                //if (seatInfo.Index == this._playerIndex)
+                //    _playerControllers[this._playerIndex].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
+                //else
+                //    _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetHandTiles(seatInfo.TileCount ?? 5, e.PlayingIndex == seatInfo.Index);
+                _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
+            }
+        }
+        catch (Exception)
+        {
+
+            throw;
         }
 
         //throw new System.NotImplementedException();

@@ -66,8 +66,15 @@ public class PlayerControllerBase : MonoBehaviour,IInitiable
     }
     public virtual void UpdateSeatInfo(SeatInfo seatInfo)
     {
-        _seaTilesAreaController.SetTiles(seatInfo.SeaTile);
-        _flowerTileAreaController.SetTiles(seatInfo.FlowerTile);
+        try
+        {
+            _seaTilesAreaController.SetTiles(seatInfo.SeaTile);
+            _flowerTileAreaController.SetTiles(seatInfo.FlowerTile);
+        }
+        catch (System.Exception)
+        {
+            throw;
+        }
         //try
         //{
         //    List<TileSuits> TestseaTile = new List<TileSuits>();

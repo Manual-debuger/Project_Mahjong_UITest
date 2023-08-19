@@ -60,14 +60,22 @@ namespace Assets.Scripts.UIScripts
         }
         public override void SetSeatInfo(SeatInfo seatInfo)
         {
-            base.SetSeatInfo(seatInfo);
-            if(seatInfo.TileCount!=null && seatInfo.TileCount>16)
+            try
             {
-                _drawedTileAreaController.SetTiles(1);
-                _handTilesAreaController.SetTiles(16);
+                base.SetSeatInfo(seatInfo);
+                if (seatInfo.TileCount != null && seatInfo.TileCount > 16)
+                {
+                    _drawedTileAreaController.SetTiles(1);
+                    _handTilesAreaController.SetTiles(16);
+                }
+                else
+                    _handTilesAreaController.SetTiles(seatInfo.TileCount ?? 3);
             }
-            else            
-                _handTilesAreaController.SetTiles(seatInfo.TileCount??3);            
+            catch (System.Exception)
+            {
+
+                throw;
+            }   
             
         }
         public override void UpdateSeatInfo(SeatInfo seatInfo)

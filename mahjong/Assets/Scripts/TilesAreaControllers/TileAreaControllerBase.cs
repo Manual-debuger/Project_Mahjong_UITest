@@ -66,10 +66,18 @@ public class TileAreaControllerBase : MonoBehaviour,IInitiable,IReturnTileSuitsA
     }
     public virtual void SetTiles(int tileCount)
     {
-        Init();
-        for(int i=0;i<tileCount;i++)
+
+        try
         {
-            AddTile((TileSuits)i);
+            Init();
+            for (int i = 0; i < tileCount; i++)
+            {
+                AddTile((TileSuits)i);
+            }
+        }
+        catch (Exception)
+        {
+            throw;
         }
     }
     public virtual void UpdateTiles(List<TileSuits> tileSuits)
