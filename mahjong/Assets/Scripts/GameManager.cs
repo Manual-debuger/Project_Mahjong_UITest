@@ -181,30 +181,43 @@ public class GameManager : MonoBehaviour,IInitiable
         
         //throw new System.NotImplementedException();
     }
-    
+
     private void OnPlayingEvent(object sender, PlayingEventArgs e)
     {
-        Debug.LogWarning("!!!!!!!!!!!!OnPlayingEvent!!!!!!!!!!!!");
-        Debug.LogWarning($"OnplayingEvent e.Seats.Count={e.Seats.Count}");
+        Debug.Log("!!!!!!!!!!!!OnPlayingEvent!!!!!!!!!!!!");
+
+        string debugMessage = "PlayingDeadline = " + e.PlayingDeadline;
+
+        _centralAreaController.SetWallCount(e.WallCount ?? -1);
+        _playerControllers[this._playerIndex].UpdateHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
         try
         {
-            _centralAreaController.SetWallCount(e.WallCount??-1);       
-            _playerControllers[CastAPIIndexToLocalIndex(this._playerIndex)].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);        
             foreach (var seatInfo in e.Seats)
             {
-                Debug.LogWarning($"OnplayingEvent {seatInfo.DoorWind}'s GM._playerIndex={this._playerIndex} seatInfo.Index={seatInfo.Index} SeaTiles.count={seatInfo.SeaTile.Count}");
-                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetSeatInfo(seatInfo);                                                            
+                debugMessage += ", Name: " + seatInfo.Name + ", Sea Tiles: ";
+                foreach (var seaTile in seatInfo.SeaTile)
+                {
+                    debugMessage += seaTile + ", ";
+                }
+
+                debugMessage += "Flower Tiles: ";
+                foreach (var FlowerTile in seatInfo.FlowerTile)
+                {
+                    debugMessage += FlowerTile + ", ";
+                }
+                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].UpdateSeatInfo(seatInfo);
                 _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
             }
+            Debug.Log(debugMessage);
         }
         catch (Exception ex)
         {
             Debug.LogError(ex.Message);
             throw;
-        }        
+        }
         //throw new System.NotImplementedException();
     }
-    
+
     private void OnWaitingActionEvent(object sender, WaitingActionEventArgs e)
     {
         Debug.LogWarning("!!!!!!!!!!!!OnWaitingActionEvent!!!!!!!!!!!!");
