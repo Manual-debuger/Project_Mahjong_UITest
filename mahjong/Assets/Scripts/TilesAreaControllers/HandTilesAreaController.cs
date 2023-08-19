@@ -22,6 +22,18 @@ public class HandTilesAreaController : TileAreaControllerBase,IPopTileAble
             throw new System.Exception("Error:HandTilesArea.AddTile() TileCount>16");
         }
     }
+    public override void SetTiles(int tileCount)
+    {
+        base.SetTiles(tileCount);
+    }
+    public override void SetTiles(List<TileSuits> tileSuits)
+    {
+        base.SetTiles(tileSuits);
+    }
+    public override void UpdateTiles(List<TileSuits> tileSuits)
+    {
+        base.UpdateTiles(tileSuits);
+    }
 
     public void PopLastTile()
     {

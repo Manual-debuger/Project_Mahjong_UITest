@@ -16,7 +16,7 @@ public class TileComponent : MonoBehaviour,IInitiable
         get { return this._tileSuits; }
         set {
                 this._tileSuits = value;
-                Debug.Log($"TileCompoent Changing mesh into {value}:{(int)value}");            
+                //Debug.Log($"TileCompoent Changing mesh into {value}:{(int)value}");            
                 _meshFilter.mesh= AssetsPoolController.Instance.TileMeshs[(int)value];
             }
     }

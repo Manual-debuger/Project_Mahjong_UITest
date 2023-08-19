@@ -25,10 +25,19 @@ public class TileAreaControllerBase : MonoBehaviour,IInitiable,IReturnTileSuitsA
     
     public virtual void AddTile(TileSuits tileSuit)
     {
-        _TilesComponents[TileCount].TileSuit = tileSuit;
-        _TilesComponents[TileCount].Appear();
-        //_TilesComponents[TileCount].ShowTileFrontSide();
-        TileCount++;
+        try
+        {
+            _TilesComponents[TileCount].TileSuit = tileSuit;
+            _TilesComponents[TileCount].Appear();
+            //_TilesComponents[TileCount].ShowTileFrontSide();
+            TileCount++;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogWarning(ex.Message);
+            throw;
+        }
+
     }
     public virtual void Init()
     {
@@ -55,29 +64,86 @@ public class TileAreaControllerBase : MonoBehaviour,IInitiable,IReturnTileSuitsA
             AddTile(tileSuit);
         }
     }
+    public virtual void SetTiles(int tileCount)
+    {
+        Init();
+        for(int i=0;i<tileCount;i++)
+        {
+            AddTile((TileSuits)i);
+        }
+    }
     public virtual void UpdateTiles(List<TileSuits> tileSuits)
     {
-        for(int i=0;i<Math.Max(tileSuits.Count,this.TileCount);i++)
+        /*Init();
+        for (int i = 0; i < tileSuits.Count; i++)
         {
-            if(i>tileSuits.Count)
+            AddTile((TileSuits)i);
+        }*/
+        try
+        {
+            for(int i=0;i<Math.Max(tileSuits.Count,this.TileCount);i++)
             {
-                _TilesComponents[i].Disappear();
-            }
-            else if (i>this.TileCount)
-            {
-                _TilesComponents[i].TileSuit = tileSuits[i];
-                _TilesComponents[i].Appear();
-            }
-            else
-            {
-                if (tileSuits[i] != _TilesComponents[i].TileSuit)
+                if(i>=tileSuits.Count)
+                {
+                    _TilesComponents[i].Disappear();
+                }
+                else if (i>=this.TileCount)
                 {
                     _TilesComponents[i].TileSuit = tileSuits[i];
                     _TilesComponents[i].Appear();
                 }
+                else
+                {
+                    if (tileSuits[i] != _TilesComponents[i].TileSuit)
+                    {
+                        _TilesComponents[i].TileSuit = tileSuits[i];
+                        _TilesComponents[i].Appear();
+                    }
+                }
             }
+            this.TileCount=tileSuits.Count;
         }
-        this.TileCount=tileSuits.Count;
+        catch (System.Exception)
+        {
+            Debug.LogError("Error:TileAreaControllerBase.UpdateTiles() tileSuits.Count="+tileSuits.Count+" this.TileCount="+this.TileCount);
+            throw;
+        }
+    }
+    public virtual void UpdateTiles(int tileCount)
+    {
+        /*Init();
+        for (int i = 0; i < tileCount; i++)
+        {
+            AddTile((TileSuits)i);
+        }*/
+        try
+        {
+            for(int i=0;i<Math.Max(tileCount,this.TileCount);i++)
+            {
+                if(i>=tileCount)
+                {
+                    _TilesComponents[i].Disappear();
+                }
+                else if (i>=this.TileCount)
+                {
+                    _TilesComponents[i].TileSuit = (TileSuits)i;
+                    _TilesComponents[i].Appear();
+                }
+                else
+                {
+                    if ((TileSuits)i != _TilesComponents[i].TileSuit)
+                    {
+                        _TilesComponents[i].TileSuit = (TileSuits)i;
+                        _TilesComponents[i].Appear();
+                    }
+                }
+            }
+            this.TileCount=tileCount;
+        }
+        catch
+        {
+            throw;
+        }
     }
     public TileSuits[] GetTileSuits()
     {

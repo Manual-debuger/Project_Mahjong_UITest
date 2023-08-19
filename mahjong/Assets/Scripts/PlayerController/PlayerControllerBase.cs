@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.VersionControl;
 using UnityEngine;
 
@@ -9,7 +10,8 @@ public class PlayerControllerBase : MonoBehaviour,IInitiable
     //private HandTilesAreaController _handTiles;    
     [SerializeField] private FlowerTileAreaController _flowerTileAreaController;
     [SerializeField] private MeldsAreaController _meldsAreaController;
-    [SerializeField] private PlayerInfoPlateController _playerInfoPlateController;    
+    [SerializeField] private PlayerInfoPlateController _playerInfoPlateController;
+    [SerializeField] private SeaTilesAreaController _seaTilesAreaController;
 
 
     public TileSuits[] FlowerTileSuits { get { return _flowerTileAreaController.GetTileSuits(); } }
@@ -18,6 +20,10 @@ public class PlayerControllerBase : MonoBehaviour,IInitiable
     void Awake()
     {
         Init();
+        if(_flowerTileAreaController == null) 
+            _flowerTileAreaController=this.GetComponentInChildren<FlowerTileAreaController>();
+        if(_seaTilesAreaController == null) 
+            _seaTilesAreaController=this.GetComponentInChildren<SeaTilesAreaController>();
     }
     // Start is called before the first frame update
     void Start()
@@ -46,14 +52,27 @@ public class PlayerControllerBase : MonoBehaviour,IInitiable
 
     public virtual void SetSeatInfo(SeatInfo seatInfo)
     {
-        _playerInfoPlateController.SetUserName(seatInfo.Nickname);
-        _playerInfoPlateController.SetWindPosision(seatInfo.DoorWind.ToString());
-        _flowerTileAreaController.SetTiles(seatInfo.FlowerTile);
+        Debug.LogWarning(seatInfo.ToString());
+        try { _playerInfoPlateController.SetUserName(seatInfo.Nickname); } catch { Debug.LogWarning("SetUserName Wrong"); throw; }
+        try { _playerInfoPlateController.SetWindPosision(seatInfo.DoorWind.ToString()); } catch { Debug.LogWarning("SetWindPosision Wrong"); throw; }
+        try { _seaTilesAreaController.SetTiles(seatInfo.SeaTile); } catch { Debug.LogWarning("SetSeaTiles Wrong");throw;}
+        try { _flowerTileAreaController.SetTiles(seatInfo.FlowerTile); } catch { Debug.LogWarning("SetFlowerTiles Wrong");throw; }
+        
+        
     }
-    public virtual void UpdateFlowerTiles(List<TileSuits> tileSuits)
+    public virtual void UpdateSeatInfo(SeatInfo seatInfo)
     {
-        _flowerTileAreaController.UpdateTiles(tileSuits);
-    }
+        try
+        {
+            _seaTilesAreaController.UpdateTiles(seatInfo.SeaTile);
+            _flowerTileAreaController.UpdateTiles(seatInfo.FlowerTile);
+        }
+        catch
+        {
+            Debug.LogError("UpdateSeatInfo Error");
+            throw;
+        }
+    }   
     public virtual void SetHandTiles(List<TileSuits> tileSuits,bool IsDrawing = false)
     {
         Debug.LogWarning("Must override this function SetHandTiles, Do NOT Use this base function");
@@ -62,7 +81,14 @@ public class PlayerControllerBase : MonoBehaviour,IInitiable
     {
         Debug.LogWarning("Must override this function SetHandTiles, Do NOT Use this base function");
     }
-
+    public virtual void UpdateHandTiles(List<TileSuits> tileSuits,bool IsDrawing = false)
+    {
+        Debug.LogWarning("Must override SetHandTiles.UpdateHandTiles, Do NOT Use this base function");
+    }
+    public virtual void UpdateHandTiles(int tileCount, bool IsDrawing = false)
+    {
+        Debug.LogWarning("Must override SetHandTiles.UpdateHandTiles(int), Do NOT Use this base function");
+    }
     public virtual void Init()
     {
         _flowerTileAreaController.Init();

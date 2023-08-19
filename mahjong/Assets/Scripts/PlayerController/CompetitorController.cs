@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace Assets.Scripts.UIScripts
@@ -38,12 +39,8 @@ namespace Assets.Scripts.UIScripts
             if (_handTilesAreaController.GetTileSuits().Length == tileCount)
                 return;
             else 
-            {
-                _handTilesAreaController.Init();
-                for(int i=0;i<tileCount;i++)
-                {
-                    _handTilesAreaController.AddTile(TileSuits.b1);
-                }                       
+            {                
+                _handTilesAreaController.SetTiles(tileCount);
             }
         }
         public override void SetHandTiles(List<TileSuits> tileSuits, bool IsDrawing=false)
@@ -51,27 +48,44 @@ namespace Assets.Scripts.UIScripts
             _drawedTileAreaController.Init();
             if (IsDrawing)
             {
-                _drawedTileAreaController.AddTile(tileSuits.Last());                
+                _drawedTileAreaController.AddTile(tileSuits.Last());    
+                tileSuits.RemoveAt(tileSuits.Count-1);
             }
-            if (_handTilesAreaController.GetTileSuits().Length == tileSuits.Count -( IsDrawing ? 1 : 0))
+            if (_handTilesAreaController.GetTileSuits().Length == tileSuits.Count)
                 return;
             else
             {
-                _handTilesAreaController.Init();
-                for(int i=0;i<tileSuits.Count-(IsDrawing?1:0);i++)
-                {
-                    _handTilesAreaController.AddTile(tileSuits[i]);
-                }
+                _handTilesAreaController.SetTiles(tileSuits);
             }                       
+        }
+        public override void SetSeatInfo(SeatInfo seatInfo)
+        {
+            base.SetSeatInfo(seatInfo);
+            if(seatInfo.TileCount!=null && seatInfo.TileCount>16)
+            {
+                _drawedTileAreaController.SetTiles(1);
+                _handTilesAreaController.SetTiles(16);
+            }
+            else            
+                _handTilesAreaController.SetTiles(seatInfo.TileCount??3);            
+            
+        }
+        public override void UpdateSeatInfo(SeatInfo seatInfo)
+        {
+            base.UpdateSeatInfo(seatInfo);
+            if(seatInfo.TileCount!=null && seatInfo.TileCount>16)
+            {
+                _drawedTileAreaController.UpdateTiles(1);
+                _handTilesAreaController.UpdateTiles(16);
+            }
+            else            
+                _handTilesAreaController.UpdateTiles(seatInfo.TileCount??3);
+            
         }
         public override void AddDrawedTile(TileSuits tileSuit)
         {
             _drawedTileAreaController.AddTile(tileSuit);
-        }
-        /*public override void AddHandTile(TileSuits tileSuit)
-        {
-            _handTilesAreaController.AddTile(tileSuit);
-        }*/
+        }        
         public override void DiscardTile(TileSuits tileSuit)
         {
             _drawedTileAreaController.PopLastTile();

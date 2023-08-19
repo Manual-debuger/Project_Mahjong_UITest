@@ -13,9 +13,10 @@ public class GameManager : MonoBehaviour,IInitiable
 
     public static GameManager Instance { get { return _instance; } }
     private int _playerIndex;
+
     [SerializeField] private AbandonedTilesAreaController _abandonedTilesAreaController;
     [SerializeField] private CentralAreaController _centralAreaController;
-    private List<PlayerControllerBase> _playerControllers;
+    [SerializeField] private List<PlayerControllerBase> _playerControllers;
     [SerializeField] private InGameUIController _inGameUIController;
     [SerializeField] private AnimController _animController;
     [SerializeField] private AudioController _audioManager;
@@ -74,6 +75,11 @@ public class GameManager : MonoBehaviour,IInitiable
     }
     public int CastAPIIndexToLocalIndex(int seatIndex)
     {
+        if (seatIndex > 3) {             Debug.LogError("Error:GameManager.CastAPIIndexToLocalIndex() seatIndex>3");
+                   throw new System.Exception("Error:GameManager.CastAPIIndexToLocalIndex() seatIndex>3");
+               }
+        if ((seatIndex - _playerIndex + 4) % 4>3 || (seatIndex - _playerIndex + 4) % 4 < 0)
+            Debug.LogError("Error:GameManager.CastAPIIndexToLocalIndex() result error");
         return (seatIndex - _playerIndex + 4) % 4;
     }
 
@@ -97,12 +103,12 @@ public class GameManager : MonoBehaviour,IInitiable
     public void OnChowTileEvent(object sender, ChowTileEventArgs e)
     {
         _playerControllers[e.PlayerIndex].AddMeldTile(MeldTypes.Sequence, e.TileSuitsList);
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
     public void OnPongTileEvent(object sender, PongTileEventArgs e)
     {
         _playerControllers[e.PlayerIndex].AddMeldTile(MeldTypes.Triplet, e.TileSuitsList);
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
     public void OnKongTileEvent(object sender, KongTileEventArgs e)
     {
@@ -110,7 +116,7 @@ public class GameManager : MonoBehaviour,IInitiable
             _playerControllers[e.PlayerIndex].AddMeldTile(MeldTypes.ConcealedQuadplet, e.TileSuitsList);
         else
             _playerControllers[e.PlayerIndex].AddMeldTile(MeldTypes.ExposedQuadplet, e.TileSuitsList);
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
     public void OnWinningSuggestEvent(object sender, WinningSuggestArgs e)
     {
@@ -124,12 +130,21 @@ public class GameManager : MonoBehaviour,IInitiable
         Debug.Log("!!!!!!!!!!!!OnRandomSeatEvent!!!!!!!!!!!!");
         _playerIndex = e.SelfSeatIndex;
         List<string> WindString=new List<string> { "東", "南", "西", "北" };
-        for(int i=0;i<4;i++)
+        try
         {
-            e.Seats[i].DoorWind = WindString[i];          
-            _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
-            _centralAreaController.SetScore(CastAPIIndexToLocalIndex(i), e.Seats[i].Scores);
+            for(int i=0;i<4;i++)
+            {
+                e.Seats[i].DoorWind = WindString[i];          
+                _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
+                _centralAreaController.SetScore(CastAPIIndexToLocalIndex(i), e.Seats[i].Scores);
+            }
         }
+        catch (Exception ex)
+        {
+            Debug.Log(ex.Message);
+            throw ;
+        }
+        
         //throw new System.NotImplementedException();
     }
 
@@ -152,15 +167,24 @@ public class GameManager : MonoBehaviour,IInitiable
     {
         Debug.Log("!!!!!!!!!!!!OnGroundingFlowerEvent!!!!!!!!!!!!");
         _centralAreaController.SetWallCount(e.WallCount ?? -1);
-        for(int i=0;i<4;i++)
-        {            
-            _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
-            if(i==this._playerIndex)
-                _playerControllers[CastAPIIndexToLocalIndex(i)].SetHandTiles(e.Tiles);
-            else
-                _playerControllers[CastAPIIndexToLocalIndex(i)].SetHandTiles(e.Seats[i].TileCount??5);
-            _abandonedTilesAreaController.SetTiles(CastAPIIndexToLocalIndex(i), e.Seats[i].SeaTile);
-        }
+                   
+            for(int i=0;i<e.Seats.Count;i++)
+            {
+                _playerControllers[CastAPIIndexToLocalIndex(i)].SetSeatInfo(e.Seats[i]);
+                try
+                {
+                    if (i == this._playerIndex)
+                        _playerControllers[CastAPIIndexToLocalIndex(i)].SetHandTiles(e.Tiles);
+                    else
+                        _playerControllers[CastAPIIndexToLocalIndex(i)].SetHandTiles(e.Seats[i].TileCount ?? 5);
+                }
+                catch (Exception ex)
+                {
+                    Debug.LogError(ex.Message);
+                    throw;
+                }
+            }
+        
         //throw new System.NotImplementedException();
     }
     
@@ -168,16 +192,24 @@ public class GameManager : MonoBehaviour,IInitiable
     {
         Debug.Log("!!!!!!!!!!!!OnPlayingEvent!!!!!!!!!!!!");
         _centralAreaController.SetWallCount(e.WallCount??-1);
-        foreach(var seatInfo in e.Seats)
+        try
         {
-            _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].UpdateFlowerTiles(seatInfo.FlowerTile);
-            //_centralAreaController.SetSeatInfo(seatInfo);
-            if(seatInfo.Index==this._playerIndex)
-                _playerControllers[this._playerIndex].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
-            else
-                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetHandTiles(seatInfo.TileCount??5, e.PlayingIndex==seatInfo.Index);            
-            _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
+            foreach(var seatInfo in e.Seats)
+            {
+                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].UpdateSeatInfo(seatInfo);
+                //_centralAreaController.SetSeatInfo(seatInfo);
+                if(seatInfo.Index==this._playerIndex)
+                    _playerControllers[this._playerIndex].UpdateHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
+                else
+                    _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].UpdateHandTiles(seatInfo.TileCount??5, e.PlayingIndex==seatInfo.Index);            
+                _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
+            }
         }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex.Message);
+            throw ex;
+        }        
         //throw new System.NotImplementedException();
     }
     
