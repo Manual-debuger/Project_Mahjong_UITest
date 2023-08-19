@@ -69,7 +69,10 @@ namespace Assets.Scripts.UIScripts
                     _handTilesAreaController.SetTiles(16);
                 }
                 else
+                {
+                    _drawedTileAreaController.Init();
                     _handTilesAreaController.SetTiles(seatInfo.TileCount ?? 3);
+                }
             }
             catch (System.Exception)
             {
@@ -86,8 +89,11 @@ namespace Assets.Scripts.UIScripts
                 _drawedTileAreaController.SetTiles(1);
                 _handTilesAreaController.SetTiles(16);
             }
-            else            
+            else
+            {
+                _drawedTileAreaController.Init();
                 _handTilesAreaController.SetTiles(seatInfo.TileCount??3);
+            }
             
         }
         public override void AddDrawedTile(TileSuits tileSuit)
