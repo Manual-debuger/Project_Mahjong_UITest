@@ -192,21 +192,21 @@ public class GameManager : MonoBehaviour,IInitiable
         _playerControllers[this._playerIndex].UpdateHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
         try
         {
-            foreach (var seatInfo in e.Seats)
+            for (int i=0;i< e.Seats.Count();i++)
             {
-                debugMessage += ", Name: " + seatInfo.Name + ", Sea Tiles: ";
-                foreach (var seaTile in seatInfo.SeaTile)
+                debugMessage += ", Name: " + e.Seats[i].Nickname + ", Sea Tiles: ";
+                foreach (var seaTile in e.Seats[i].SeaTile)
                 {
                     debugMessage += seaTile + ", ";
                 }
 
                 debugMessage += "Flower Tiles: ";
-                foreach (var FlowerTile in seatInfo.FlowerTile)
+                foreach (var FlowerTile in e.Seats[i].FlowerTile)
                 {
                     debugMessage += FlowerTile + ", ";
                 }
-                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].UpdateSeatInfo(seatInfo);
-                _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
+                _playerControllers[CastAPIIndexToLocalIndex(i)].UpdateSeatInfo(e.Seats[i]);
+                _centralAreaController.SetScore(CastAPIIndexToLocalIndex(i), e.Seats[i].Scores);
             }
             Debug.Log(debugMessage);
         }
@@ -222,23 +222,34 @@ public class GameManager : MonoBehaviour,IInitiable
     {
         Debug.LogWarning("!!!!!!!!!!!!OnWaitingActionEvent!!!!!!!!!!!!");
         Debug.LogWarning($"OnWaitingActionEvent e.Seats.Count={e.Seats.Count}");
+
+        string debugMessage = "PlayingDeadline = " + e.PlayingDeadline;
+
+        _centralAreaController.SetWallCount(e.WallCount ?? -1);
+        _playerControllers[this._playerIndex].UpdateHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
         try
         {
-            _centralAreaController.SetWallCount(e.WallCount ?? -1);
-            //_playerControllers[CastAPIIndexToLocalIndex(this._playerIndex)].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
-            foreach (var seatInfo in e.Seats)
+            for (int i = 0; i < e.Seats.Count(); i++)
             {
-                _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetSeatInfo(seatInfo);
-                //if (seatInfo.Index == this._playerIndex)
-                //    _playerControllers[this._playerIndex].SetHandTiles(e.Tiles, e.PlayingIndex == this._playerIndex);
-                //else
-                //    _playerControllers[CastAPIIndexToLocalIndex(seatInfo.Index)].SetHandTiles(seatInfo.TileCount ?? 5, e.PlayingIndex == seatInfo.Index);
-                _centralAreaController.SetScore(CastAPIIndexToLocalIndex(seatInfo.Index), seatInfo.Scores);
-            }
-        }
-        catch (Exception)
-        {
+                debugMessage += ", Name: " + e.Seats[i].Nickname + ", Sea Tiles: ";
+                foreach (var seaTile in e.Seats[i].SeaTile)
+                {
+                    debugMessage += seaTile + ", ";
+                }
 
+                debugMessage += "Flower Tiles: ";
+                foreach (var FlowerTile in e.Seats[i].FlowerTile)
+                {
+                    debugMessage += FlowerTile + ", ";
+                }
+                _playerControllers[CastAPIIndexToLocalIndex(i)].UpdateSeatInfo(e.Seats[i]);
+                _centralAreaController.SetScore(CastAPIIndexToLocalIndex(i), e.Seats[i].Scores);
+            }
+            Debug.Log(debugMessage);
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex.Message);
             throw;
         }
 
