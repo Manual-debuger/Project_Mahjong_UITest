@@ -551,7 +551,7 @@ public class API : MonoBehaviour
         }
         else
         {
-            return new List<TileSuits> { TileSuits.NULL, TileSuits.NULL };
+            return new List<TileSuits> { TileSuits.NULL, TileSuits.NULL }; 
         }
     }
 
